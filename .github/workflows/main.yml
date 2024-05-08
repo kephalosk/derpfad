@@ -11,8 +11,12 @@ on:
   # Triggers the workflow on push request on the main branch for changes in the specified paths.
   push:
     branches: [ "master" ]
+    paths:
+      - 'derpfad.yaml'
   pull_request:
     branches: [ "master" ]
+    paths:
+      - 'derpfad.yaml'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel.
 jobs:
