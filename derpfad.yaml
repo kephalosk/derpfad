@@ -5,8 +5,6 @@ metadata:
   labels:
     app: derpfad
   namespace: default
-  annotations:
-    force-restart: "{{ timestamp }}"
 spec:
   replicas: 5
   selector:
@@ -22,7 +20,6 @@ spec:
       labels:
         app: derpfad
     spec:
-      restartPolicy: Always
       containers:
       - name: derpfad
         image: registry.digitalocean.com/kephalosk/derpfad:latest
