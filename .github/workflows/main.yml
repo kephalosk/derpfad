@@ -48,6 +48,9 @@ jobs:
     - name: Push image to DigitalOcean Container Registry
       run: docker push registry.digitalocean.com/kephalosk/derpfad
 
+    - name: Renew cluster’s certificate
+      run: doctl kubernetes cluster kubeconfig save ${{ secrets.CLUSTER_ID }}
+
     # Deploy to DigitalOCcean Kubernetes.
     - name: Deploy to DigitalOcean Kubernetes
       run: kubectl apply -f derpfad.yaml --validate=false
