@@ -53,9 +53,10 @@ jobs:
 
     # Deploy to DigitalOCcean Kubernetes.
     - name: Deploy to DigitalOcean Kubernetes
-      run: |
-        sed -i "s/{{ timestamp }}/$(date +%s)/g" derpfad.yaml
-        kubectl apply -f derpfad.yaml
+      run: kubectl apply -f derpfad.yaml
+        
+    - name: restart Pods
+      run: kubectl rollout restart
 
     - name: Verify deployment
       run: kubectl rollout status deployment/derpfad
