@@ -22,11 +22,11 @@ spec:
       labels:
         app: derpfad
     spec:
+      restartPolicy: Always
       containers:
       - name: derpfad
         image: registry.digitalocean.com/kephalosk/derpfad:latest
         imagePullPolicy: Always
-        restartPolicy: Always
         ports:
         - name: http
           containerPort: 80
