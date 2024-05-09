@@ -6,7 +6,7 @@ metadata:
     app: derpfad
   namespace: default
   annotations:
-    force-restart: "{{ .Values.timestamp }}"
+    force-restart: "{{ timestamp }}"
 spec:
   replicas: 5
   selector:
