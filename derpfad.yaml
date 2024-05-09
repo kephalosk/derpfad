@@ -1,15 +1,15 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: minimalhtml
+  name: derpfad
   labels:
-    app: minimalhtml
+    app: derpfad
   namespace: default
 spec:
   replicas: 5
   selector:
     matchLabels:
-      app: minimalhtml
+      app: derpfad
   strategy:
     rollingUpdate:
       maxSurge: 1
@@ -18,10 +18,10 @@ spec:
   template:
     metadata:
       labels:
-        app: minimalhtml
+        app: derpfad
     spec:
       containers:
-      - name: minimalhtml
+      - name: derpfad
         image: registry.digitalocean.com/kephalosk/derpfad:latest
         imagePullPolicy: Always
         ports:
@@ -34,8 +34,8 @@ metadata:
   finalizers:
     - service.kubernetes.io/load-balancer-cleanup
   labels:
-    app: minimalhtml
-  name: minimalhtml
+    app: derpfad
+  name: derpfad
   namespace: default
 spec:
   allocateLoadBalancerNodePorts: true
@@ -50,6 +50,6 @@ spec:
       protocol: TCP
       targetPort: 80
   selector:
-    app: minimalhtml
+    app: derpfad
   sessionAffinity: None
   type: LoadBalancer
