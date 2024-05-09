@@ -5,8 +5,6 @@ metadata:
   labels:
     app: derpfad
   namespace: default
-  annotations:
-    kubectl.kubernetes.io/restartedAt: "{{ .Time.Now }}"
 spec:
   replicas: 5
   selector:
@@ -21,6 +19,7 @@ spec:
     metadata:
       labels:
         app: derpfad
+        restart: "{{ .Time.Now }}"
     spec:
       containers:
       - name: derpfad
