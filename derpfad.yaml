@@ -2,12 +2,19 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: derpfad
+  labels:
+    app: derpfad
   namespace: default
 spec:
   replicas: 5
   selector:
     matchLabels:
       app: derpfad
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 5
   template:
     metadata:
       labels:
