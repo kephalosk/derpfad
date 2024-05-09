@@ -31,7 +31,7 @@ jobs:
     - name: Push image to DigitalOcean Container Registry
       run: docker push registry.digitalocean.com/kephalosk/derpfad:latest
       
-  scan:
+  analyze:
     runs-on: ubuntu-latest
 
     needs: build
@@ -39,6 +39,14 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        
+      - name: Install doctl
+        uses: digitalocean/action-doctl@v2
+        with:
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+          
+      - name: Log in to DigitalOcean Container Registry with short-lived credentials
+        run: doctl registry login --expiry-seconds 1200
         
       - name: Pull image from registry
         run: docker pull registry.digitalocean.com/kephalosk/derpfad:latest
@@ -56,7 +64,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     
-    needs: scan
+    needs: analyze
 
     steps:
     - name: Checkout master
