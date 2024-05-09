@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: derpfad
-        image: kephalosk/derpfad:latest
+        image: registry.digitalocean.com/kephalosk/derpfad:latest
         imagePullPolicy: Always
         ports:
         - name: http
