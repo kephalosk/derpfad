@@ -56,7 +56,7 @@ jobs:
       run: kubectl apply -f derpfad.yaml
         
     - name: restart Pods
-      run: kubectl rollout restart
+      run: kubectl -n default rollout restart deploy
 
     - name: Verify deployment
       run: kubectl rollout status deployment/derpfad
