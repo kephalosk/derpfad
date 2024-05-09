@@ -5,6 +5,8 @@ metadata:
   labels:
     app: derpfad
   namespace: default
+  annotations:
+    force-restart: "{{ .Values.timestamp }}"
 spec:
   replicas: 5
   selector:
@@ -19,7 +21,6 @@ spec:
     metadata:
       labels:
         app: derpfad
-        restart: "{{ .Time.Now }}"
     spec:
       containers:
       - name: derpfad
