@@ -37,16 +37,16 @@ jobs:
     
     # Build a Docker image of your application in your registry and tag the image with the $GITHUB_SHA.
     - name: Build container image
-      run: docker build -t derpfad .
+      run: docker build -t derpfad:latest .
 
     - name: Log in to DigitalOcean Container Registry with short-lived credentials
       run: doctl registry login --expiry-seconds 1200
 
     - name: Tag image
-      run: docker tag derpfad registry.digitalocean.com/kephalosk/derpfad
+      run: docker tag derpfad:latest registry.digitalocean.com/kephalosk/derpfad:latest
       
     - name: Push image to DigitalOcean Container Registry
-      run: docker push registry.digitalocean.com/kephalosk/derpfad
+      run: docker push registry.digitalocean.com/kephalosk/derpfad:latest
 
     - name: Renew cluster’s certificate
       run: doctl kubernetes cluster kubeconfig save ${{ secrets.CLUSTER_ID }}
