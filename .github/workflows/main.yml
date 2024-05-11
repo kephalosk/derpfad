@@ -14,6 +14,9 @@ jobs:
       - name: Checkout master
         uses: actions/checkout@main
 
+      - name: install Vue CLI
+        run: npm install -g @vue/cli
+
       - name: Build container image
         run: npm run test:unit
 
