@@ -6,6 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "npx playwright test",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -15,7 +16,9 @@
     "vuex": "^4.0.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.44.0",
     "@types/jest": "^27.0.1",
+    "@types/node": "^20.12.11",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vue/cli-plugin-babel": "~5.0.0",
