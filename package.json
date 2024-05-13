@@ -6,7 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "npx playwright test",
+    "test:e2e": "npx playwright test e2e-tests",
+    "test:integration": "npx playwright test integration-tests",
+    "updatevrts": "npx playwright test integration-tests --update-snapshots",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

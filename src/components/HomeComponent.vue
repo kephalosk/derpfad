@@ -3,7 +3,8 @@
     <section>
       <h2>The Easy Path To Master Web Development</h2>
       <p>
-        Easy Web Path provides a step-by-step overview of core concepts in web development and how they interact.
+        Easy Web Path provides a step-by-step overview of core concepts in web
+        development and how they interact.
       </p>
     </section>
 
