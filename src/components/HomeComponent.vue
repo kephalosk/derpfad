@@ -1,55 +1,37 @@
 <template>
   <div class="homeComponent">
     <section>
-      <h2>Der Pfad</h2>
+      <h2>The Easy Path To Master Web Development</h2>
       <p>
-        Der Pfad ist ein Mind-Superset zur Erlösung, Heilung, Befreiung,
-        Neutralisierung und Restrukturierung von Traumata.
+        Easy Web Path provides a step-by-step overview of core concepts in web development and how they interact.
       </p>
     </section>
 
     <section>
-      <h2>Kernkonzepte</h2>
+      <h2>Core Concepts</h2>
       <ul>
-        <li>1. Bewusstsein</li>
+        <li>1. Basics</li>
         <ul>
-          <li>1.1 Atmen</li>
-          <li>1.2 Wahrnehmen</li>
-          <li>1.3 Beobachten</li>
-          <li>1.4 Erweitern</li>
-          <li>1.5 Akzeptieren</li>
+          <li>Lesson 0: Problem Solving</li>
+          <li>Lesson 1: Minimal Setup</li>
+          <li>Lesson 2: Docker Setup</li>
+          <li>Lesson 3: Container-Registry Setup</li>
+          <li>Lesson 4: Kubernetes Setup</li>
+          <li>Lesson 5: Version Control</li>
+          <li>Lesson 6: Automatic Deployment</li>
+          <li>Lesson 7: Image Analysis</li>
         </ul>
-        <li>2. Glaube</li>
+        <li>2. Modern Web Development</li>
         <ul>
-          <li>2.1 Wahrheit</li>
-          <li>2.2 Luege</li>
-          <li>2.3 Vertrauen</li>
-          <li>2.4 Dankbarkeit</li>
-          <li>2.5 Heilung</li>
-        </ul>
-        <li>3. Bestimmung</li>
-        <ul>
-          <li>3.1 Konzepte</li>
-          <li>3.2 Projekte</li>
-          <li>3.3 Artefakte</li>
-          <li>3.4 Berufung</li>
-          <li>3.5 Vertrieb</li>
-        </ul>
-        <li>4. Gemeinschaft</li>
-        <ul>
-          <li>4.1 Existenz</li>
-          <li>4.2 Investitionen</li>
-          <li>4.3 Erledigungen</li>
-          <li>4.4 Hobbies</li>
-          <li>4.5 Beziehungen</li>
-        </ul>
-        <li>5. Erfüllung</li>
-        <ul>
-          <li>5.1 Traeume</li>
-          <li>5.2 Ziele</li>
-          <li>5.3 Schritte</li>
-          <li>5.4 Protokolle</li>
-          <li>5.5 Erfolge</li>
+          <li>Lesson 8: Development Environment</li>
+          <li>Lesson 9: Javascript Framework</li>
+          <li>Lesson 10: Unit Testing</li>
+          <li>Lesson 11: End-to-End Testing</li>
+          <li>Lesson 12: Integration Testing</li>
+          <li>Lesson 13: Build Versioning</li>
+          <li>Lesson 14: Static Code Analysis</li>
+          <li>Lesson 15: 3rd Party Library Analysis</li>
+          <li>Lesson 16: Security Analysis</li>
         </ul>
       </ul>
     </section>

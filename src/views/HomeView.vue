@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
-    <HomeComponent msg="Willkommen beim Pfad" />
+    <HomeComponent msg="Welcome to the Easy Web Path" />
   </div>
 </template>
 
