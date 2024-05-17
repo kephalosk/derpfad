@@ -1,0 +1,21 @@
+version: "25"
+services:
+  website:
+    image: nginx
+    ports:
+      - "8081:80"
+    restart: always
+  website2:
+    image: nginx
+    ports:
+      - "8082:80"
+    restart: always
+    networks:
+      derpfad:
+        ipv4_address: 192.168.92.21
+networks:
+  derpfad:
+    ipam:
+      driver: default
+      config:
+        - subnet: "192.168.92.0/24"
