@@ -6,4 +6,4 @@ COPY package*.json ./
 RUN npm install
 RUN npx playwright install
 COPY . .
-CMD ["npx", "playwright", "test", "integration-tests"]
+CMD ["npx", "playwright", "test", "integration-tests", "--update-snapshots"]

@@ -111,14 +111,16 @@ jobs:
       - name: Run Playwright tests
         run: npx playwright test integration-tests
 
-      - uses: actions/upload-artifact@v4
+      - name: Create Artifact for new vrt screenshots
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: integration-tests
           path: integration-tests/
           retention-days: 30
 
-      - uses: actions/upload-artifact@v4
+      - name: Create Artifact for Playwright report
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: playwright-report-integration
