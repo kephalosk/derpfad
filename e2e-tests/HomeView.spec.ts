@@ -1,13 +1,14 @@
 import { test, expect } from '@playwright/test';
+import config from '../config';
 
 test('has title', async ({ page }) => {
-  await page.goto('http://localhost/');
+  await page.goto(config.BASEPATH);
 
   await expect(page).toHaveTitle('derpfad');
 });
 
 test('has about link', async ({ page }) => {
-  await page.goto('http://localhost/');
+  await page.goto(config.BASEPATH);
 
   await page.getByRole('link', { name: 'About' }).click();
 

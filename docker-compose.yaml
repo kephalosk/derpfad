@@ -1,12 +1,23 @@
 version: "25"
 services:
-  website:
+  derpfad:
     image: derpfad
     ports:
       - "80:80"
     restart: always
-  website2:
+    networks:
+      - derpfad_network
+  playwright:
     image: playwright
     depends_on:
       - derpfad
-    restart: always
+    ports:
+      - "8080:80"
+    restart: no
+    networks:
+      - derpfad_network
+    volumes:
+      - ./integration-tests:/app/integration-tests
+networks:
+  derpfad_network:
+      driver: bridge
