@@ -34,6 +34,12 @@
           <li>Lesson 15: 3rd Party Library Analysis</li>
           <li>Lesson 16: Security Analysis</li>
         </ul>
+        <li>3. Advanced Web Development</li>
+        <ul>
+          <li>Lesson 17: Backend Setup</li>
+          <li>Lesson 18: API Setup</li>
+          <li>Lesson 19: Database integration</li>
+        </ul>
       </ul>
     </section>
 
