@@ -10,6 +10,9 @@
 
     <section>
       <h2>Core Concepts</h2>
+
+      <InfoCard class="rootInfoCard" title="User Interface" description="Personal Computer: Macbook" imageSrc="../assets/logo.png"/>
+
       <ul>
         <li>1. Basics</li>
         <ul>
@@ -49,9 +52,11 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import InfoCard from "@/components/InfoCard.vue";
 
 export default defineComponent({
   name: "HomeComponent",
+  components: {InfoCard},
   props: {
     msg: String,
   },

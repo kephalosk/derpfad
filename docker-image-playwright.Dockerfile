@@ -3,7 +3,7 @@ ENV BASE_PATH='http://derpfad/'
 ENV PW_TEST_HTML_REPORT_OPEN=never
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN npm ci
 RUN npx playwright install
 COPY . .
 CMD ["npx", "playwright", "test", "integration-tests", "--update-snapshots"]

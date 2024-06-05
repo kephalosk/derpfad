@@ -14,3 +14,9 @@ test('has about link', async ({ page }) => {
 
   await expect(page.getByRole('heading', { name: 'This is an about page' })).toBeVisible();
 });
+
+test('has InfoCard', async ({ page }) => {
+  await page.goto(config.BASEPATH);
+  const name = await page.innerText('.rootInfoCard');
+  expect(name).toContain('User Interface');
+});
