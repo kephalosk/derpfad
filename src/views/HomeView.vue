@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
     <HomeComponent msg="Welcome to the Easy Web Path" />
   </div>
 </template>
