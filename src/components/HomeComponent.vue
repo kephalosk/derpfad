@@ -66,6 +66,7 @@
         <Concept :icon="iconOS" :representer="operatingSystem" name="Operating System"/>
         <section class="cardRow">
           <Concept :icon="iconTextEditor" :representer="textEditor" name="Word Processing Program"/>
+          <ArrowIcon label="create"/>
           <Concept :icon="iconHTML" representer="index.html" name="HTML-Website"/>
         </section>
       </InfoCard>
@@ -77,6 +78,7 @@
 </template>
 
 <script setup lang="ts">
+import ArrowIcon from "@/components/ArrowIconRight.vue";
 import InfoCard from "@/components/InfoCard.vue";
 import Concept from "@/components/Concept.vue";
 import SelectionDropDown from "@/components/SelectionDropDown.vue";
