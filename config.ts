@@ -3,7 +3,7 @@ interface Config {
 }
 
 const config: Config = {
-  BASEPATH: process.env.BASE_PATH || "http://localhost:8080/",
+  BASEPATH: process.env.BASE_PATH || "http://localhost/",
 };
 
 export default config;
