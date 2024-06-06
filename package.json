@@ -6,9 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "npx playwright test e2e-tests",
+    "test:e2e": "BASE_PATH='http://localhost:8080' npx playwright test e2e-tests",
     "test:integration": "npx playwright test integration-tests",
-    "lint": "vue-cli-service lint"
+    "vrt": "make vrt"
   },
   "dependencies": {
     "core-js": "^3.8.3",
