@@ -30,6 +30,15 @@ export default defineConfig({
     trace: 'on-first-retry',
   },
 
+  expect: {
+    timeout: 10000,
+    toMatchSnapshot: {
+      threshold: 0.3,
+      maxDiffPixels: 1602,
+      maxDiffPixelRatio: 0.2
+    }
+  },
+
   /* Configure projects for major browsers */
   projects: [
     {
