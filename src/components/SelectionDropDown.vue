@@ -10,10 +10,20 @@
 import { defineEmits } from 'vue';
 
 const emit = defineEmits(['optionSelected']);
-const props = defineProps<{ selected: string }>();
+const props = defineProps({
+  selected: {
+    required: true,
+    type: String
+  },
+  defaultValue: {
+    required: true,
+    type: String
+  },
+});
+
 const handleChange = (event: MouseEvent) => {
   const target = event.target as HTMLSelectElement;
-  const selectedOption = (target && target.value) ? target.value : "macos";
+  const selectedOption = (target && target.value) ? target.value : props.defaultValue;
   emit('optionSelected', selectedOption);
 };
 </script>
