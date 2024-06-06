@@ -115,6 +115,8 @@
           </section>
         </InfoCard>
       </InfoCard>
+
+      <h4>HowTo: Minimal Setup</h4>
     </section>
 
     <p>&copy; 2024 EasyWebPath. All rights reserved.</p>
