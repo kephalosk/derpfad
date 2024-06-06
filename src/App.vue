@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <router-link to="/">Chapter 1: Basics</router-link> |
+    <router-link to="/">Chapter 1: Basics</router-link>
 <!--    <router-link to="/">Home</router-link> |-->
 <!--    <router-link to="/about">About</router-link>-->
   </nav>
