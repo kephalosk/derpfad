@@ -181,7 +181,7 @@
         </InfoCard>
 
         <InfoCard class="cardExplanation">
-          <p class="explanationHeading">Why HTML?</p>
+          <p class="explanationHeading">Why a Web Browser?</p>
           <ol>
             <li><b>Local Development:</b> Web browsers support local development by rendering and previewing web pages and applications stored on a developer's computer.</li>
             <li><b>Interactivity and Functionality:</b> They provide features such as tabbed browsing, bookmarking, and extensions, enhancing user experience and enabling interaction with web content.</li>
