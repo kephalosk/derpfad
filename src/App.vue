@@ -1,4 +1,11 @@
 <template>
+  <section>
+    <h1>The Easy Path To Master Web Development</h1>
+    <p>
+      Easy Web Path provides a step-by-step overview of core concepts in web
+      development and how they interact.
+    </p>
+  </section>
   <nav>
     <router-link to="/">Chapter 1: Basics</router-link>
 <!--    <router-link to="/">Home</router-link> |-->
@@ -14,6 +21,12 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+
+h1 {
+  font-size: 34px;
+  font-weight: bold;
 }
 
 nav {

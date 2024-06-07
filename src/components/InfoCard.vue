@@ -9,6 +9,7 @@
 
 <style scoped>
 .infocard {
+  background: radial-gradient(circle at left, rgba(255, 255, 255, 0.8), rgba(173, 216, 230, 0));
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 10px 15px 10px 15px;
