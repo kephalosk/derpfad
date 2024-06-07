@@ -79,22 +79,6 @@
             <li><b>Security and Stability:</b> The operating system ensures security by controlling access to resources and maintains system stability by managing processes and preventing conflicts.</li>
           </ol>
         </InfoCard>
-
-        <InfoCard class="cardExplanation">
-          <p class="explanationHeading">Further Information:</p>
-          <p class="bookinfo">
-            <a href="https://www.amazon.com/macOS-Sonoma-Dummies-Computer-tech/dp/139421975X" target="_blank"><img alt="Cover Image" :src="imageCoverOperatingSystemMacos" :style="{ width: '200px'}"/></a>
-            <a href="https://www.amazon.com/macOS-Sonoma-Dummies-Computer-tech/dp/139421975X" target="_blank">Guy Hart-Davis: macOS Sonoma For Dummies </a>
-          </p>
-          <p class="bookinfo">
-            <a href="https://www.amazon.com/Windows-11-Dummies-Andy-Rathbone/dp/1119846471" target="_blank"><img alt="Cover Image" :src="imageCoverOperatingSystemWindows" :style="{ width: '200px'}"/></a>
-            <a href="https://www.amazon.com/Windows-11-Dummies-Andy-Rathbone/dp/1119846471" target="_blank">Andy Rathbone: Windows 11 For Dummies</a>
-          </p>
-          <p class="bookinfo">
-            <a href="https://www.amazon.com/Linux-Bible-Christopher-Negus/dp/1119578884" target="_blank"><img alt="Cover Image" :src="imageCoverOperatingSystemLinux" :style="{ width: '200px'}"/></a>
-            <a href="https://www.amazon.com/Linux-Bible-Christopher-Negus/dp/1119578884" target="_blank">Christopher Negus: Linux Bible</a>
-          </p>
-        </InfoCard>
       </div>
 
       <div class="conceptContainer">
