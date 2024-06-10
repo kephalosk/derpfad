@@ -1,5 +1,5 @@
 import { shallowMount } from "@vue/test-utils";
-import HomeComponent from "@/components/Lesson1.vue";
+import HomeComponent from "@/lessons/Lesson1.vue";
 import InfoCard from "@/components/InfoCard.vue";
 
 describe("HomeComponent", () => {
