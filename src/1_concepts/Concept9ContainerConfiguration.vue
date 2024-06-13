@@ -6,8 +6,25 @@
       <section class="cardRow">
         <Concept :icon="iconTextEditor" :representer="textEditor" name="Word Processing Program"/>
         <ArrowIconRight label="create"/>
-        <Concept :icon="iconHTML" representer="index.html" name="HTML-Website"/>
-        <ArrowIconRight label="open in"/>
+        <div class="cardColumn">
+          <Concept :icon="iconHTML" representer="index.html" name="HTML-Website"/>
+          <Concept :icon="iconDockerfile" representer="Dockerfile" name="Container Configuration"/>
+        </div>
+        <ArrowIconRight label="build in"/>
+        <div class="cardColumn">
+          <InfoCard class="cardOperatingSystem">
+            <Concept :icon="iconDocker" representer="Docker" name="Container"/>
+            <InfoCard class="cardOperatingSystem">
+              <Concept :icon="iconNginx" representer="NGINX" name="Web Server"/>
+              <section class="cardRow">
+                <Concept :icon="iconHTML" representer="index.html" name="HTML-Website"/>
+              </section>
+            </InfoCard>
+          </InfoCard>
+          <arrow-icon-up label="run container"/>
+          <Concept :icon="iconDockerDesktop" representer="Docker Desktop" name="Container Environment"/>
+        </div>
+        <ArrowIconRight label="called from"/>
         <Concept :icon="iconChrome" representer="Chrome" name="Web Browser"/>
       </section>
     </InfoCard>
@@ -19,6 +36,7 @@ import { defineProps } from 'vue';
 import Concept from "@/components/Concept.vue";
 import InfoCard from "@/components/InfoCard.vue";
 import ArrowIconRight from "@/components/ArrowIconRight.vue";
+import ArrowIconUp from "@/components/ArrowIconUp.vue";
 
 const props = defineProps({
   iconLaptop: {
@@ -49,11 +67,19 @@ const props = defineProps({
 
 const iconHTML: string = require('@/assets/icon_document_html.png');
 const iconChrome: string = require('@/assets/icon_chrome.png');
+const iconNginx: string = require('@/assets/icon_nginx.png');
+const iconDocker: string = require('@/assets/icon_docker.png');
+const iconDockerDesktop: string = require('@/assets/icon_docker_desktop.png');
+const iconDockerfile: string = require('@/assets/icon_dockerfile.png');
 </script>
 
 <style scoped>
 .cardRow {
   display: flex;
   flex-direction: row;
+}
+.cardColumn {
+  display: flex;
+  flex-direction: column;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="arrow-icon">
+    <img class="arrow" src="../assets/icon_arrow_down.svg" alt="Arrow" />
     <div class="label">{{ label }}</div>
-    <img class="arrow" src="../assets/icon_arrow_right.svg" alt="Arrow" />
   </div>
 </template>
 
@@ -20,8 +20,10 @@ const props = defineProps({
 }
 .arrow-icon {
   display: flex;
-  flex-direction: column;
-  padding-top: 20px;
+  flex-direction: row;
   font-weight: bold;
+}
+.label {
+  padding-top: 40px;
 }
 </style>

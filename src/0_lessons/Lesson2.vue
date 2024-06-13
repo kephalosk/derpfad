@@ -3,55 +3,65 @@
     <section>
       <h2>Chapter 1: Basics</h2>
 
-      <SelectionDropDown :selected="selectedLesson" defaultValue="Lesson 1: Minimal Setup" @optionSelected="handleLessonChange">
+      <SelectionDropDown :selected="selectedLesson" defaultValue="lesson2" @optionSelected="handleLessonChange">
         <option value="lesson1">Lesson 1: Minimal Setup</option>
         <option value="lesson2">Lesson 2: Docker Setup</option>
       </SelectionDropDown>
 
       <div class="conceptContainer">
-        <h4>Concept 1: Personal Computer</h4>
-        <SelectionDropDown :selected="selectedDevice" defaultValue="macos" @optionSelected="handleOptionSelected">
-          <option value="macos">Apple MacBook</option>
-          <option value="windows">Microsoft Surface</option>
-          <option value="linux">Lenovo Thinkpad</option>
+        <h4>Concept 6: Web Server</h4>
+        <SelectionDropDown :selected="selectedWebServer" defaultValue="nginx" @optionSelected="handleOptionSelected">
+          <option value="nginx">NGINX</option>
         </SelectionDropDown>
-        <concept1-personal-computer :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
+        <concept6-web-server :text-editor="textEditor" :icon-text-editor="iconTextEditor" :operating-system="operatingSystem" :icon-o-s="iconOS" :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
         <explanation1-personal-computer/>
         <references1-personal-computer/>
       </div>
 
       <div class="conceptContainer">
-        <h4>Concept 2: Operating System</h4>
+        <h4>Concept 7: Container</h4>
         <SelectionDropDown :selected="selectedOS" defaultValue="macos" @optionSelected="handleOptionSelected">
           <option value="macos">macOS</option>
           <option value="windows">Windows</option>
           <option value="linux">Linux</option>
         </SelectionDropDown>
-        <concept2-operating-system :operating-system="operatingSystem" :icon-o-s="iconOS" :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
+        <concept7-container :text-editor="textEditor" :icon-text-editor="iconTextEditor" :operating-system="operatingSystem" :icon-o-s="iconOS" :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
         <explanation2-operating-system/>
       </div>
 
       <div class="conceptContainer">
-        <h4>Concept 3: Word Processing Program</h4>
+        <h4>Concept 8: Container Environment</h4>
         <SelectionDropDown :selected="selectedTextEditor" defaultValue="macos" @optionSelected="handleOptionSelected">
           <option value="macos">TextEdit</option>
           <option value="windows">Notepad</option>
           <option value="linux">gedit</option>
         </SelectionDropDown>
-        <concept3-word-processing-program :text-editor="textEditor" :icon-text-editor="iconTextEditor" :operating-system="operatingSystem" :icon-o-s="iconOS" :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
+        <concept8-container-environment :text-editor="textEditor" :icon-text-editor="iconTextEditor" :operating-system="operatingSystem" :icon-o-s="iconOS" :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
         <explanation3-word-processing-programm/>
       </div>
 
       <div class="conceptContainer">
-        <h4>Concept 4: HTML-Website</h4>
-        <concept4-h-t-m-l-website :text-editor="textEditor" :icon-text-editor="iconTextEditor" :operating-system="operatingSystem" :icon-o-s="iconOS" :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
+        <h4>Concept 9: Container Configuration</h4>
+        <concept9-container-configuration :text-editor="textEditor" :icon-text-editor="iconTextEditor" :operating-system="operatingSystem" :icon-o-s="iconOS" :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
         <explanation4-h-t-m-l-website/>
         <references4-h-t-m-l-website/>
       </div>
 
       <div class="conceptContainer">
-        <h4>Concept 5: Web Browser</h4>
-        <concept5-web-browser :text-editor="textEditor" :icon-text-editor="iconTextEditor" :operating-system="operatingSystem" :icon-o-s="iconOS" :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
+        <h4>Concept 10: Project Folder</h4>
+        <concept10-project-folder :text-editor="textEditor" :icon-text-editor="iconTextEditor" :operating-system="operatingSystem" :icon-o-s="iconOS" :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
+        <explanation5-web-browser/>
+      </div>
+
+      <div class="conceptContainer">
+        <h4>Concept 11: Shell</h4>
+        <concept11-shell :text-editor="textEditor" :icon-text-editor="iconTextEditor" :operating-system="operatingSystem" :icon-o-s="iconOS" :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
+        <explanation5-web-browser/>
+      </div>
+
+      <div class="conceptContainer">
+        <h4>Concept 12: Terminal</h4>
+        <concept12-terminal :text-editor="textEditor" :icon-text-editor="iconTextEditor" :operating-system="operatingSystem" :icon-o-s="iconOS" :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
         <explanation5-web-browser/>
       </div>
 
@@ -79,10 +89,20 @@ import References1PersonalComputer from "@/3_references/References1PersonalCompu
 import References4HTMLWebsite from "@/3_references/References4HTMLWebsite.vue";
 import HowToMinimalSetup from "@/4_howtos/HowToMinimalSetup.vue";
 import {useRouter} from "vue-router";
+import Concept6WebServer from "@/1_concepts/Concept6WebServer.vue";
+import Concept7Container from "@/1_concepts/Concept7Container.vue";
+import Concept8ContainerEnvironment from "@/1_concepts/Concept8ContainerEnvironment.vue";
+import Concept9ContainerConfiguration from "@/1_concepts/Concept9ContainerConfiguration.vue";
+import Concept10ProjectFolder from "@/1_concepts/Concept10ProjectFolder.vue";
+import Concept11Shell from "@/1_concepts/Concept11Shell.vue";
+import Concept12Terminal from "@/1_concepts/Concept12Terminal.vue";
 
 const router = useRouter();
 
-const selectedLesson = ref('lesson1')
+const selectedLesson = ref('lesson2')
+
+let webServer = ref<string>("NGINX");
+const selectedWebServer = ref('nginx');
 
 let personalComputer = ref<string>("Apple MacBook");
 const selectedDevice = ref('macos');

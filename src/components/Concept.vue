@@ -38,6 +38,7 @@ const separator = ": ";
 <style scoped>
 .concept {
   padding: 10px 5px 0px 5px;
+  width: 160px;
 }
 .conceptName {
   font-weight: bold;

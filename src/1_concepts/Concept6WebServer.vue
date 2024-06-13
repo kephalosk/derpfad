@@ -7,6 +7,15 @@
         <Concept :icon="iconTextEditor" :representer="textEditor" name="Word Processing Program"/>
         <ArrowIconRight label="create"/>
         <Concept :icon="iconHTML" representer="index.html" name="HTML-Website"/>
+        <ArrowIconRight label="build in"/>
+        <InfoCard class="cardOperatingSystem">
+          <Concept :icon="iconNginx" representer="NGINX" name="Web Server"/>
+          <section class="cardRow">
+            <Concept :icon="iconHTML" representer="index.html" name="HTML-Website"/>
+          </section>
+        </InfoCard>
+        <ArrowIconRight label="called from"/>
+        <Concept :icon="iconChrome" representer="Chrome" name="Web Browser"/>
       </section>
     </InfoCard>
   </InfoCard>
@@ -46,6 +55,8 @@ const props = defineProps({
 });
 
 const iconHTML: string = require('@/assets/icon_document_html.png');
+const iconChrome: string = require('@/assets/icon_chrome.png');
+const iconNginx: string = require('@/assets/icon_nginx.png');
 </script>
 
 <style scoped>
