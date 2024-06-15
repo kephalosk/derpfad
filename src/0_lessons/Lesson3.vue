@@ -1,5 +1,6 @@
 <template>
-  <div class="chapter1">
+
+  <div>
     <section>
       <h2>Chapter 1: Basics</h2>
 
@@ -11,7 +12,7 @@
 
       <div class="conceptContainer">
         <h4>Concept 14: Container Registry</h4>
-        <InfoCard class="cardPersonalComputer">
+        <InfoCard class="conceptImage">
           <img alt="Concept Image" :src="imageConcept" class="conceptImage"/>
         </InfoCard>
 
@@ -243,5 +244,7 @@ a {
 }
 .conceptImage {
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 </style>
