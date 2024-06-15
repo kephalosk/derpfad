@@ -3,18 +3,18 @@
     <section>
       <h2>Chapter 1: Basics</h2>
 
-      <SelectionDropDown :selected="selectedLesson" defaultValue="lesson2" @optionSelected="handleLessonChange">
+      <SelectionDropDown :selected="selectedLesson" defaultValue="lesson3" @optionSelected="handleLessonChange">
         <option value="lesson1">Lesson 1: Minimal Setup</option>
         <option value="lesson2">Lesson 2: Container Setup</option>
         <option value="lesson3">Lesson 3: Container-Registry Setup</option>
       </SelectionDropDown>
 
       <div class="conceptContainer">
-        <h4>Concept 6: Web Server</h4>
-        <SelectionDropDown :selected="selectedWebServer" defaultValue="nginx" @optionSelected="handleOptionSelected">
-          <option value="nginx">NGINX</option>
-        </SelectionDropDown>
-        <concept6-web-server :text-editor="textEditor" :icon-text-editor="iconTextEditor" :operating-system="operatingSystem" :icon-o-s="iconOS" :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
+        <h4>Concept 14: Container Registry</h4>
+        <InfoCard class="cardPersonalComputer">
+          <img alt="Concept Image" :src="imageConcept" class="conceptImage"/>
+        </InfoCard>
+
         <explanation6-web-server/>
         <references6-web-server/>
       </div>
@@ -109,10 +109,12 @@ import Concept13ExecutablePath from "@/1_concepts/Concept13ExecutablePath.vue";
 import Explanation13ExecutablePath from "@/2_explanations/Explanation13ExecutablePath.vue";
 import ArrowIconRight from "@/components/ArrowIconRight.vue";
 import HowTo2ContainerSetup from "@/4_howtos/HowTo2ContainerSetup.vue";
+import InfoCard from "@/components/InfoCard.vue";
+import Concept from "@/components/Concept.vue";
 
 const router = useRouter();
 
-const selectedLesson = ref('lesson2')
+const selectedLesson = ref('lesson3')
 
 const selectedWebServer = ref('nginx');
 const selectedContainer = ref('docker');
@@ -140,6 +142,8 @@ const iconTextEdit: string = require('@/assets/icon_textEdit.png');
 const iconNotepad: string = require('@/assets/icon_notepad.png');
 const iconGedit: string = require('@/assets/icon_gedit.png');
 let iconTextEditor = ref<string>(iconTextEdit);
+
+const imageConcept: string = require('@/assets/test.jpg');
 
 const handleOptionSelected = (option: string) => {
   switch (option) {
@@ -236,5 +240,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.conceptImage {
+  width: 100%;
 }
 </style>

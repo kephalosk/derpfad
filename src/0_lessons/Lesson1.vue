@@ -3,9 +3,10 @@
     <section>
       <h2>Chapter 1: Basics</h2>
 
-      <SelectionDropDown :selected="selectedLesson" defaultValue="lesson1" @optionSelected="handleLessonChange">
+      <SelectionDropDown :selected="selectedLesson" defaultValue="lesson2" @optionSelected="handleLessonChange">
         <option value="lesson1">Lesson 1: Minimal Setup</option>
         <option value="lesson2">Lesson 2: Container Setup</option>
+        <option value="lesson3">Lesson 3: Container-Registry Setup</option>
       </SelectionDropDown>
 
       <div class="conceptContainer">
@@ -168,6 +169,9 @@ const handleLessonChange = (option: string) => {
       break;
     case 'lesson2':
       router.push('/lesson2');
+      break;
+    case 'lesson3':
+      router.push('/lesson3');
       break;
     default:
   }

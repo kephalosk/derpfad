@@ -29,7 +29,8 @@
       <li>Type in url searchbar: http://localhost/
         <InfoCard class="cardImage">
           <img alt="Cover Image" :src="resultDockerHTML" :style="{ width: '400px'}"/>
-        </InfoCard></li>
+        </InfoCard>
+      </li>
     </ol>
   </InfoCard>
 </template>
