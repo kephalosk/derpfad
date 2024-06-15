@@ -44,8 +44,6 @@ const basicHTML: string = "\n<!DOCTYPE html>\n" +
 
 <style scoped>
 .cardHowTo {
-  display: flex;
-  flex-direction: column;
   max-width: 700px;
   text-align: left;
 }

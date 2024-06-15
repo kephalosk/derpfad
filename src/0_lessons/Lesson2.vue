@@ -5,7 +5,7 @@
 
       <SelectionDropDown :selected="selectedLesson" defaultValue="lesson2" @optionSelected="handleLessonChange">
         <option value="lesson1">Lesson 1: Minimal Setup</option>
-        <option value="lesson2">Lesson 2: Docker Setup</option>
+        <option value="lesson2">Lesson 2: Container Setup</option>
       </SelectionDropDown>
 
       <div class="conceptContainer">
@@ -14,58 +14,67 @@
           <option value="nginx">NGINX</option>
         </SelectionDropDown>
         <concept6-web-server :text-editor="textEditor" :icon-text-editor="iconTextEditor" :operating-system="operatingSystem" :icon-o-s="iconOS" :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
-        <explanation1-personal-computer/>
-        <references1-personal-computer/>
+        <explanation6-web-server/>
+        <references6-web-server/>
       </div>
 
       <div class="conceptContainer">
         <h4>Concept 7: Container</h4>
-        <SelectionDropDown :selected="selectedOS" defaultValue="macos" @optionSelected="handleOptionSelected">
-          <option value="macos">macOS</option>
-          <option value="windows">Windows</option>
-          <option value="linux">Linux</option>
+        <SelectionDropDown :selected="selectedContainer" defaultValue="docker" @optionSelected="handleOptionSelected">
+          <option value="docker">Docker</option>
         </SelectionDropDown>
         <concept7-container :text-editor="textEditor" :icon-text-editor="iconTextEditor" :operating-system="operatingSystem" :icon-o-s="iconOS" :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
-        <explanation2-operating-system/>
+        <explanation7-container/>
+        <references7-container/>
       </div>
 
       <div class="conceptContainer">
         <h4>Concept 8: Container Environment</h4>
-        <SelectionDropDown :selected="selectedTextEditor" defaultValue="macos" @optionSelected="handleOptionSelected">
-          <option value="macos">TextEdit</option>
-          <option value="windows">Notepad</option>
-          <option value="linux">gedit</option>
+        <SelectionDropDown :selected="selectedContainerEnvironment" defaultValue="docker" @optionSelected="handleOptionSelected">
+          <option value="docker">Docker Desktop</option>
         </SelectionDropDown>
         <concept8-container-environment :text-editor="textEditor" :icon-text-editor="iconTextEditor" :operating-system="operatingSystem" :icon-o-s="iconOS" :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
-        <explanation3-word-processing-programm/>
+        <explanation8-container-environment/>
       </div>
 
       <div class="conceptContainer">
         <h4>Concept 9: Container Configuration</h4>
         <concept9-container-configuration :text-editor="textEditor" :icon-text-editor="iconTextEditor" :operating-system="operatingSystem" :icon-o-s="iconOS" :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
-        <explanation4-h-t-m-l-website/>
-        <references4-h-t-m-l-website/>
+        <explanation9-container-configuration/>
       </div>
 
       <div class="conceptContainer">
         <h4>Concept 10: Project Folder</h4>
         <concept10-project-folder :text-editor="textEditor" :icon-text-editor="iconTextEditor" :operating-system="operatingSystem" :icon-o-s="iconOS" :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
-        <explanation5-web-browser/>
+        <explanation10-project-folder/>
       </div>
 
       <div class="conceptContainer">
         <h4>Concept 11: Shell</h4>
+        <SelectionDropDown :selected="selectedShell" defaultValue="bash" @optionSelected="handleOptionSelected">
+          <option value="bash">bash</option>
+        </SelectionDropDown>
         <concept11-shell :text-editor="textEditor" :icon-text-editor="iconTextEditor" :operating-system="operatingSystem" :icon-o-s="iconOS" :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
-        <explanation5-web-browser/>
+        <explanation11-shell/>
+        <references11-shell/>
       </div>
 
       <div class="conceptContainer">
         <h4>Concept 12: Terminal</h4>
+        <SelectionDropDown :selected="selectedTerminal" defaultValue="iterm2" @optionSelected="handleOptionSelected">
+          <option value="iterm2">iTerm2</option>
+        </SelectionDropDown>
         <concept12-terminal :text-editor="textEditor" :icon-text-editor="iconTextEditor" :operating-system="operatingSystem" :icon-o-s="iconOS" :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
-        <explanation5-web-browser/>
+        <explanation12-terminal/>
       </div>
 
-      <how-to-minimal-setup/>
+      <div class="conceptContainer">
+        <h4>Concept 13: Executable Path</h4>
+        <concept13-executable-path :text-editor="textEditor" :icon-text-editor="iconTextEditor" :operating-system="operatingSystem" :icon-o-s="iconOS" :personal-computer="personalComputer" :icon-laptop="iconLaptop"/>
+        <explanation13-executable-path/>
+      </div>
+
+      <how-to2-container-setup class="conceptContainer"/>
     </section>
 
     <p>&copy; 2024 EasyWebPath. All rights reserved.</p>
@@ -75,19 +84,8 @@
 <script setup lang="ts">
 import SelectionDropDown from "@/components/SelectionDropDown.vue";
 import {ref} from "vue";
-import Concept1PersonalComputer from "@/1_concepts/Concept1PersonalComputer.vue";
-import Concept2OperatingSystem from "@/1_concepts/Concept2OperatingSystem.vue";
-import Concept3WordProcessingProgram from "@/1_concepts/Concept3WordProcessingProgram.vue";
-import Concept4HTMLWebsite from "@/1_concepts/Concept4HTMLWebsite.vue";
-import Concept5WebBrowser from "@/1_concepts/Concept5WebBrowser.vue";
-import Explanation1PersonalComputer from "@/2_explanations/Explanation1PersonalComputer.vue";
-import Explanation2OperatingSystem from "@/2_explanations/Explanation2OperatingSystem.vue";
-import Explanation3WordProcessingProgramm from "@/2_explanations/Explanation3WordProcessingProgramm.vue";
-import Explanation4HTMLWebsite from "@/2_explanations/Explanation4HTMLWebsite.vue";
 import Explanation5WebBrowser from "@/2_explanations/Explanation5WebBrowser.vue";
-import References1PersonalComputer from "@/3_references/References1PersonalComputer.vue";
-import References4HTMLWebsite from "@/3_references/References4HTMLWebsite.vue";
-import HowToMinimalSetup from "@/4_howtos/HowToMinimalSetup.vue";
+import HowTo1MinimalSetup from "@/4_howtos/HowTo1MinimalSetup.vue";
 import {useRouter} from "vue-router";
 import Concept6WebServer from "@/1_concepts/Concept6WebServer.vue";
 import Concept7Container from "@/1_concepts/Concept7Container.vue";
@@ -96,13 +94,30 @@ import Concept9ContainerConfiguration from "@/1_concepts/Concept9ContainerConfig
 import Concept10ProjectFolder from "@/1_concepts/Concept10ProjectFolder.vue";
 import Concept11Shell from "@/1_concepts/Concept11Shell.vue";
 import Concept12Terminal from "@/1_concepts/Concept12Terminal.vue";
+import Explanation6WebServer from "@/2_explanations/Explanation6WebServer.vue";
+import References6WebServer from "@/3_references/References6WebServer.vue";
+import Explanation7Container from "@/2_explanations/Explanation7Container.vue";
+import References7Container from "@/3_references/References7Container.vue";
+import Explanation8ContainerEnvironment from "@/2_explanations/Explanation8ContainerEnvironment.vue";
+import Explanation9ContainerConfiguration from "@/2_explanations/Explanation9ContainerConfiguration.vue";
+import Explanation10ProjectFolder from "@/2_explanations/Explanation10ProjectFolder.vue";
+import Explanation11Shell from "@/2_explanations/Explanation11Shell.vue";
+import References11Shell from "@/3_references/References11Shell.vue";
+import Explanation12Terminal from "@/2_explanations/Explanation12Terminal.vue";
+import Concept13ExecutablePath from "@/1_concepts/Concept13ExecutablePath.vue";
+import Explanation13ExecutablePath from "@/2_explanations/Explanation13ExecutablePath.vue";
+import ArrowIconRight from "@/components/ArrowIconRight.vue";
+import HowTo2ContainerSetup from "@/4_howtos/HowTo2ContainerSetup.vue";
 
 const router = useRouter();
 
 const selectedLesson = ref('lesson2')
 
-let webServer = ref<string>("NGINX");
 const selectedWebServer = ref('nginx');
+const selectedContainer = ref('docker');
+const selectedContainerEnvironment = ref('docker');
+const selectedShell = ref('bash');
+const selectedTerminal = ref('iterm2');
 
 let personalComputer = ref<string>("Apple MacBook");
 const selectedDevice = ref('macos');

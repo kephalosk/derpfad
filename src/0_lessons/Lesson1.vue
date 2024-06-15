@@ -3,9 +3,9 @@
     <section>
       <h2>Chapter 1: Basics</h2>
 
-      <SelectionDropDown :selected="selectedLesson" defaultValue="Lesson 1: Minimal Setup" @optionSelected="handleLessonChange">
+      <SelectionDropDown :selected="selectedLesson" defaultValue="lesson1" @optionSelected="handleLessonChange">
         <option value="lesson1">Lesson 1: Minimal Setup</option>
-        <option value="lesson2">Lesson 2: Docker Setup</option>
+        <option value="lesson2">Lesson 2: Container Setup</option>
       </SelectionDropDown>
 
       <div class="conceptContainer">
@@ -55,7 +55,7 @@
         <explanation5-web-browser/>
       </div>
 
-      <how-to-minimal-setup/>
+      <how-to1-minimal-setup/>
     </section>
 
     <p>&copy; 2024 EasyWebPath. All rights reserved.</p>
@@ -77,7 +77,7 @@ import Explanation4HTMLWebsite from "@/2_explanations/Explanation4HTMLWebsite.vu
 import Explanation5WebBrowser from "@/2_explanations/Explanation5WebBrowser.vue";
 import References1PersonalComputer from "@/3_references/References1PersonalComputer.vue";
 import References4HTMLWebsite from "@/3_references/References4HTMLWebsite.vue";
-import HowToMinimalSetup from "@/4_howtos/HowToMinimalSetup.vue";
+import HowTo1MinimalSetup from "@/4_howtos/HowTo1MinimalSetup.vue";
 import {useRouter} from "vue-router";
 
 const router = useRouter();

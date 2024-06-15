@@ -24,6 +24,18 @@
           <Concept :icon="iconShellBash" representer="bash" name="Shell" size="75px"/>
           <arrow-icon-down label="docker run"/>
         </div>
+        <div class="cardColumn">
+          <div class="ghostItem100"/>
+          <div class="ghostItem100"/>
+          <div class="customOffsetTop"/>
+          <arrow-icon-right label="PATH"/>
+        </div>
+        <div class="cardColumn">
+          <div class="ghostItem100"/>
+          <div class="ghostItem100"/>
+          <div class="customOffsetTop"/>
+          <Concept :icon="iconFolder" representer="usr/local/bin" name="Executable Path"/>
+        </div>
       </section>
 
       <section class="cardRow">

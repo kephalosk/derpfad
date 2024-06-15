@@ -11,7 +11,7 @@
         <div class="cardColumn">
           <Concept :icon="iconOS" :representer="operatingSystem" name="Operating System"/>
           <arrow-icon-up label="mediate"/>
-          <Concept :icon="iconShellBash" representer="bash" name="Shell"/>
+          <Concept :icon="iconShellBash" representer="bash" name="Shell" size="75px"/>
           <arrow-icon-down label="docker run"/>
         </div>
       </section>
