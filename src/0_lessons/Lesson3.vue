@@ -238,9 +238,8 @@ a {
   align-items: center;
 }
 .conceptContainer {
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  max-width: 100%;
 }
 .conceptImage {
   width: 100%;

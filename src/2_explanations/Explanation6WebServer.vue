@@ -20,6 +20,7 @@ import InfoCard from "@/components/InfoCard.vue";
 
 <style scoped>
 .cardExplanation {
+  max-width: 100%;
   width: 700px;
 }
 .explanationHeading {
