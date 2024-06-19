@@ -1,6 +1,6 @@
 import { shallowMount } from "@vue/test-utils";
 import HomeComponent from "@/0_lessons/Lesson1.vue";
-import Concept1PersonalComputer from "@/concepts/Concept1PersonalComputer.vue";
+import ConceptImage from "@/components/ConceptImage.vue";
 
 describe("HomeComponent", () => {
   it("renders div homeComponent", () => {
@@ -14,7 +14,7 @@ describe("HomeComponent", () => {
   it("renders Concept 1: Personal Computer", () => {
     const wrapper = shallowMount(HomeComponent);
 
-    const divHomeComponent = wrapper.findComponent(Concept1PersonalComputer);
+    const divHomeComponent = wrapper.findComponent(ConceptImage);
 
     expect(divHomeComponent.exists()).toBe(true);
   });
