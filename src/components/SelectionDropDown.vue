@@ -29,4 +29,59 @@ const handleChange = (event: MouseEvent) => {
 </script>
 
 <style scoped>
+div {
+  position: relative;
+  display: inline-block;
+}
+
+select {
+  appearance: none;
+  background: linear-gradient(to bottom right, #31ffff, #ffffff);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000066; /* Dark blue text */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  width: 100%;
+  outline: none;
+}
+
+select:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+select:focus {
+  box-shadow: 0 0 0 3px rgba(49, 216, 230, 0.5);
+}
+
+select::after {
+  content: '';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #000066; /* Dark blue arrow */
+  pointer-events: none;
+}
+
+div::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #000066; /* Dark blue arrow */
+  pointer-events: none;
+  transform: translateY(-50%);
+}
 </style>

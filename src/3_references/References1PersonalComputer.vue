@@ -31,9 +31,6 @@ const imageCoverPersonalComputerLenovo: string = require('@/assets/icon_thinkpad
   font-weight: bold;
   align-items: center;
 }
-.cardExplanation {
-  width: 700px;
-}
 .explanationHeading {
   font-weight: bold;
   font-style: italic;

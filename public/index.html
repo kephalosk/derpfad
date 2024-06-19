@@ -5,8 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
+  <header class="banner">
+      <div class="banner-content">
+          <h1>The Easy Path To Master Web Development</h1>
+          <p>
+              EasyWebPath.com provides a step-by-step overview of core concepts in Web
+              Development and how they relate to each other.
+          </p>
+      </div>
+  </header>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
@@ -16,7 +26,42 @@
   </body>
   <style>
       body {
-          background: radial-gradient(circle at left, rgba(255, 255, 255, 0.8), rgba(49, 216, 230, 0.4));
+          font-family: Avenir, Helvetica, Arial;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          text-align: center;
+          color: #2c3e50;
+          background: radial-gradient(circle at left, rgba(255, 255, 255, 0.8), rgba(49, 255, 255, 0.4));
+          margin: 0;
+          padding: 0;
+      }
+
+      .banner {
+          background: linear-gradient(135deg, #31ffff, #ffffff); /* Gradient from #31ffff to white */
+          color: #004d40; /* Dark teal text color */
+          padding: 20px 0; /* Adjust padding for spacing */
+          text-align: center; /* Center-align content */
+          margin-top: 0; /* Remove top margin */
+      }
+
+      .banner h1 {
+          font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+          font-size: 3rem; /* Larger font size for headline */
+          font-weight: 700; /* Bold font weight */
+          margin: 0; /* Remove default margin */
+      }
+
+      .banner p {
+          font-size: 1.2rem; /* Smaller font size for paragraph */
+          font-weight: bold;
+          line-height: 1.6; /* Improved readability with increased line height */
+          margin: 20px 0 0; /* Adjust top margin for paragraph */
+      }
+
+      .banner-content {
+          max-width: 800px; /* Limit content width */
+          margin: 0 auto; /* Center content horizontally */
+          padding: 0 20px; /* Add padding to content */
       }
   </style>
 </html>

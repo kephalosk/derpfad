@@ -19,9 +19,6 @@ import InfoCard from "@/components/InfoCard.vue";
 </script>
 
 <style scoped>
-.cardExplanation {
-  width: 700px;
-}
 .explanationHeading {
   font-weight: bold;
   font-style: italic;

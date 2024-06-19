@@ -1,6 +1,6 @@
 import { shallowMount } from "@vue/test-utils";
 import HomeComponent from "@/0_lessons/Lesson1.vue";
-import Concept1PersonalComputer from "@/1_concepts/Concept1PersonalComputer.vue";
+import Concept1PersonalComputer from "@/concepts/Concept1PersonalComputer.vue";
 
 describe("HomeComponent", () => {
   it("renders div homeComponent", () => {
