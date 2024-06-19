@@ -15,9 +15,8 @@ test('has Chapter 1: Basics link', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'The Easy Path To Master Web Development' })).toBeVisible();
 });
 
-test('has InfoCard', async ({ page }) => {
+test('has heading banner', async ({ page }) => {
   await page.goto(config.BASEPATH);
-  const name = await page.innerText('.cardPersonalComputer');
-  console.log(name);
-  expect(name).toContain('Personal Computer');
+  const name = await page.innerText('.banner-heading');
+  expect(name).toContain('Concept 1: Personal Computer');
 });
