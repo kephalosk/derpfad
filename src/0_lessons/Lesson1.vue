@@ -55,7 +55,7 @@
       <how-to1-minimal-setup class="conceptContainer"/>
     </section>
 
-    <p>&copy; 2024 EasyWebPath. All rights reserved.</p>
+    <p>&copy; 2024 EasyWebPath. All rights reserved. <router-link to="/impressum">Impressum</router-link></p>
 </template>
 
 <script setup lang="ts">

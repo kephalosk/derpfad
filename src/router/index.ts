@@ -2,12 +2,18 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 import Lesson1 from "@/0_lessons/Lesson1.vue";
 import Lesson2 from "@/0_lessons/Lesson2.vue";
 import Lesson3 from "@/0_lessons/Lesson3.vue";
+import Impressum from "@/views/Impressum.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "home",
     component: Lesson1,
+  },
+  {
+    path: '/impressum',
+    name: 'Impressum',
+    component: Impressum,
   },
   {
     path: "/lesson2",
