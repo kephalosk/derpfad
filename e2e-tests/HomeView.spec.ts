@@ -4,7 +4,7 @@ import config from '../config';
 test('has title', async ({ page }) => {
   await page.goto(config.BASEPATH);
 
-  await expect(page).toHaveTitle('derpfad');
+  await expect(page).toHaveTitle('EasyWebPath.com');
 });
 
 test('has Chapter 1: Basics link', async ({ page }) => {
