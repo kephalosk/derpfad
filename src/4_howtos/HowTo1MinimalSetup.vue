@@ -34,11 +34,11 @@ const resultHTML: string = require('@/assets/result_html.png');
 const basicHTML: string = "\n<!DOCTYPE html>\n" +
     "<html>\n" +
     "<head>\n" +
-    "    <title>My Easy Website Title</title>\n" +
+    "    <title>Easy Website Title</title>\n" +
     "</head>\n" +
     "<body>\n" +
-    "    <h1>My Easy Website Heading</h1>\n" +
-    "    <p>My Easy Website Paragraph.</p>\n" +
+    "    <h1>Easy Website Heading</h1>\n" +
+    "    <p>Easy Website Paragraph.</p>\n" +
     "</body>\n" +
     "</html>"
 </script>
