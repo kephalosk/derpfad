@@ -1,38 +1,20 @@
 <template>
-  <nav>
-    <router-link to="/">Chapter 1: Basics</router-link>
-<!--    <router-link to="/">Home</router-link> |-->
+<!--  <nav>-->
+<!--    <router-link to="/">Chapter 1: Basics</router-link>-->
+<!--    <router-link to="/"> Home</router-link> |-->
 <!--    <router-link to="/about">About</router-link>-->
-  </nav>
+<!--  </nav>-->
   <router-view />
 </template>
 
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue';
 
-const windowWidth = ref(window.innerWidth);
-
-const contentStyle = computed(() => ({
-  textAlign: windowWidth.value < 700 ? 'left' : 'center',
-  padding: '20px',
-}));
-
-const handleResize = () => {
-  windowWidth.value = window.innerWidth;
-};
-
-onMounted(() => {
-  window.addEventListener('resize', handleResize);
-});
-
-onUnmounted(() => {
-  window.removeEventListener('resize', handleResize);
-});
 </script>
 
 <style>
 #app {
+  max-width: 100%;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -67,30 +49,5 @@ nav a.router-link-exact-active {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.banner-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.banner-content p {
-  font-size: 1.2rem;
-  max-width: 800px;
-}
-
-@media (max-width: 700px) {
-  .banner-content {
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .banner-content h1 {
-    font-size: 2rem;
-  }
-
-  .banner-content p {
-    font-size: 1rem;
-  }
 }
 </style>

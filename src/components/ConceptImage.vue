@@ -1,12 +1,12 @@
 <template>
-  <InfoCard>
+  <ImageCard>
     <img alt="Concept Image" :src="imageLink" class="conceptImage"/>
-  </InfoCard>
+  </ImageCard>
 </template>
 
 <script setup lang="ts">
 import { defineProps } from "vue/dist/vue";
-import InfoCard from "@/components/InfoCard.vue";
+import ImageCard from "@/components/ImageCard.vue";
 
 const props = defineProps({
   imageLink: {
@@ -19,7 +19,6 @@ const props = defineProps({
 <style scoped>
 .conceptImage {
   width: 100%;
-  max-width: 100%;
   height: auto;
 }
 </style>

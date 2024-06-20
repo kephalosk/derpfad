@@ -84,7 +84,7 @@
 </template>
 
 <script setup lang="ts">
-import SelectionDropDown from "@/components/SelectionDropDown.vue";
+import SelectionDropDown from "@/components/LessonDropDown.vue";
 import {ref} from "vue";
 import Explanation5WebBrowser from "@/2_explanations/Explanation5WebBrowser.vue";
 import HowTo1MinimalSetup from "@/4_howtos/HowTo1MinimalSetup.vue";
