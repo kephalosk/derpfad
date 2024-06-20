@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="icon" href="<%= BASE_URL %>favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>EasyWebPath.com</title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2740117821379370"
@@ -12,6 +12,7 @@
   </head>
   <header class="banner">
       <div class="banner-content">
+          <img src="<%= BASE_URL %>favicon.png" class="logo">
           <h1>The Easy Path To Master Web Development</h1>
           <p>
               EasyWebPath.com provides a step-by-step overview of core concepts in Web
@@ -40,6 +41,11 @@
 
       .app {
         width: 100%;
+      }
+
+      .logo {
+          max-width: 200px;
+          width: 100%;
       }
 
       .banner {
