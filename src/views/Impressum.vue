@@ -1,5 +1,8 @@
 <template>
   <div class="impressum">
+    <nav>
+      <router-link to="/">Chapter 1: Basics</router-link>
+    </nav>
     <h1>Impressum</h1>
     <p>
       Name: Philipp Kraatz<br>
