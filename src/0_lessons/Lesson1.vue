@@ -1,7 +1,7 @@
 <template>
     <section class="pathline">
       <p>
-        <ChapterDropDown :selected="selectedChapter" defaultValue="chapter1" @optionSelected="handleChapterChange">
+        <ChapterDropDown class="chapter" :selected="selectedChapter" defaultValue="chapter1" @optionSelected="handleChapterChange">
           <option value="chapter1">Chapter 1: Basics</option>
         </ChapterDropDown>
       </p>

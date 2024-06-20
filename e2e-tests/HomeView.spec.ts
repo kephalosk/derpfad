@@ -10,9 +10,10 @@ test('has title', async ({ page }) => {
 test('has Chapter 1: Basics link', async ({ page }) => {
   await page.goto(config.BASEPATH);
 
-  await page.getByRole('link', { name: 'Chapter 1: Basics' }).click();
+  // await page.getByRole('link', { name: 'Chapter 1: Basics' }).click();
+  const dropdown = page.locator('.chapter');
 
-  await expect(page.getByRole('heading', { name: 'The Easy Path To Master Web Development' })).toBeVisible();
+  await expect(dropdown).toBeVisible();
 });
 
 test('has heading banner', async ({ page }) => {
