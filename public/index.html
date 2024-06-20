@@ -13,6 +13,7 @@
   <header class="banner">
       <div class="banner-content">
           <img src="<%= BASE_URL %>favicon.png" class="logo">
+          <h2>EasyWebPath.com</h2>
           <h1>The Easy Path To Master Web Development</h1>
           <p>
               EasyWebPath.com provides a step-by-step overview of core concepts in Web
@@ -46,11 +47,21 @@
       .logo {
           max-width: 200px;
           width: 100%;
+          margin-right: 10px;
+      }
+
+      h2 {
+          font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+          font-size: 2rem; /* Larger font size for headline */
+          font-weight: 700; /* Bold font weight */
+          margin: 0; /* Remove default margin */
+          color: #31ffff;
+          padding-bottom: 10px;
       }
 
       .banner {
-          background: linear-gradient(135deg, #31ffff, #ffffff); /* Gradient from #31ffff to white */
-          color: #004d40; /* Dark teal text color */
+          background: linear-gradient(to bottom, #ffffff 50%, #31ffff 100%); /* Gradient from #31ffff to white */
+          color: #1ea3a3; /* Dark teal text color */
           padding: 20px 0; /* Adjust padding for spacing */
           text-align: center; /* Center-align content */
           margin-top: 0; /* Remove top margin */
@@ -61,6 +72,7 @@
           font-size: 3rem; /* Larger font size for headline */
           font-weight: 700; /* Bold font weight */
           margin: 0; /* Remove default margin */
+          color: #27cccc;
       }
 
       .banner p {
