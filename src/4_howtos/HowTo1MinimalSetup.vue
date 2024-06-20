@@ -46,7 +46,7 @@ const basicHTML: string = "\n<!DOCTYPE html>\n" +
 <style scoped>
 .banner-heading {
   background: linear-gradient(to bottom right, #31ffff, #ffffff);
-  color: #136868; /* Dark blue text */
+  color: #188282; /* Dark blue text */
   padding: 10px 0px; /* Adjust padding to your preference */
   border-radius: 5px; /* Rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
