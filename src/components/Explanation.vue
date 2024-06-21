@@ -1,7 +1,7 @@
 <template>
   <InfoCard class="cardExplanation">
-    <p class="explanationHeading">{{ heading }}</p>
-    <ol class="explanationPoints">
+    <p class="explanationHeading color">{{ heading }}</p>
+    <ol class="explanationPoints color">
       <li><b>{{ explanationTitle1 }}</b>{{ explanationText1 }}</li>
       <li><b>{{ explanationTitle2 }}</b>{{ explanationText2 }}</li>
       <li><b>{{ explanationTitle3 }}</b>{{ explanationText3 }}</li>
@@ -52,5 +52,8 @@ const explanationText3: string = ` ${props.explanations[2]}`;
 }
 .explanationPoints {
   text-align: left;
+}
+.color {
+  color: black;
 }
 </style>

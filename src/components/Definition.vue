@@ -1,7 +1,7 @@
 <template>
   <InfoCard class="cardExplanation">
-    <p class="explanationHeading">{{ heading }}</p>
-    <p>{{ definition }}</p>
+    <p class="explanationHeading color">{{ heading }}</p>
+    <p class="color">{{ definition }}</p>
   </InfoCard>
 </template>
 
@@ -27,5 +27,8 @@ const heading: string = `What is ${props.conceptName}?`;
 .explanationHeading {
   font-weight: bold;
   font-style: italic;
+}
+.color {
+  color: black;
 }
 </style>

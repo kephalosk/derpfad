@@ -1,6 +1,6 @@
 <template>
   <h4 class="banner-heading">HowTo: Minimal Setup</h4>
-  <InfoCard class="cardHowTo">
+  <InfoCard class="cardHowTo color">
     <ol>
       <li>Open a <b>Word Processing Program</b>.</li>
       <li>Create a new file.</li>
@@ -71,5 +71,8 @@ const basicHTML: string = "\n<!DOCTYPE html>\n" +
   max-width: 500px;
   width: 100%;
   height: auto;
+}
+.color {
+  color: black;
 }
 </style>
