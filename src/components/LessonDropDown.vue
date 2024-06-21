@@ -42,7 +42,7 @@ select {
   padding: 10px 15px;
   font-size: 1rem;
   font-weight: bold;
-  color: #139494; /* Dark blue text */
+  color: #149797; /* Dark blue text */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   width: 100%;
