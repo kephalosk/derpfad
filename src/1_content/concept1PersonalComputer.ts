@@ -24,7 +24,7 @@ export const concept1: ConceptContent = {
         {
             title: 'Microsoft Surface',
             imageLink: require('@/assets/cover_personalcomputer_microsoft.jpg'),
-            weblink: 'https://amzn.to/3KUxbSA'
+            weblink: 'https://amzn.to/4cv1V8n'
         },
         {
             title: 'Lenovo ThinkPad',
