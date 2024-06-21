@@ -49,5 +49,6 @@ const title = 'Further Information:';
 .explanationHeading {
   font-weight: bold;
   font-style: italic;
+  color: black;
 }
 </style>
