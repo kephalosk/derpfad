@@ -19,17 +19,17 @@ export const concept1: ConceptContent = {
         {
             title: 'Apple MacBook',
             imageLink: require('@/assets/cover_personalcomputer_apple.jpg'),
-            weblink: 'https://www.amazon.com/Apple-MacBook-Laptop-12%E2%80%91core-18%E2%80%91core/dp/B0CM5KXB2B'
+            weblink: 'https://amzn.to/3XwWYaQ'
         },
         {
             title: 'Microsoft Surface',
             imageLink: require('@/assets/cover_personalcomputer_microsoft.jpg'),
-            weblink: 'https://www.amazon.com/Microsoft-Surface-Laptop-Studio-Touchscreen/dp/B0CDK3H8XH'
+            weblink: 'https://amzn.to/3KUxbSA'
         },
         {
             title: 'Lenovo ThinkPad',
             imageLink: require('@/assets/icon_thinkpad.png'),
-            weblink: 'https://www.amazon.com/Lenovo-ThinkPad-Business-i7-1165G7-Fingerprint/dp/B0CHFVYMBC'
+            weblink: 'https://amzn.to/3xhAArz'
         },
     ],
 }
