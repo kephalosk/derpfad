@@ -57,7 +57,7 @@
       <how-to1-minimal-setup/>
     </section>
 
-    <p>&copy; 2024 EasyWebPath. All rights reserved. As an Amazon Associate, I earn from qualifying purchases. <router-link to="/impressum">Impressum</router-link></p>
+    <p class="footer">&copy; 2024 EasyWebPath. All rights reserved. As an Amazon Associate, I earn from qualifying purchases. <router-link to="/impressum">Impressum</router-link></p>
 </template>
 
 <script setup lang="ts">
@@ -137,6 +137,9 @@ p {
   font-weight: bold; /* Make the text bold */
   text-align: center; /* Center-align the text */
   width: 100%;
+}
+.footer {
+  color: #139494;
 }
 .conceptContainer {
   display: flex;
