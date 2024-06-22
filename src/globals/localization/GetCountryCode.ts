@@ -1,6 +1,5 @@
 import {getCountryFromTimezone} from "@/globals/localization/TimezoneToCountryMapper";
 import {getCountryFromLanguage} from "@/globals/localization/LanguageToCountryMapper";
-import {CountryCodesEnum} from "@/globals/localization/CountryCodesEnum";
 
 export function getCountryCode(): string {
     const timezone: string = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -8,7 +7,7 @@ export function getCountryCode(): string {
 
     if(!country){
         const language = navigator.language;
-        country = getCountryFromLanguage(language) || CountryCodesEnum.USA;
+        country = getCountryFromLanguage(language);
     }
 
     return country;
