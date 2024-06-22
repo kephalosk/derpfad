@@ -11,7 +11,7 @@
 <script setup lang="ts">
 import InfoCard from "@/components/InfoCard.vue";
 
-const imageReferenceShellNewham: string = require('@/assets/cover_shell_newham.jpg');
+const imageReferenceShellNewham: string = require('@/assets/cover/cover_shell_newham.jpg');
 </script>
 
 <style scoped>

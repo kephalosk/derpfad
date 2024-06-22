@@ -38,7 +38,7 @@
 <script setup lang="ts">
 import InfoCard from "@/components/InfoCard.vue";
 
-const resultDockerHTML: string = require('@/assets/result_docker_html.png');
+const resultDockerHTML: string = require('@/assets/results/result_docker_html.png');
 
 const basicDockerfile: string = "\nFROM nginx:alpine" +
 "\n" +

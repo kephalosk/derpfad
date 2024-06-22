@@ -11,7 +11,7 @@
 <script setup lang="ts">
 import InfoCard from "@/components/InfoCard.vue";
 
-const imageReferenceContainerPoulton: string = require('@/assets/cover_container_poulton.jpg');
+const imageReferenceContainerPoulton: string = require('@/assets/cover/cover_container_poulton.jpg');
 </script>
 
 <style scoped>

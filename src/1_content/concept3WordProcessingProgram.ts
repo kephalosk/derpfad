@@ -2,7 +2,7 @@ import {ConceptContent} from "@/globals/Types/ConceptContent";
 
 export const concept3: ConceptContent = {
     heading: 'Concept 3: Word Processing Program',
-    image: require('@/assets/conceptpath/lesson1concept3.svg'),
+    image: require('@/assets/conceptpath/lesson1/lesson1concept3.svg'),
     name: 'a Word Processing Program',
     definition: 'A Word Processing Program is software that allows users to create, edit, format, and print text documents.',
     buzzwords: [

@@ -19,9 +19,9 @@
 <script setup lang="ts">
 import InfoCard from "@/components/InfoCard.vue";
 
-const imageCoverPersonalComputerApple: string = require('@/assets/cover_personalcomputer_apple.jpg');
-const imageCoverPersonalComputerMicrosoft: string = require('@/assets/cover_personalcomputer_microsoft.jpg');
-const imageCoverPersonalComputerLenovo: string = require('@/assets/icon_thinkpad.png');
+const imageCoverPersonalComputerApple: string = require('@/assets/cover/cover_personalcomputer_apple.jpg');
+const imageCoverPersonalComputerMicrosoft: string = require('@/assets/cover/cover_personalcomputer_microsoft.jpg');
+const imageCoverPersonalComputerLenovo: string = require('@/assets/cover/cover_personalcomputer_thinkpad.png');
 </script>
 
 <style scoped>

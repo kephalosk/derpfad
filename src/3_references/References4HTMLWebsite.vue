@@ -19,9 +19,9 @@
 <script setup lang="ts">
 import InfoCard from "@/components/InfoCard.vue";
 
-const imageReferenceHtmlDuckett: string = require('@/assets/cover_html_duckett.jpg');
-const imageReferenceHtmlMcgrath: string = require('@/assets/cover_html_mcgrath.jpg');
-const imageReferenceHtmlRobsen: string = require('@/assets/cover_html_robsen.jpg');
+const imageReferenceHtmlDuckett: string = require('@/assets/cover/cover_html_duckett.jpg');
+const imageReferenceHtmlMcgrath: string = require('@/assets/cover/cover_html_mcgrath.jpg');
+const imageReferenceHtmlRobsen: string = require('@/assets/cover/cover_html_robsen.jpg');
 </script>
 
 <style scoped>

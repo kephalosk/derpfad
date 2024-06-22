@@ -11,7 +11,7 @@
 <script setup lang="ts">
 import InfoCard from "@/components/InfoCard.vue";
 
-const imageReferenceWebServerOuiran: string = require('@/assets/cover_webserver_ouiran.jpg');
+const imageReferenceWebServerOuiran: string = require('@/assets/cover/cover_webserver_ouiran.jpg');
 </script>
 
 <style scoped>

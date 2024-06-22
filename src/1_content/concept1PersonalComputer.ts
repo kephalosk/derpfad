@@ -2,7 +2,7 @@ import {ConceptContent} from "@/globals/Types/ConceptContent";
 
 export const concept1: ConceptContent = {
     heading: 'Concept 1: Personal Computer',
-    image: require('@/assets/conceptpath/lesson1concept1.svg'),
+    image: require('@/assets/conceptpath/lesson1/lesson1concept1.svg'),
     name: 'a Personal Computer',
     definition: 'A Personal Computer is a machine used by developers to write, test and manage code locally.',
     buzzwords: [
@@ -18,7 +18,7 @@ export const concept1: ConceptContent = {
     references: [
         {
             title: 'Apple MacBook Pro M3',
-            imageLink: require('@/assets/cover_personalcomputer_apple.jpg'),
+            imageLink: require('@/assets/cover/cover_personalcomputer_apple.jpg'),
             weblinks: {
                 US: 'https://amzn.to/3xlcyMi',
                 UK: 'https://amzn.to/45xYhZj',
@@ -37,7 +37,7 @@ export const concept1: ConceptContent = {
         },
         {
             title: 'Microsoft Surface Laptop',
-            imageLink: require('@/assets/cover_personalcomputer_microsoft.jpg'),
+            imageLink: require('@/assets/cover/cover_personalcomputer_microsoft.jpg'),
             weblinks: {
                 US: 'https://amzn.to/45EJRXq',
                 UK: 'https://amzn.to/3RzBHtd',
@@ -56,7 +56,7 @@ export const concept1: ConceptContent = {
         },
         {
             title: 'Lenovo ThinkPad',
-            imageLink: require('@/assets/icon_thinkpad.png'),
+            imageLink: require('@/assets/cover/cover_personalcomputer_thinkpad.png'),
             weblinks: {
                 US: 'https://amzn.to/3RElLpS',
                 UK: 'https://amzn.to/3RGqzep',

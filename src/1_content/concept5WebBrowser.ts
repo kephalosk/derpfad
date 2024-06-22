@@ -2,7 +2,7 @@ import {ConceptContent} from "@/globals/Types/ConceptContent";
 
 export const concept5: ConceptContent = {
     heading: 'Concept 5: Web Browser',
-    image: require('@/assets/conceptpath/lesson1concept5.jpg'),
+    image: require('@/assets/conceptpath/lesson1/lesson1concept5.jpg'),
     name: 'a Web Browser',
     definition: 'A Web Browser is software used to access and view content on the World Wide Web.',
     buzzwords: [

@@ -29,7 +29,7 @@ import InfoCard from "@/components/InfoCard.vue";
 import ScrollWindow from "@/components/ScrollWindow.vue";
 import ImageCard from "@/components/ImageCard.vue";
 
-const resultHTML: string = require('@/assets/result_html.png');
+const resultHTML: string = require('@/assets/results/result_html.png');
 
 const basicHTML: string = "\n<!DOCTYPE html>\n" +
     "<html>\n" +

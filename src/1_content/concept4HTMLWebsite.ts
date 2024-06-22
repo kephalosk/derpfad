@@ -2,7 +2,7 @@ import {ConceptContent} from "@/globals/Types/ConceptContent";
 
 export const concept4: ConceptContent = {
     heading: 'Concept 4: HTML',
-    image: require('@/assets/conceptpath/lesson1concept4.svg'),
+    image: require('@/assets/conceptpath/lesson1/lesson1concept4.svg'),
     name: 'HTML',
     definition: 'HTML (HyperText Markup Language) is the standard markup language used to create and structure content on web pages.',
     buzzwords: [
@@ -18,7 +18,7 @@ export const concept4: ConceptContent = {
     references: [
         {
             title: 'Jon Duckett: HTML and CSS: Design and Build Websites',
-            imageLink: require('@/assets/cover_html_duckett.jpg'),
+            imageLink: require('@/assets/cover/cover_html_duckett.jpg'),
             weblinks: {
                 US: 'https://amzn.to/3KVDHsm',
                 UK: 'https://amzn.to/3KVDHsm',
@@ -37,7 +37,7 @@ export const concept4: ConceptContent = {
         },
         {
             title: 'Mike Mcgrath: HTML in Easy Steps',
-            imageLink: require('@/assets/cover_html_mcgrath.jpg'),
+            imageLink: require('@/assets/cover/cover_html_mcgrath.jpg'),
             weblinks: {
                 US: 'https://amzn.to/3xDTlVY',
                 UK: 'https://amzn.to/3xDTlVY',
@@ -56,7 +56,7 @@ export const concept4: ConceptContent = {
         },
         {
             title: 'Elisabeth Robson, Eric Freeman: Head First HTML and CSS: A Learner\'s Guide to Creating Standards-Based Web Pages',
-            imageLink: require('@/assets/cover_html_robsen.jpg'),
+            imageLink: require('@/assets/cover/cover_html_robsen.jpg'),
             weblinks: {
                 US: 'https://amzn.to/4ccfv0F',
                 UK: 'https://amzn.to/4ccfv0F',
