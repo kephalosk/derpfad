@@ -17,7 +17,7 @@ export const concept1: ConceptContent = {
     ],
     references: [
         {
-            title: 'Apple MacBook Pro',
+            title: 'Apple MacBook Pro M3',
             imageLink: require('@/assets/cover_personalcomputer_apple.jpg'),
             weblinks: {
                 US: 'https://amzn.to/3xlcyMi',
