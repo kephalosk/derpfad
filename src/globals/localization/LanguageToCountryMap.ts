@@ -17,6 +17,8 @@ const languageToCountryUSA: ILanguageToCountry = {
     'es-us': CountryCodesEnum.USA,
     'haw': CountryCodesEnum.USA,
     'haw-us': CountryCodesEnum.USA,
+    'lkt': CountryCodesEnum.USA,
+    'lkt-us': CountryCodesEnum.USA,
 };
 
 const languageToCountryUK: ILanguageToCountry = {
@@ -71,11 +73,62 @@ const languageToCountryUK: ILanguageToCountry = {
     'hr': CountryCodesEnum.UK,
     'hr-ba': CountryCodesEnum.UK,
     'hr-hr': CountryCodesEnum.UK,
+    'hu': CountryCodesEnum.UK,
+    'hu-hu': CountryCodesEnum.UK,
+    'is': CountryCodesEnum.UK,
+    'is_is': CountryCodesEnum.UK,
+    'kl': CountryCodesEnum.UK,
+    'kl-gl': CountryCodesEnum.UK,
+    'kw': CountryCodesEnum.UK,
+    'kw-gb': CountryCodesEnum.UK,
+    'lt': CountryCodesEnum.UK,
+    'lt-lt': CountryCodesEnum.UK,
+    'lv': CountryCodesEnum.UK,
+    'lv-lv': CountryCodesEnum.UK,
+    'mt': CountryCodesEnum.UK,
+    'mt-mt': CountryCodesEnum.UK,
+    'nb': CountryCodesEnum.UK,
+    'nb-no': CountryCodesEnum.UK,
+    'nb-sj': CountryCodesEnum.UK,
+    'nn': CountryCodesEnum.UK,
+    'nn-no': CountryCodesEnum.UK,
+    'pt': CountryCodesEnum.UK,
+    'pt-pt': CountryCodesEnum.UK,
+    'ro': CountryCodesEnum.UK,
+    'ro-md': CountryCodesEnum.UK,
+    'ro-ro': CountryCodesEnum.UK,
+    'ru-by': CountryCodesEnum.UK,
+    'ru-md': CountryCodesEnum.UK,
+    'ru-ua': CountryCodesEnum.UK,
+    'sk': CountryCodesEnum.UK,
+    'sk-sk': CountryCodesEnum.UK,
+    'sl': CountryCodesEnum.UK,
+    'sl-sl': CountryCodesEnum.UK,
+    'sq': CountryCodesEnum.UK,
+    'sq-al': CountryCodesEnum.UK,
+    'sq-mk': CountryCodesEnum.UK,
+    'sq-xk': CountryCodesEnum.UK,
+    'sr': CountryCodesEnum.UK,
+    'sr-cyrl': CountryCodesEnum.UK,
+    'sr-cyrl_ba': CountryCodesEnum.UK,
+    'sr-cyrl_me': CountryCodesEnum.UK,
+    'sr-cyrl_rs': CountryCodesEnum.UK,
+    'sr-cyrl_xk': CountryCodesEnum.UK,
+    'sr-latn': CountryCodesEnum.UK,
+    'sr-latn_ba': CountryCodesEnum.UK,
+    'sr-latn_me': CountryCodesEnum.UK,
+    'sr-latn_rs': CountryCodesEnum.UK,
+    'sr-latn_xk': CountryCodesEnum.UK,
+    'tr': CountryCodesEnum.UK,
+    'tr-cy': CountryCodesEnum.UK,
+    'tr-tr': CountryCodesEnum.UK,
+    'uk': CountryCodesEnum.UK,
+    'uk-ua': CountryCodesEnum.UK,
 };
 
 const languageToCountryGermany: ILanguageToCountry = {
     'de': CountryCodesEnum.Germany, //german
-    'de-de': CountryCodesEnum.Germany, //german
+    'de-de': CountryCodesEnum.Germany,
     'de-at': CountryCodesEnum.Germany,
     'de-ch': CountryCodesEnum.Germany,
     'de-li': CountryCodesEnum.Germany,
@@ -89,6 +142,16 @@ const languageToCountryGermany: ILanguageToCountry = {
     'gsw-li': CountryCodesEnum.Germany,
     'hsb': CountryCodesEnum.Germany,
     'hsb-de': CountryCodesEnum.Germany,
+    'ksh': CountryCodesEnum.Germany,
+    'ksh-de': CountryCodesEnum.Germany,
+    'nds': CountryCodesEnum.Germany,
+    'nds-de': CountryCodesEnum.Germany,
+    'pt-ch': CountryCodesEnum.Germany,
+    'rm': CountryCodesEnum.Germany,
+    'rm-ch': CountryCodesEnum.Germany,
+    'wae': CountryCodesEnum.Germany,
+    'wae-ch': CountryCodesEnum.Germany,
+    'yi': CountryCodesEnum.Germany,
 };
 
 const languageToCountryFrance: ILanguageToCountry = {
@@ -147,6 +210,7 @@ const languageToCountryFrance: ILanguageToCountry = {
 
 const languageToCountryJapan: ILanguageToCountry = {
     'ja': CountryCodesEnum.Japan, //japanese
+    'ja-jp': CountryCodesEnum.Japan,
 };
 
 const languageToCountryCanada: ILanguageToCountry = {
@@ -156,6 +220,10 @@ const languageToCountryCanada: ILanguageToCountry = {
 
 const languageToCountryItaly: ILanguageToCountry = {
     'it': CountryCodesEnum.Italy, //italian
+    'it-ch': CountryCodesEnum.Italy,
+    'it-it': CountryCodesEnum.Italy,
+    'it-sm': CountryCodesEnum.Italy,
+    'it-va': CountryCodesEnum.Italy,
     // redirected
     'ca-it': CountryCodesEnum.Italy,
     'de-it': CountryCodesEnum.Italy,
@@ -189,22 +257,43 @@ const languageToCountryAustralia: ILanguageToCountry = {
     'en-ph': CountryCodesEnum.Australia,
     'fil': CountryCodesEnum.Australia,
     'fil-ph': CountryCodesEnum.Australia,
+    'id': CountryCodesEnum.Australia,
+    'id-id': CountryCodesEnum.Australia,
 };
 
 const languageToCountryNetherlands: ILanguageToCountry = {
     'nl': CountryCodesEnum.Netherlands, //dutch
+    'nl-aw': CountryCodesEnum.Netherlands,
+    'nl-bq': CountryCodesEnum.Netherlands,
+    'nl-cw': CountryCodesEnum.Netherlands,
+    'nl-nl': CountryCodesEnum.Netherlands,
+    'nl-sr': CountryCodesEnum.Netherlands,
+    'nl-sx': CountryCodesEnum.Netherlands,
+    // redirected
     'en-nl': CountryCodesEnum.Netherlands,
     'fy': CountryCodesEnum.Netherlands,
     'fy-nl': CountryCodesEnum.Netherlands,
+    'nds-nl': CountryCodesEnum.Netherlands,
 };
 
 const languageToCountrySweden: ILanguageToCountry = {
     'sv': CountryCodesEnum.Sweden, //swedish
+    'sv-ax': CountryCodesEnum.Sweden,
+    'sv-fi': CountryCodesEnum.Sweden,
+    'sv-se': CountryCodesEnum.Sweden,
+    // redirected
     'en-se': CountryCodesEnum.Sweden,
+    'se': CountryCodesEnum.Sweden,
+    'se-fi': CountryCodesEnum.Sweden,
+    'se-no': CountryCodesEnum.Sweden,
+    'se-se': CountryCodesEnum.Sweden,
+    'smn': CountryCodesEnum.Sweden,
+    'smn-fl': CountryCodesEnum.Sweden,
 };
 
 const languageToCountryPoland: ILanguageToCountry = {
     'pl': CountryCodesEnum.Poland, //polish
+    'pl-pl': CountryCodesEnum.Poland,
 };
 
 const languageToCountryBelgium: ILanguageToCountry = {
@@ -212,6 +301,10 @@ const languageToCountryBelgium: ILanguageToCountry = {
     'de-lu': CountryCodesEnum.Belgium,
     'en-be': CountryCodesEnum.Belgium,
     'fr-be': CountryCodesEnum.Belgium,
+    'lb': CountryCodesEnum.Belgium,
+    'lb-lu': CountryCodesEnum.Belgium,
+    'nl-be': CountryCodesEnum.Belgium,
+    'pt-lu': CountryCodesEnum.Belgium,
 };
 
 export const LanguageToCountryMap: ILanguageToCountry = {

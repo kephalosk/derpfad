@@ -19,17 +19,59 @@ export const concept4: ConceptContent = {
         {
             title: 'Jon Duckett: HTML and CSS: Design and Build Websites',
             imageLink: require('@/assets/cover_html_duckett.jpg'),
-            weblink: 'https://amzn.to/3KVDHsm'
+            weblinks: {
+                US: 'https://amzn.to/3KVDHsm',
+                UK: 'https://amzn.to/3KVDHsm',
+                DE: 'https://amzn.to/3KVDHsm',
+                FR: 'https://amzn.to/3KVDHsm',
+                JP: 'https://amzn.to/3KVDHsm',
+                CA: 'https://amzn.to/3KVDHsm',
+                IT: 'https://amzn.to/3KVDHsm',
+                SP: 'https://amzn.to/3KVDHsm',
+                AU: 'https://amzn.to/3KVDHsm',
+                NL: 'https://amzn.to/3KVDHsm',
+                SW: 'https://amzn.to/3KVDHsm',
+                PL: 'https://amzn.to/3KVDHsm',
+                BE: 'https://amzn.to/3KVDHsm',
+            } 
         },
         {
             title: 'Mike Mcgrath: HTML in Easy Steps',
             imageLink: require('@/assets/cover_html_mcgrath.jpg'),
-            weblink: 'https://amzn.to/3xDTlVY'
+            weblinks: {
+                US: 'https://amzn.to/3xDTlVY',
+                UK: 'https://amzn.to/3xDTlVY',
+                DE: 'https://amzn.to/3xDTlVY',
+                FR: 'https://amzn.to/3xDTlVY',
+                JP: 'https://amzn.to/3xDTlVY',
+                CA: 'https://amzn.to/3xDTlVY',
+                IT: 'https://amzn.to/3xDTlVY',
+                SP: 'https://amzn.to/3xDTlVY',
+                AU: 'https://amzn.to/3xDTlVY',
+                NL: 'https://amzn.to/3xDTlVY',
+                SW: 'https://amzn.to/3xDTlVY',
+                PL: 'https://amzn.to/3xDTlVY',
+                BE: 'https://amzn.to/3xDTlVY',
+            }
         },
         {
             title: 'Elisabeth Robson, Eric Freeman: Head First HTML and CSS: A Learner\'s Guide to Creating Standards-Based Web Pages',
             imageLink: require('@/assets/cover_html_robsen.jpg'),
-            weblink: 'https://amzn.to/4ccfv0F'
+            weblinks: {
+                US: 'https://amzn.to/4ccfv0F',
+                UK: 'https://amzn.to/4ccfv0F',
+                DE: 'https://amzn.to/4ccfv0F',
+                FR: 'https://amzn.to/4ccfv0F',
+                JP: 'https://amzn.to/4ccfv0F',
+                CA: 'https://amzn.to/4ccfv0F',
+                IT: 'https://amzn.to/4ccfv0F',
+                SP: 'https://amzn.to/4ccfv0F',
+                AU: 'https://amzn.to/4ccfv0F',
+                NL: 'https://amzn.to/4ccfv0F',
+                SW: 'https://amzn.to/4ccfv0F',
+                PL: 'https://amzn.to/4ccfv0F',
+                BE: 'https://amzn.to/4ccfv0F',
+            }
         },
     ],
 }

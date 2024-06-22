@@ -2,8 +2,8 @@
   <InfoCard class="cardExplanation" v-if="hasReferences">
     <p class="explanationHeading">{{ title }}</p>
     <p class="bookinfo" v-for="(item, index) in details" :key="index">
-      <a :href="item.weblink" target="_blank"><img class="bookCover" alt="Cover Image" :src="item.imageLink"/></a>
-      <a :href="item.weblink" target="_blank">{{ item.title }}</a>
+      <a :href="item.weblinks[countryCode]" target="_blank"><img class="bookCover" alt="Cover Image" :src="item.imageLink"/></a>
+      <a :href="item.weblinks[countryCode]" target="_blank">{{ item.title }}</a>
     </p>
   </InfoCard>
 </template>
@@ -20,14 +20,30 @@ const props = defineProps({
     validator(value: unknown): boolean {
       return Array.isArray(value) && value.every(item => {
         return typeof item === 'object' &&
-            'weblink' in item &&
+            'weblinks' in item &&
             'imageLink' in item &&
             'title' in item &&
-            typeof item.weblink === 'string' &&
             typeof item.imageLink === 'string' &&
-            typeof item.title === 'string';
+            typeof item.title === 'string' &&
+            'US' in item.weblinks && typeof item.weblinks.US === 'string'&&
+            'UK' in item.weblinks && typeof item.weblinks.UK === 'string'&&
+            'DE' in item.weblinks && typeof item.weblinks.DE === 'string'&&
+            'FR' in item.weblinks && typeof item.weblinks.FR === 'string'&&
+            'JP' in item.weblinks && typeof item.weblinks.JP === 'string'&&
+            'CA' in item.weblinks && typeof item.weblinks.CA === 'string'&&
+            'IT' in item.weblinks && typeof item.weblinks.IT === 'string'&&
+            'SP' in item.weblinks && typeof item.weblinks.SP === 'string'&&
+            'AU' in item.weblinks && typeof item.weblinks.AU === 'string'&&
+            'NL' in item.weblinks && typeof item.weblinks.NL === 'string'&&
+            'SW' in item.weblinks && typeof item.weblinks.SW === 'string'&&
+            'PL' in item.weblinks && typeof item.weblinks.PL === 'string'&&
+            'BE' in item.weblinks && typeof item.weblinks.BE === 'string';
       });
     }
+  },
+  countryCode: {
+    type: String,
+    required: true,
   }
 });
 

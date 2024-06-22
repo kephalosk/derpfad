@@ -19,7 +19,7 @@
         <ConceptImage :image-link="concept1.image" class="conceptImage extraSmall"/>
         <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>
         <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>
-        <References :details="concept1.references" class="large"/>
+        <References :details="concept1.references" :country-code="countryCode" class="large"/>
       </div>
 
       <div class="conceptContainer">
@@ -27,7 +27,7 @@
         <ConceptImage :image-link="concept2.image" class="conceptImage small"/>
         <Definition class="large" :concept-name="concept2.name" :definition="concept2.definition"/>
         <Explanation class="large" :concept-name="concept2.name" :buzzwords="concept2.buzzwords" :explanations="concept2.explanations"/>
-        <References :details="concept2.references" class="large"/>
+        <References :details="concept2.references" :country-code="countryCode" class="large"/>
       </div>
 
       <div class="conceptContainer">
@@ -35,7 +35,7 @@
         <ConceptImage :image-link="concept3.image" class="conceptImage mediumSmall"/>
         <Definition class="large" :concept-name="concept3.name" :definition="concept3.definition"/>
         <Explanation class="large" :concept-name="concept3.name" :buzzwords="concept3.buzzwords" :explanations="concept3.explanations"/>
-        <References :details="concept3.references" class="large"/>
+        <References :details="concept3.references" :country-code="countryCode" class="large"/>
       </div>
 
       <div class="conceptContainer">
@@ -43,7 +43,7 @@
         <ConceptImage :image-link="concept4.image" class="conceptImage medium"/>
         <Definition class="large" :concept-name="concept4.name" :definition="concept4.definition"/>
         <Explanation class="large" :concept-name="concept4.name" :buzzwords="concept4.buzzwords" :explanations="concept4.explanations"/>
-        <References :details="concept4.references" class="large"/>
+        <References :details="concept4.references" :country-code="countryCode" class="large"/>
       </div>
 
       <div class="conceptContainer">
@@ -51,7 +51,7 @@
         <ConceptImage :image-link="concept5.image" class="conceptImage"/>
         <Definition class="large" :concept-name="concept5.name" :definition="concept5.definition"/>
         <Explanation class="large" :concept-name="concept5.name" :buzzwords="concept5.buzzwords" :explanations="concept5.explanations"/>
-        <References :details="concept5.references" class="large"/>
+        <References :details="concept5.references" :country-code="countryCode" class="large"/>
       </div>
 
       <how-to1-minimal-setup/>
@@ -76,39 +76,17 @@ import {concept3} from "@/1_content/concept3WordProcessingProgram";
 import {concept4} from "@/1_content/concept4HTMLWebsite";
 import {concept5} from "@/1_content/concept5WebBrowser";
 import ChapterDropDown from "@/components/ChapterDropDown.vue";
-import {TimezoneToCountryMap} from "@/globals/localization/TimezoneToCountryMap";
-import {getCountryFromTimezone} from "@/globals/localization/TimezoneToCountryMapper";
+import {getCountryCode} from "@/globals/localization/GetCountryCode";
 
 const router = useRouter();
 
 const selectedChapter = ref('chapter1');
 const selectedLesson = ref('lesson1');
 
-function determineCountry() {
-  const timezone: string = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  console.log('timezone',timezone);//Europe/Berlin
-  let country = getCountryFromTimezone(timezone);
-
-  if(!country){
-    const language = navigator.language;
-    country = getCountryFromLanguage(language);;
-  }
-
-  console.log('countrycode',country);
-
-  const nulltest = TimezoneToCountryMap['ugauga'];
-
-  console.log('countrycode null',nulltest);
-
-
-
-  console.log('language',language);//en-US
-
-  let countryCode: string;
-}
+let countryCode = ref<string>('');
 
 onMounted(() => {
-  determineCountry();
+  countryCode.value = getCountryCode();
 });
 
 const handleChapterChange = (option: string) => {

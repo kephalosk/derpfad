@@ -19,17 +19,59 @@ export const concept1: ConceptContent = {
         {
             title: 'Apple MacBook',
             imageLink: require('@/assets/cover_personalcomputer_apple.jpg'),
-            weblink: 'https://amzn.to/3XwWYaQ'
+            weblinks: {
+                US: 'https://amzn.to/3XwWYaQ',
+                UK: 'https://amzn.to/3XwWYaQ',
+                DE: 'https://amzn.to/3XwWYaQ',
+                FR: 'https://amzn.to/3XwWYaQ',
+                JP: 'https://amzn.to/3XwWYaQ',
+                CA: 'https://amzn.to/3XwWYaQ',
+                IT: 'https://amzn.to/3XwWYaQ',
+                SP: 'https://amzn.to/3XwWYaQ',
+                AU: 'https://amzn.to/3XwWYaQ',
+                NL: 'https://amzn.to/3XwWYaQ',
+                SW: 'https://amzn.to/3XwWYaQ',
+                PL: 'https://amzn.to/3XwWYaQ',
+                BE: 'https://amzn.to/3XwWYaQ',
+            }
         },
         {
             title: 'Microsoft Surface',
             imageLink: require('@/assets/cover_personalcomputer_microsoft.jpg'),
-            weblink: 'https://amzn.to/4cv1V8n'
+            weblinks: {
+                US: 'https://amzn.to/4cv1V8n',
+                UK: 'https://amzn.to/4cv1V8n',
+                DE: 'https://amzn.to/4cv1V8n',
+                FR: 'https://amzn.to/4cv1V8n',
+                JP: 'https://amzn.to/4cv1V8n',
+                CA: 'https://amzn.to/4cv1V8n',
+                IT: 'https://amzn.to/4cv1V8n',
+                SP: 'https://amzn.to/4cv1V8n',
+                AU: 'https://amzn.to/4cv1V8n',
+                NL: 'https://amzn.to/4cv1V8n',
+                SW: 'https://amzn.to/4cv1V8n',
+                PL: 'https://amzn.to/4cv1V8n',
+                BE: 'https://amzn.to/4cv1V8n',
+            }
         },
         {
             title: 'Lenovo ThinkPad',
             imageLink: require('@/assets/icon_thinkpad.png'),
-            weblink: 'https://amzn.to/3xhAArz'
+            weblinks: {
+                US: 'https://amzn.to/3xhAArz',
+                UK: 'https://amzn.to/3xhAArz',
+                DE: 'https://amzn.to/3xhAArz',
+                FR: 'https://amzn.to/3xhAArz',
+                JP: 'https://amzn.to/3xhAArz',
+                CA: 'https://amzn.to/3xhAArz',
+                IT: 'https://amzn.to/3xhAArz',
+                SP: 'https://amzn.to/3xhAArz',
+                AU: 'https://amzn.to/3xhAArz',
+                NL: 'https://amzn.to/3xhAArz',
+                SW: 'https://amzn.to/3xhAArz',
+                PL: 'https://amzn.to/3xhAArz',
+                BE: 'https://amzn.to/3xhAArz',
+            }
         },
     ],
 }
