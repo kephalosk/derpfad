@@ -39,10 +39,10 @@ select {
   background: linear-gradient(to bottom right, #31ffff, #ffffff);
   border: 1px solid #ccc;
   border-radius: 10px;
-  padding: 10px 15px;
+  padding: 10px 40px 10px 15px;
   font-size: 1rem;
   font-weight: bold;
-  color: #149797; /* Dark blue text */
+  color: #1EB3B3; /* Dark blue text */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   width: 100%;

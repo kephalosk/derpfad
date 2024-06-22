@@ -62,7 +62,7 @@
 
 <script setup lang="ts">
 import LessonDropDown from "@/components/LessonDropDown.vue";
-import {ref} from "vue";
+import {onMounted, ref} from "vue";
 import HowTo1MinimalSetup from "@/4_howtos/HowTo1MinimalSetup.vue";
 import {useRouter} from "vue-router";
 import Explanation from "@/components/Explanation.vue";
@@ -76,13 +76,40 @@ import {concept3} from "@/1_content/concept3WordProcessingProgram";
 import {concept4} from "@/1_content/concept4HTMLWebsite";
 import {concept5} from "@/1_content/concept5WebBrowser";
 import ChapterDropDown from "@/components/ChapterDropDown.vue";
-import InfoCard from "@/components/InfoCard.vue";
-import ScrollWindow from "@/components/ScrollWindow.vue";
+import {TimezoneToCountryMap} from "@/globals/localization/TimezoneToCountryMap";
+import {getCountryFromTimezone} from "@/globals/localization/TimezoneToCountryMapper";
 
 const router = useRouter();
 
 const selectedChapter = ref('chapter1');
 const selectedLesson = ref('lesson1');
+
+function determineCountry() {
+  const timezone: string = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  console.log('timezone',timezone);//Europe/Berlin
+  let country = getCountryFromTimezone(timezone);
+
+  if(!country){
+    const language = navigator.language;
+    country = getCountryFromLanguage(language);;
+  }
+
+  console.log('countrycode',country);
+
+  const nulltest = TimezoneToCountryMap['ugauga'];
+
+  console.log('countrycode null',nulltest);
+
+
+
+  console.log('language',language);//en-US
+
+  let countryCode: string;
+}
+
+onMounted(() => {
+  determineCountry();
+});
 
 const handleChapterChange = (option: string) => {
   switch (option) {

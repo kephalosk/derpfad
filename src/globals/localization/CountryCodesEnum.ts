@@ -1,0 +1,15 @@
+export enum CountryCodesEnum {
+    USA = 'US',
+    UK = 'UK',
+    Germany = 'DE',
+    France = 'FR',
+    Japan = 'JP',
+    Canada = 'CA',
+    Italy = 'IT',
+    Spain = 'SP',
+    Australia = 'AU',
+    Netherlands = 'NL',
+    Sweden = 'SW',
+    Poland = 'PL',
+    Belgium = 'BE',
+}

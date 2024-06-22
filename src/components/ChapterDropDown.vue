@@ -40,10 +40,10 @@ select {
   border: 1px solid #ccc;
   border-radius: 10px;
   margin: 15px 0px;
-  padding: 15px 30px;
+  padding: 15px 40px 15px 15px;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #1AABAB; /* Dark blue text */
+  color: #26C8C8; /* Dark blue text */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   width: 100%;
