@@ -6,7 +6,23 @@
     <h1>Impressum</h1>
     <p>
       Name: Philipp Kraatz<br>
+      Address: Hans-Böckler-Straße 1, 25746 Heide, Deutschland<br>
+    </p>
+
+    <h1>Kontakt</h1>
+    <p>
+      Email: easywebpathinfo@gmail.com<br>
+    </p>
+
+    <h1>Legal Disclosure</h1>
+    <p>
+      Name: Philipp Kraatz<br>
       Address: Hans-Böckler-Straße 1, 25746 Heide, Germany<br>
+      Email: easywebpathinfo@gmail.com<br>
+    </p>
+
+    <h1>Contact</h1>
+    <p>
       Email: easywebpathinfo@gmail.com<br>
     </p>
 
@@ -19,7 +35,7 @@
     </p>
 
   </div>
-  <p class="footer">&copy; 2024 EasyWebPath. All rights reserved. As an Amazon Associate, I earn from qualifying purchases. <router-link to="/impressum">Impressum</router-link></p>
+  <p class="footer">&copy; 2024 EasyWebPath. All rights reserved. As an Amazon Associate, I earn from qualifying purchases. <router-link to="/impressum">Impressum</router-link> <router-link to="/impressum">Legal Disclosure</router-link></p>
 </template>
 
 <script>

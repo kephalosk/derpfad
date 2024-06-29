@@ -57,7 +57,7 @@
       <how-to1-minimal-setup/>
     </section>
 
-    <p class="footer">&copy; 2024 EasyWebPath. All rights reserved. As an Amazon Associate, I earn from qualifying purchases. <router-link to="/impressum">Impressum</router-link></p>
+    <p class="footer">&copy; 2024 EasyWebPath. All rights reserved. As an Amazon Associate, I earn from qualifying purchases. <router-link to="/impressum">Legal Disclosure</router-link> <router-link to="/impressum">Legal Disclosure</router-link></p>
 </template>
 
 <script setup lang="ts">
