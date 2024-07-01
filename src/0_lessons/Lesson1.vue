@@ -22,6 +22,14 @@
         <References :details="concept1.references" :country-code="countryCode" class="large"/>
       </div>
 
+      <!-- Block_ch1l1c1 -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-2740117821379370"
+           data-ad-slot="5084087822"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+
       <div class="conceptContainer">
         <h4 class="banner-heading">{{ concept2.heading }}</h4>
         <ConceptImage :image-link="concept2.image" class="conceptImage small"/>
@@ -57,6 +65,8 @@
       <how-to1-minimal-setup/>
     </section>
 
+  <a href="https://a.check24.net/misc/click.php?pid=305756&aid=330&cat=13" target="_blank"><img src="https://a.check24.net/misc/view.php?pid=305756&aid=330&cat=13" width="300" height="600" style="max-width: 100%; height: auto;" ></a>
+
     <p class="footer">&copy; 2024 EasyWebPath. All rights reserved. As an Amazon Associate, I earn from qualifying purchases. <router-link to="/impressum">Legal Disclosure</router-link> <router-link to="/impressum">Legal Disclosure</router-link></p>
 </template>
 
@@ -87,6 +97,7 @@ let countryCode = ref<string>('');
 
 onMounted(() => {
   countryCode.value = getCountryCode();
+  (adsbygoogle = window.adsbygoogle || []).push({});
 });
 
 const handleChapterChange = (option: string) => {
