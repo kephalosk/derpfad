@@ -73,6 +73,6 @@ const basicHTML: string = "\n<!DOCTYPE html>\n" +
   height: auto;
 }
 .color {
-  color: black;
+  color: #0A4A4A;
 }
 </style>

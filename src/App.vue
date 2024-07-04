@@ -21,17 +21,17 @@
   text-align: center;
   color: #2c3e50;
   //Farbcodes (dark to bright):
-  //#000000
-  //#0A4A4A
-  //#0F7070
-  //#139494
-  //#1EB3B3
-  //#1DBDBD
-  //#2CE4E4
-  //#31FFFF
-  //#98FFFF
-  //#CCFFFF
-  //#FFFFFF
+  //#000000 black
+  //#0A4A4A darkxx
+  //#0F7070 darkx
+  //#139494 dark
+  //#1EB3B3 mediumdark
+  //#1DBDBD medium
+  //#2CE4E4 mediumlight
+  //#31FFFF light
+  //#98FFFF lightx
+  //#CCFFFF lightxx
+  //#FFFFFF white
 }
 
 

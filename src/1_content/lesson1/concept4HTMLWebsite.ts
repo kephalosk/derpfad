@@ -2,7 +2,7 @@ import {ConceptContent} from "@/globals/Types/ConceptContent";
 
 export const concept4: ConceptContent = {
     heading: 'Concept 4: HTML',
-    image: require('@/assets/conceptpath/lesson1/lesson1concept4.svg'),
+    image: require('@/assets/conceptpath/lesson1/lesson1concept4.jpg'),
     name: 'HTML',
     definition: 'HTML (HyperText Markup Language) is the standard markup language used to create and structure content on web pages.',
     buzzwords: [

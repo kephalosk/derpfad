@@ -2,7 +2,7 @@ import {ConceptContent} from "@/globals/Types/ConceptContent";
 
 export const concept2: ConceptContent = {
     heading: 'Concept 2: Operating System',
-    image: require('@/assets/conceptpath/lesson1/lesson1concept2.svg'),
+    image: require('@/assets/conceptpath/lesson1/lesson1concept2.jpg'),
     name: 'an Operating System',
     definition: 'An operating system is software that manages a computer\'s hardware and provides common services for computer programs.',
     buzzwords: [
