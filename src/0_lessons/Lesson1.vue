@@ -23,12 +23,12 @@
       </div>
 
       <!-- Block_ch1l1c1 -->
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-2740117821379370"
-           data-ad-slot="5084087822"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
+<!--      <ins class="adsbygoogle"-->
+<!--           style="display:block"-->
+<!--           data-ad-client="ca-pub-2740117821379370"-->
+<!--           data-ad-slot="5084087822"-->
+<!--           data-ad-format="auto"-->
+<!--           data-full-width-responsive="true"></ins>-->
 
       <div class="conceptContainer">
         <h4 class="banner-heading">{{ concept2.heading }}</h4>
