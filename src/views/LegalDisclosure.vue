@@ -3,23 +3,24 @@
     <nav>
       <router-link to="/">Chapter 1: Basics</router-link>
     </nav>
-    <h1>Impressum</h1>
+
+    <h1>Legal Disclosure</h1>
     <p>
       Name: Philipp Kraatz<br>
-      Addresse: Hans-Böckler-Straße 1, 25746 Heide, Deutschland<br>
+      Address: Hans-Böckler-Straße 1, 25746 Heide, Germany<br>
     </p>
 
-    <h1>Kontakt</h1>
+    <h1>Contact</h1>
     <p>
       Email: easywebpathinfo@gmail.com<br>
     </p>
 
-    <h2>Haftungsausschluss:</h2>
+    <h2>Disclaimer:</h2>
     <p>
-      Die auf dieser Website verwendeten Symbole stammen von Drittanbietern. Wir erheben keinen Anspruch auf Eigentum oder Rechte an diesen Symbolen. Alle Rechte an diesen Symbolen gehören ihren jeweiligen Eigentümern. Wenn Sie der Meinung sind, dass Inhalte Ihre Urheberrechte verletzen, kontaktieren Sie uns bitte umgehend zur Klärung.
+      The icons used on this website are sourced from third-party providers. We do not claim ownership or rights over these icons. All rights to these icons belong to their respective owners. If you believe that any content infringes on your copyright, please contact us immediately for resolution.
     </p>
     <p>
-      Als Amazon-Partner verdiene ich an qualifizierten Käufen.
+      As an Amazon Associate, I earn from qualifying purchases.
     </p>
 
   </div>
