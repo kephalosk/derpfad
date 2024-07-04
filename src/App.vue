@@ -20,6 +20,18 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  //Farbcodes (dark to bright):
+  //#000000
+  //#0A4A4A
+  //#0F7070
+  //#139494
+  //#1EB3B3
+  //#1DBDBD
+  //#2CE4E4
+  //#31FFFF
+  //#98FFFF
+  //#CCFFFF
+  //#FFFFFF
 }
 
 

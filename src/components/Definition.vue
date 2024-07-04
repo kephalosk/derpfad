@@ -29,6 +29,6 @@ const heading: string = `What is ${props.conceptName}?`;
   font-style: italic;
 }
 .color {
-  color: black;
+  color: #0F7070;
 }
 </style>

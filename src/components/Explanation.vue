@@ -54,6 +54,6 @@ const explanationText3: string = ` ${props.explanations[2]}`;
   text-align: left;
 }
 .color {
-  color: black;
+  color: #0A4A4A;
 }
 </style>

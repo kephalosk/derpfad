@@ -66,8 +66,6 @@
     </section>
 
   <a href="https://a.check24.net/misc/click.php?pid=305756&aid=330&cat=13" target="_blank"><img src="https://a.check24.net/misc/view.php?pid=305756&aid=330&cat=13" width="300" height="600" style="max-width: 100%; height: auto;" ></a>
-
-  <Footer/>
 </template>
 
 <script setup lang="ts">

@@ -2,8 +2,8 @@
   <InfoCard class="cardExplanation" v-if="hasReferences">
     <p class="explanationHeading">{{ title }}</p>
     <p class="bookinfo" v-for="(item, index) in details" :key="index">
-      <a :href="item.weblinks[countryCode]" target="_blank"><img class="bookCover" alt="Cover Image" :src="item.imageLink"/></a>
-      <a :href="item.weblinks[countryCode]" target="_blank">{{ item.title }}</a>
+      <a class="color" :href="item.weblinks[countryCode]" target="_blank"><img class="bookCover" alt="Cover Image" :src="item.imageLink"/></a>
+      <a class="color"  :href="item.weblinks[countryCode]" target="_blank">{{ item.title }}</a>
     </p>
   </InfoCard>
 </template>
@@ -61,10 +61,14 @@ const title = 'Further Information:';
   flex-direction: column;
   font-weight: bold;
   align-items: center;
+  color: #0A4A4A;
 }
 .explanationHeading {
   font-weight: bold;
   font-style: italic;
-  color: black;
+  color: #0A4A4A;
+}
+.color {
+  color: #0A4A4A;
 }
 </style>
