@@ -2,36 +2,12 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 import Lesson1 from "@/0_lessons/Lesson1.vue";
 import Lesson2 from "@/0_lessons/Lesson2.vue";
 import Lesson3 from "@/0_lessons/Lesson3.vue";
-import Impressum from "@/views/Impressum.vue";
-import LegalDisclosure from "@/views/LegalDisclosure.vue";
-import Datenschutz from "@/views/Datenschutz.vue";
-import PrivacyPolicy from "@/views/PrivacyPolicy.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "home",
     component: Lesson1,
-  },
-  {
-    path: '/datenschutz',
-    name: 'Datenschutz',
-    component: Datenschutz,
-  },
-  {
-    path: '/impressum',
-    name: 'Impressum',
-    component: Impressum,
-  },
-  {
-    path: '/legaldisclosure',
-    name: 'Legal Disclosure',
-    component: LegalDisclosure,
-  },
-  {
-    path: '/privacypolicy',
-    name: 'Privacy Policy',
-    component: PrivacyPolicy,
   },
   {
     path: "/lesson2",

@@ -85,7 +85,6 @@ import {concept4} from "@/1_content/concept4HTMLWebsite";
 import {concept5} from "@/1_content/concept5WebBrowser";
 import ChapterDropDown from "@/components/ChapterDropDown.vue";
 import {getCountryCode} from "@/globals/localization/GetCountryCode";
-import Footer from "@/components/Footer.vue";
 
 const router = useRouter();
 
