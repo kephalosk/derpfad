@@ -23,12 +23,15 @@
     </p>
 
   </div>
-  <p class="footer">&copy; 2024 EasyWebPath. All rights reserved. As an Amazon Associate, I earn from qualifying purchases. <router-link to="/impressum">Impressum</router-link> <router-link to="/legaldisclosure">Legal Disclosure</router-link></p>
+  <Footer/>
 </template>
 
 <script>
+import Footer from "@/components/Footer.vue";
+
 export default {
-  name: 'Impressum'
+  name: 'Impressum',
+  components: {Footer}
 }
 </script>
 
@@ -55,8 +58,5 @@ export default {
 .impressum p {
   margin-bottom: 15px;
   color: black;
-}
-.footer {
-  color: #139494;
 }
 </style>

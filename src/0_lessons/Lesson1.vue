@@ -67,7 +67,7 @@
 
   <a href="https://a.check24.net/misc/click.php?pid=305756&aid=330&cat=13" target="_blank"><img src="https://a.check24.net/misc/view.php?pid=305756&aid=330&cat=13" width="300" height="600" style="max-width: 100%; height: auto;" ></a>
 
-    <p class="footer">&copy; 2024 EasyWebPath. All rights reserved. As an Amazon Associate, I earn from qualifying purchases. <router-link to="/datenschutz">Datenschutz</router-link> <router-link to="/impressum">Impressum</router-link> <router-link to="/legaldisclosure">Legal Disclosure</router-link></p>
+  <Footer/>
 </template>
 
 <script setup lang="ts">
@@ -87,6 +87,7 @@ import {concept4} from "@/1_content/concept4HTMLWebsite";
 import {concept5} from "@/1_content/concept5WebBrowser";
 import ChapterDropDown from "@/components/ChapterDropDown.vue";
 import {getCountryCode} from "@/globals/localization/GetCountryCode";
+import Footer from "@/components/Footer.vue";
 
 const router = useRouter();
 
@@ -153,9 +154,6 @@ p {
   font-weight: bold; /* Make the text bold */
   text-align: center; /* Center-align the text */
   width: 100%;
-}
-.footer {
-  color: #139494;
 }
 .conceptContainer {
   display: flex;

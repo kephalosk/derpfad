@@ -1,5 +1,5 @@
 <template>
-  <div class="impressum">
+  <div class="datenschutz">
     <nav>
       <router-link to="/">Chapter 1: Basics</router-link>
     </nav>
@@ -61,8 +61,7 @@
     dieser Website ist:</p> <p>Philipp Kraatz<br />
     Hans-B&ouml;ckler-Stra&szlig;e 1<br />
     25746 Heide, Deutschland</p>
-    <p>Telefon: &#91;Telefonnummer der verantwortlichen Stelle&#93;<br />
-      E-Mail: easywebpathinfo@gmail.com</p>
+    <p>E-Mail: easywebpathinfo@gmail.com</p>
     <p>Verantwortliche Stelle ist die nat&uuml;rliche oder juristische Person, die allein oder gemeinsam mit anderen
       &uuml;ber die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.&nbsp;B. Namen, E-Mail-
       Adressen o. &Auml;.) entscheidet.</p>
@@ -172,8 +171,7 @@
     Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein
     berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website &ndash;
     hierzu m&uuml;ssen die Server-Log-Files erfasst werden.</p>
-    <h3>Anfrage per E-Mail, Telefon oder Telefax</h3> <p>Wenn Sie uns per E-Mail, Telefon oder Telefax
-    kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage)
+    <h3>Anfrage per E-Mail</h3> <p>Wenn Sie uns per E-Mail kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage)
     zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne
     Ihre Einwilligung weiter.</p> <p>Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b
     DSGVO, sofern Ihre Anfrage mit der Erf&uuml;llung eines Vertrags zusammenh&auml;ngt oder zur
@@ -188,17 +186,20 @@
     <p>Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a></p>
 
   </div>
-  <p class="footer">&copy; 2024 EasyWebPath. All rights reserved. As an Amazon Associate, I earn from qualifying purchases. <router-link to="/impressum">Impressum</router-link> <router-link to="/legaldisclosure">Legal Disclosure</router-link></p>
+  <Footer/>
 </template>
 
 <script>
+import Footer from "@/components/Footer.vue";
+
 export default {
-  name: 'Impressum'
+  name: 'Datenschutz',
+  components: {Footer}
 }
 </script>
 
 <style scoped>
-.impressum {
+.datenschutz {
   font-family: Arial, sans-serif;
   color: black;
   max-width: 800px;
@@ -206,22 +207,19 @@ export default {
   padding: 20px;
   line-height: 1.6;
 }
-.impressum h1 {
+.datenschutz h1 {
   font-size: 28px;
   margin-bottom: 10px;
   color: black;
 }
-.impressum h2 {
+.datenschutz h2 {
   font-size: 22px;
   margin-top: 20px;
   margin-bottom: 10px;
   color: black;
 }
-.impressum p {
+.datenschutz p {
   margin-bottom: 15px;
   color: black;
-}
-.footer {
-  color: #139494;
 }
 </style>

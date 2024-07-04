@@ -1,5 +1,5 @@
 <template>
-  <div class="impressum">
+  <div class="legalDisclosure">
     <nav>
       <router-link to="/">Chapter 1: Basics</router-link>
     </nav>
@@ -24,17 +24,20 @@
     </p>
 
   </div>
-  <p class="footer">&copy; 2024 EasyWebPath. All rights reserved. As an Amazon Associate, I earn from qualifying purchases. <router-link to="/impressum">Impressum</router-link> <router-link to="/legaldisclosure">Legal Disclosure</router-link></p>
+  <Footer/>
 </template>
 
 <script>
+import Footer from "@/components/Footer.vue";
+
 export default {
-  name: 'Impressum'
+  name: 'Legal Disclosure',
+  components: {Footer}
 }
 </script>
 
 <style scoped>
-.impressum {
+.legalDisclosure {
   font-family: Arial, sans-serif;
   color: black;
   max-width: 800px;
@@ -42,22 +45,19 @@ export default {
   padding: 20px;
   line-height: 1.6;
 }
-.impressum h1 {
+.legalDisclosure h1 {
   font-size: 28px;
   margin-bottom: 10px;
   color: black;
 }
-.impressum h2 {
+.legalDisclosure h2 {
   font-size: 22px;
   margin-top: 20px;
   margin-bottom: 10px;
   color: black;
 }
-.impressum p {
+.legalDisclosure p {
   margin-bottom: 15px;
   color: black;
-}
-.footer {
-  color: #139494;
 }
 </style>

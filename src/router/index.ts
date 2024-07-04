@@ -5,6 +5,7 @@ import Lesson3 from "@/0_lessons/Lesson3.vue";
 import Impressum from "@/views/Impressum.vue";
 import LegalDisclosure from "@/views/LegalDisclosure.vue";
 import Datenschutz from "@/views/Datenschutz.vue";
+import PrivacyPolicy from "@/views/PrivacyPolicy.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -26,6 +27,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/legaldisclosure',
     name: 'Legal Disclosure',
     component: LegalDisclosure,
+  },
+  {
+    path: '/privacypolicy',
+    name: 'Privacy Policy',
+    component: PrivacyPolicy,
   },
   {
     path: "/lesson2",
