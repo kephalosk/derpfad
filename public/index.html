@@ -39,14 +39,19 @@
 <!--    <script>-->
 <!--        (adsbygoogle = window.adsbygoogle || []).push({});-->
 <!--    </script>-->
-    <p class="footer">
-        &copy; 2024 EasyWebPath. All rights reserved. As an Amazon Associate, I earn from qualifying purchases.
-        <a class="color" href="/datenschutz.html">Datenschutz</a><span> | </span>
-        <a class="color" href="/impressum.html">Impressum</a><span> | </span>
-        <a class="color" href="/legaldisclosure.html">Legal Disclosure</a><span> | </span>
-        <a class="color" href="/privacypolicy.html">Privacy Policy</a><span> | </span>
-        <a class="color" href="/">Start</a>
-    </p>
+
+    <footer>
+        <p>&copy; 2024 EasyWebPath. All rights reserved. As an Amazon Associate, I earn from qualifying purchases.</p>
+        <nav>
+            <ul>
+                <li><a class="color" href="/datenschutz.html">Datenschutz</a></li>
+                <li><a class="color" href="/impressum.html">Impressum</a></li>
+                <li><a class="color" href="/legaldisclosure.html">Legal Disclosure</a></li>
+                <li><a class="color" href="/privacypolicy.html">Privacy Policy</a></li>
+                <li><a class="color" href="/">Start</a></li>
+            </ul>
+        </nav>
+    </footer>
   </body>
   <style>
       body {
@@ -112,14 +117,23 @@
           padding: 0 20px; /* Add padding to content */
       }
 
-      .footer {
-          border-top: 1px solid #0A4A4A; /* Schwarze Linie über dem Footer */
+      .color {
+          color: #0A4A4A;
+      }
+
+      footer {
+          border-top: 1px solid #0F7070; /* Schwarze Linie über dem Footer */
           padding: 10px; /* Optional: Abstand nach oben */
           color: #0A4A4A;
       }
 
-      .color {
+      footer p{
           color: #0A4A4A;
+      }
+
+      footer ul {
+          list-style-type: none;  /* Entfernt die Bullet Points */
+          padding: 0;  /* Entfernt den standardmäßigen linken Einzug */
       }
   </style>
 </html>
