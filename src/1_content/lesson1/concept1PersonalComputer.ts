@@ -2,7 +2,7 @@ import {ConceptContent} from "@/globals/Types/ConceptContent";
 
 export const concept1: ConceptContent = {
     heading: 'Concept 1: Personal Computer',
-    image: require('@/assets/conceptpath/lesson1/lesson1concept1.svg'),
+    image: require('@/assets/conceptpath/lesson1/lesson1concept1.jpg'),
     name: 'a Personal Computer',
     definition: 'A Personal Computer is a machine used by developers to write, test and manage code locally.',
     buzzwords: [

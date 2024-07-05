@@ -19,7 +19,7 @@
         <ConceptImage :image-link="concept1.image" class="conceptImage extraSmall"/>
         <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>
         <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>
-        <References :details="concept1.references" :country-code="countryCode" class="large"/>
+<!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
       </div>
 
       <!-- Block_ch1l1c1 -->
@@ -51,7 +51,7 @@
         <ConceptImage :image-link="concept4.image" class="conceptImage medium"/>
         <Definition class="large" :concept-name="concept4.name" :definition="concept4.definition"/>
         <Explanation class="large" :concept-name="concept4.name" :buzzwords="concept4.buzzwords" :explanations="concept4.explanations"/>
-        <References :details="concept4.references" :country-code="countryCode" class="large"/>
+<!--        <References :details="concept4.references" :country-code="countryCode" class="large"/>-->
       </div>
 
       <div class="conceptContainer">
