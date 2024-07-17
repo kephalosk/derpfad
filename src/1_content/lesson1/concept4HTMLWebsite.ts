@@ -9,17 +9,26 @@ export const concept4HTMLWebsite: ConceptContent = {
     image: require('@/assets/conceptpath/lesson1/lesson1concept4.jpg'),
     number,
     name,
-    definition: 'HTML (HyperText Markup Language) is the standard markup language used to create and structure content on web pages.',
-    buzzwords: [
-        'Foundation of Web Pages',
-        'Standardized and Universally Supported',
-        'Easy to Learn and Use'
+    definition: [
+        'A Website written in HTML',
+        'HTML means: HyperText Markup Language',
+        'It\'s the standard markup language to create and structure content on websites',
     ],
-    explanations: [
-        'HTML is the fundamental building block of web pages.',
-        'As a standard maintained by the World Wide Web Consortium (W3C), HTML is universally supported by all web browsers.',
-        'HTML is relatively simple to learn, with a clear and intuitive syntax.'
+    reason: [
+        {
+            buzzword: 'Standardized',
+            explanation: 'Standard maintained by the World Wide Web Consortium (W3C)',
+        },
+        {
+            buzzword: 'Universally Supported',
+            explanation: 'Supported by all web browsers',
+        },
+        {
+            buzzword: 'Easy to Learn',
+            explanation: 'Simple, clear and intuitive syntax',
+        }
     ],
+    sidenotes: [],
     references: [
         {
             title: 'Jon Duckett: HTML and CSS: Design and Build Websites',

@@ -9,17 +9,24 @@ export const concept1PersonalComputer: ConceptContent = {
     image: require('@/assets/conceptpath/lesson1/lesson1concept1.jpg'),
     number,
     name,
-    definition: 'A Personal Computer is a machine used by developers to write, test and manage code locally.',
-    buzzwords: [
-        'Accessibility and Convenience',
-        'Customization and Control',
-        'Cost-Effectiveness'
+    definition: [
+        'Machine to write, test and manage code locally'
     ],
-    explanations: [
-        'Personal computers provide immediate access to development tools and resources, allowing developers to work from anywhere with ease.',
-        'Developers can customize their personal computers with preferred software, settings, and configurations tailored to their specific needs and workflows.',
-        'Using a personal computer eliminates the need for expensive server infrastructure for development and testing, making it a cost-effective solution for web development tasks.'
+    reason: [
+        {
+            buzzword: 'Accessibility',
+            explanation: 'Immediate access to development tools',
+        },
+        {
+            buzzword: 'Convenience',
+            explanation: 'Work from anywhere with ease',
+        },
+        {
+            buzzword: 'Customization',
+            explanation: 'Use preferred software, settings, and configurations.',
+        },
     ],
+    sidenotes: [],
     references: [
         {
             title: 'Apple MacBook Pro M3',

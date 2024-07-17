@@ -18,8 +18,9 @@
         <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
         <ConceptImage :image-link="concept1PersonalComputer.image" class="conceptImage extraSmall"/>
         <Definition class="large" :concept-name="concept1PersonalComputer.name" :definition="concept1PersonalComputer.definition"/>
-        <Explanation class="large" :concept-name="concept1PersonalComputer.name" :buzzwords="concept1PersonalComputer.buzzwords" :explanations="concept1PersonalComputer.explanations"/>
-<!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
+        <Explanation class="large" :concept-name="concept1PersonalComputer.name" :reason="concept1PersonalComputer.reason"/>
+<!--        <References :details="concept1PersonalComputer.references" :country-code="countryCode" class="large"/>-->
+        <Sidenotes :sidenotes="concept1PersonalComputer.sidenotes"/>
       </div>
 
       <!-- Block_ch1l1c1 -->
@@ -34,32 +35,36 @@
         <h4 class="banner-heading">{{ concept2OperatingSystem.heading }}</h4>
         <ConceptImage :image-link="concept2OperatingSystem.image" class="conceptImage small"/>
         <Definition class="large" :concept-name="concept2OperatingSystem.name" :definition="concept2OperatingSystem.definition"/>
-        <Explanation class="large" :concept-name="concept2OperatingSystem.name" :buzzwords="concept2OperatingSystem.buzzwords" :explanations="concept2OperatingSystem.explanations"/>
+        <Explanation class="large" :concept-name="concept2OperatingSystem.name" :reason="concept2OperatingSystem.reason"/>
         <References :details="concept2OperatingSystem.references" :country-code="countryCode" class="large"/>
+        <Sidenotes :sidenotes="concept2OperatingSystem.sidenotes"/>
       </div>
 
       <div class="conceptContainer">
         <h4 class="banner-heading">{{ concept3WordProcessingProgram.heading }}</h4>
         <ConceptImage :image-link="concept3WordProcessingProgram.image" class="conceptImage mediumSmall"/>
         <Definition class="large" :concept-name="concept3WordProcessingProgram.name" :definition="concept3WordProcessingProgram.definition"/>
-        <Explanation class="large" :concept-name="concept3WordProcessingProgram.name" :buzzwords="concept3WordProcessingProgram.buzzwords" :explanations="concept3WordProcessingProgram.explanations"/>
+        <Explanation class="large" :concept-name="concept3WordProcessingProgram.name" :reason="concept3WordProcessingProgram.reason"/>
         <References :details="concept3WordProcessingProgram.references" :country-code="countryCode" class="large"/>
+        <Sidenotes :sidenotes="concept3WordProcessingProgram.sidenotes"/>
       </div>
 
       <div class="conceptContainer">
         <h4 class="banner-heading">{{ concept4HTMLWebsite.heading }}</h4>
         <ConceptImage :image-link="concept4HTMLWebsite.image" class="conceptImage medium"/>
         <Definition class="large" :concept-name="concept4HTMLWebsite.name" :definition="concept4HTMLWebsite.definition"/>
-        <Explanation class="large" :concept-name="concept4HTMLWebsite.name" :buzzwords="concept4HTMLWebsite.buzzwords" :explanations="concept4HTMLWebsite.explanations"/>
+        <Explanation class="large" :concept-name="concept4HTMLWebsite.name" :reason="concept4HTMLWebsite.reason"/>
 <!--        <References :details="concept4.references" :country-code="countryCode" class="large"/>-->
+        <Sidenotes :sidenotes="concept4HTMLWebsite.sidenotes"/>
       </div>
 
       <div class="conceptContainer">
         <h4 class="banner-heading">{{ concept5WebBrowser.heading }}</h4>
         <ConceptImage :image-link="concept5WebBrowser.image" class="conceptImage"/>
         <Definition class="large" :concept-name="concept5WebBrowser.name" :definition="concept5WebBrowser.definition"/>
-        <Explanation class="large" :concept-name="concept5WebBrowser.name" :buzzwords="concept5WebBrowser.buzzwords" :explanations="concept5WebBrowser.explanations"/>
+        <Explanation class="large" :concept-name="concept5WebBrowser.name" :reason="concept5WebBrowser.reason"/>
         <References :details="concept5WebBrowser.references" :country-code="countryCode" class="large"/>
+        <Sidenotes :sidenotes="concept5WebBrowser.sidenotes"/>
       </div>
 
       <how-to1-minimal-setup/>
@@ -85,6 +90,7 @@ import {concept4HTMLWebsite} from "@/1_content/lesson1/concept4HTMLWebsite";
 import {concept5WebBrowser} from "@/1_content/lesson1/concept5WebBrowser";
 import ChapterDropDown from "@/components/ChapterDropDown.vue";
 import {getCountryCode} from "@/globals/localization/GetCountryCode";
+import Sidenotes from "@/components/Sidenotes.vue";
 
 const router = useRouter();
 

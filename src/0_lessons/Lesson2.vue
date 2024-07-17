@@ -15,6 +15,15 @@
     </p>
 
     <div class="conceptContainer">
+      <h4 class="banner-heading">{{ concept3WordProcessingProgram.heading }}</h4>
+      <ConceptImage :image-link="concept3WordProcessingProgram.image" class="conceptImage mediumSmall"/>
+      <Definition class="large" :concept-name="concept3WordProcessingProgram.name" :definition="concept3WordProcessingProgram.definition"/>
+      <Explanation class="large" :concept-name="concept3WordProcessingProgram.name" :reason="concept3WordProcessingProgram.reason"/>
+      <References :details="concept3WordProcessingProgram.references" :country-code="countryCode" class="large"/>
+      <Sidenotes :sidenotes="concept3WordProcessingProgram.sidenotes"/>
+    </div>
+
+    <div class="conceptContainer">
       <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
       <ConceptImage :image-link="lesson2concept6" class="conceptImage extraLarge"/>
 <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
@@ -183,6 +192,7 @@ import {concept4HTMLWebsite} from "@/1_content/lesson1/concept4HTMLWebsite";
 import {concept5WebBrowser} from "@/1_content/lesson1/concept5WebBrowser";
 import ChapterDropDown from "@/components/ChapterDropDown.vue";
 import {getCountryCode} from "@/globals/localization/GetCountryCode";
+import Sidenotes from "@/components/Sidenotes.vue";
 
 const router = useRouter();
 

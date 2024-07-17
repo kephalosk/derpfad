@@ -1,48 +1,41 @@
 <template>
   <InfoCard class="cardExplanation">
     <p class="explanationHeading color">{{ heading }}</p>
-    <ol class="explanationPoints color">
-      <li><b>{{ explanationTitle1 }}</b>{{ explanationText1 }}</li>
-      <li><b>{{ explanationTitle2 }}</b>{{ explanationText2 }}</li>
-      <li><b>{{ explanationTitle3 }}</b>{{ explanationText3 }}</li>
-    </ol>
+    <ul class="explanationPoints color" v-for="(item, index) in reason" :key="index">
+      <li><b>{{ item.buzzword }}: </b>{{ item.explanation }}</li>
+    </ul>
   </InfoCard>
 </template>
 
 <script setup lang="ts">
 import InfoCard from "@/components/InfoCard.vue";
 import {defineProps} from "vue/dist/vue";
+import {getIndefiniteArticle} from "@/globals/language/GetIndefiniteArticle";
+import {ReferenceDetails} from "@/globals/Types/ReferenceDetails";
+import {ConceptReason} from "@/globals/Types/ConceptReason";
 
 const props = defineProps({
   conceptName: {
     type: String,
     required: true
   },
-  buzzwords: {
-    type: Array,
+  reason: {
+    type: Array as () => ConceptReason[],
     required: true,
     validator(value: unknown): boolean {
-      return Array.isArray(value) && value.every(item => typeof item === 'string');
-    }
-  },
-  explanations: {
-    type: Array,
-    required: true,
-    validator(value: unknown): boolean {
-      return Array.isArray(value) && value.every(item => typeof item === 'string');
+      return Array.isArray(value) && value.every(item => {
+        return typeof item === 'object' &&
+            'buzzword' in item &&
+            'explanation' in item &&
+            typeof item.buzzword === 'string' &&
+            typeof item.explanation === 'string';
+      });
     }
   },
 });
 
-const heading: string = `Why ${props.conceptName}?`;
-
-const explanationTitle1: string = `${props.buzzwords[0]}:`;
-const explanationTitle2: string = `${props.buzzwords[1]}:`;
-const explanationTitle3: string = `${props.buzzwords[2]}:`;
-
-const explanationText1: string = ` ${props.explanations[0]}`;
-const explanationText2: string = ` ${props.explanations[1]}`;
-const explanationText3: string = ` ${props.explanations[2]}`;
+const article = getIndefiniteArticle(props.conceptName);
+const heading: string = `Why ${article} ${props.conceptName}?`;
 </script>
 
 <style scoped>

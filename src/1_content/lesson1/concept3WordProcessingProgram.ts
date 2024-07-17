@@ -9,16 +9,15 @@ export const concept3WordProcessingProgram: ConceptContent = {
     image: require('@/assets/conceptpath/lesson1/lesson1concept3.jpg'),
     number,
     name,
-    definition: 'A Word Processing Program is software that allows users to create, edit, format, and print text documents.',
-    buzzwords: [
-        'Code Structuring',
-        'Documentation',
-        'Content Planning'
+    definition: [
+        'Allows users to create, edit, format, and print text documents.',
     ],
-    explanations: [
-        'Word processing programs aid developers in organizing code snippets and files.',
-        'They assist in creating and maintaining project documentation.',
-        'These programs help in outlining website content, facilitating the planning and organization of information before implementation.'
+    reason: [
+        {
+            buzzword: 'Code Structuring',
+            explanation: 'Organizing code snippets and files',
+        }
     ],
+    sidenotes: [],
     references: [],
 }

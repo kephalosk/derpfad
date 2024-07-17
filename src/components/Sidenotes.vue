@@ -1,7 +1,7 @@
 <template>
-  <InfoCard class="cardExplanation">
-    <p class="definitionHeading color">{{ heading }}</p>
-    <ul class="definitionPoints color" v-for="(item, index) in definition" :key="index">
+  <InfoCard class="cardSidenotes" v-if="hasSidenotes">
+    <p class="sidenotesHeading color">{{ heading }}</p>
+    <ul class="sidenotesPoints color" v-for="(item, index) in sidenotes" :key="index">
       <li>{{ item }}</li>
     </ul>
   </InfoCard>
@@ -10,14 +10,9 @@
 <script setup lang="ts">
 import { defineProps } from "vue/dist/vue";
 import InfoCard from "@/components/InfoCard.vue";
-import {getIndefiniteArticle} from "@/globals/language/GetIndefiniteArticle";
 
 const props = defineProps({
-  conceptName: {
-    type: String,
-    required: true
-  },
-  definition: {
+  sidenotes: {
     type: Array,
     required: true,
     validator(value: unknown): boolean {
@@ -26,18 +21,18 @@ const props = defineProps({
   }
 });
 
-const article = getIndefiniteArticle(props.conceptName);
+const heading: string = 'Sidenotes';
 
-const heading: string = `What is ${article} ${props.conceptName}?`;
+const hasSidenotes = props.sidenotes?.length;
 
 </script>
 
 <style scoped>
-.definitionHeading {
+.sidenotesHeading {
   font-weight: bold;
   font-style: italic;
 }
-.definitionPoints {
+.sidenotesPoints {
   text-align: left;
 }
 .color {
