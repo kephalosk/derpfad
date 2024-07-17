@@ -1,9 +1,14 @@
 import {ConceptContent} from "@/globals/Types/ConceptContent";
+import {ContentEnum} from "@/globals/ContentEnum";
 
-export const concept5: ConceptContent = {
-    heading: 'Concept 5: Web Browser',
+const number: number = 5;
+const name: string = 'Web Browser';
+
+export const concept5WebBrowser: ConceptContent = {
+    heading: `${ContentEnum.CHAPTER} ${number}: ${name}`,
     image: require('@/assets/conceptpath/lesson1/lesson1concept5.jpg'),
-    name: 'a Web Browser',
+    number,
+    name,
     definition: 'A Web Browser is software used to access and view content on the World Wide Web.',
     buzzwords: [
         'Foundation of Web Pages',

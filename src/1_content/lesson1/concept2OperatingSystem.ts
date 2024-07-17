@@ -1,9 +1,14 @@
 import {ConceptContent} from "@/globals/Types/ConceptContent";
+import {ContentEnum} from "@/globals/ContentEnum";
 
-export const concept2: ConceptContent = {
-    heading: 'Concept 2: Operating System',
+const number: number = 2;
+const name: string = 'Operating System';
+
+export const concept2OperatingSystem: ConceptContent = {
+    heading: `${ContentEnum.CHAPTER} ${number}: ${name}`,
     image: require('@/assets/conceptpath/lesson1/lesson1concept2.jpg'),
-    name: 'an Operating System',
+    number,
+    name,
     definition: 'An operating system is software that manages a computer\'s hardware and provides common services for computer programs.',
     buzzwords: [
         'Resource Management',

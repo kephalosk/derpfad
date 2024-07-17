@@ -15,10 +15,10 @@
       </p>
 
       <div class="conceptContainer">
-        <h4 class="banner-heading">{{ concept1.heading }}</h4>
-        <ConceptImage :image-link="concept1.image" class="conceptImage extraSmall"/>
-        <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>
-        <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>
+        <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
+        <ConceptImage :image-link="concept1PersonalComputer.image" class="conceptImage extraSmall"/>
+        <Definition class="large" :concept-name="concept1PersonalComputer.name" :definition="concept1PersonalComputer.definition"/>
+        <Explanation class="large" :concept-name="concept1PersonalComputer.name" :buzzwords="concept1PersonalComputer.buzzwords" :explanations="concept1PersonalComputer.explanations"/>
 <!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
       </div>
 
@@ -31,35 +31,35 @@
 <!--           data-full-width-responsive="true"></ins>-->
 
       <div class="conceptContainer">
-        <h4 class="banner-heading">{{ concept2.heading }}</h4>
-        <ConceptImage :image-link="concept2.image" class="conceptImage small"/>
-        <Definition class="large" :concept-name="concept2.name" :definition="concept2.definition"/>
-        <Explanation class="large" :concept-name="concept2.name" :buzzwords="concept2.buzzwords" :explanations="concept2.explanations"/>
-        <References :details="concept2.references" :country-code="countryCode" class="large"/>
+        <h4 class="banner-heading">{{ concept2OperatingSystem.heading }}</h4>
+        <ConceptImage :image-link="concept2OperatingSystem.image" class="conceptImage small"/>
+        <Definition class="large" :concept-name="concept2OperatingSystem.name" :definition="concept2OperatingSystem.definition"/>
+        <Explanation class="large" :concept-name="concept2OperatingSystem.name" :buzzwords="concept2OperatingSystem.buzzwords" :explanations="concept2OperatingSystem.explanations"/>
+        <References :details="concept2OperatingSystem.references" :country-code="countryCode" class="large"/>
       </div>
 
       <div class="conceptContainer">
-        <h4 class="banner-heading">{{ concept3.heading }}</h4>
-        <ConceptImage :image-link="concept3.image" class="conceptImage mediumSmall"/>
-        <Definition class="large" :concept-name="concept3.name" :definition="concept3.definition"/>
-        <Explanation class="large" :concept-name="concept3.name" :buzzwords="concept3.buzzwords" :explanations="concept3.explanations"/>
-        <References :details="concept3.references" :country-code="countryCode" class="large"/>
+        <h4 class="banner-heading">{{ concept3WordProcessingProgram.heading }}</h4>
+        <ConceptImage :image-link="concept3WordProcessingProgram.image" class="conceptImage mediumSmall"/>
+        <Definition class="large" :concept-name="concept3WordProcessingProgram.name" :definition="concept3WordProcessingProgram.definition"/>
+        <Explanation class="large" :concept-name="concept3WordProcessingProgram.name" :buzzwords="concept3WordProcessingProgram.buzzwords" :explanations="concept3WordProcessingProgram.explanations"/>
+        <References :details="concept3WordProcessingProgram.references" :country-code="countryCode" class="large"/>
       </div>
 
       <div class="conceptContainer">
-        <h4 class="banner-heading">{{ concept4.heading }}</h4>
-        <ConceptImage :image-link="concept4.image" class="conceptImage medium"/>
-        <Definition class="large" :concept-name="concept4.name" :definition="concept4.definition"/>
-        <Explanation class="large" :concept-name="concept4.name" :buzzwords="concept4.buzzwords" :explanations="concept4.explanations"/>
+        <h4 class="banner-heading">{{ concept4HTMLWebsite.heading }}</h4>
+        <ConceptImage :image-link="concept4HTMLWebsite.image" class="conceptImage medium"/>
+        <Definition class="large" :concept-name="concept4HTMLWebsite.name" :definition="concept4HTMLWebsite.definition"/>
+        <Explanation class="large" :concept-name="concept4HTMLWebsite.name" :buzzwords="concept4HTMLWebsite.buzzwords" :explanations="concept4HTMLWebsite.explanations"/>
 <!--        <References :details="concept4.references" :country-code="countryCode" class="large"/>-->
       </div>
 
       <div class="conceptContainer">
-        <h4 class="banner-heading">{{ concept5.heading }}</h4>
-        <ConceptImage :image-link="concept5.image" class="conceptImage"/>
-        <Definition class="large" :concept-name="concept5.name" :definition="concept5.definition"/>
-        <Explanation class="large" :concept-name="concept5.name" :buzzwords="concept5.buzzwords" :explanations="concept5.explanations"/>
-        <References :details="concept5.references" :country-code="countryCode" class="large"/>
+        <h4 class="banner-heading">{{ concept5WebBrowser.heading }}</h4>
+        <ConceptImage :image-link="concept5WebBrowser.image" class="conceptImage"/>
+        <Definition class="large" :concept-name="concept5WebBrowser.name" :definition="concept5WebBrowser.definition"/>
+        <Explanation class="large" :concept-name="concept5WebBrowser.name" :buzzwords="concept5WebBrowser.buzzwords" :explanations="concept5WebBrowser.explanations"/>
+        <References :details="concept5WebBrowser.references" :country-code="countryCode" class="large"/>
       </div>
 
       <how-to1-minimal-setup/>
@@ -77,12 +77,12 @@ import Explanation from "@/components/Explanation.vue";
 import Definition from "@/components/Definition.vue";
 import ConceptImage from "@/components/ConceptImage.vue";
 import References from "@/components/References.vue";
-import {concept1} from "@/1_content/lesson1/concept1PersonalComputer";
-import {concept2} from "@/1_content/lesson1/concept2OperatingSystem";
+import {concept1PersonalComputer} from "@/1_content/lesson1/concept1PersonalComputer";
+import {concept2OperatingSystem} from "@/1_content/lesson1/concept2OperatingSystem";
 import lesson3 from "@/0_lessons/Lesson3.vue";
-import {concept3} from "@/1_content/lesson1/concept3WordProcessingProgram";
-import {concept4} from "@/1_content/lesson1/concept4HTMLWebsite";
-import {concept5} from "@/1_content/lesson1/concept5WebBrowser";
+import {concept3WordProcessingProgram} from "@/1_content/lesson1/concept3WordProcessingProgram";
+import {concept4HTMLWebsite} from "@/1_content/lesson1/concept4HTMLWebsite";
+import {concept5WebBrowser} from "@/1_content/lesson1/concept5WebBrowser";
 import ChapterDropDown from "@/components/ChapterDropDown.vue";
 import {getCountryCode} from "@/globals/localization/GetCountryCode";
 

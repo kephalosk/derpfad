@@ -1,9 +1,14 @@
 import {ConceptContent} from "@/globals/Types/ConceptContent";
+import {ContentEnum} from "@/globals/ContentEnum";
 
-export const concept4: ConceptContent = {
-    heading: 'Concept 4: HTML',
+const number: number = 4;
+const name: string = 'HTML-Website';
+
+export const concept4HTMLWebsite: ConceptContent = {
+    heading: `${ContentEnum.CHAPTER} ${number}: ${name}`,
     image: require('@/assets/conceptpath/lesson1/lesson1concept4.jpg'),
-    name: 'HTML',
+    number,
+    name,
     definition: 'HTML (HyperText Markup Language) is the standard markup language used to create and structure content on web pages.',
     buzzwords: [
         'Foundation of Web Pages',

@@ -1,4 +1,4 @@
-export enum IndefiniteArticle {
+export enum IndefiniteArticleEnum {
     A = 'a',
     AN = 'an',
 }

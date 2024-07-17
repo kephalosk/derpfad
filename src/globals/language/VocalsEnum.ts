@@ -1,4 +1,4 @@
-export enum Vocals {
+export enum VocalsEnum {
     A = 'a',
     E = 'e',
     I = 'i',

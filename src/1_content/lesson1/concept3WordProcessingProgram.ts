@@ -1,9 +1,14 @@
 import {ConceptContent} from "@/globals/Types/ConceptContent";
+import {ContentEnum} from "@/globals/ContentEnum";
 
-export const concept3: ConceptContent = {
-    heading: 'Concept 3: Word Processing Program',
+const number: number = 3;
+const name: string = 'Word Processing Program';
+
+export const concept3WordProcessingProgram: ConceptContent = {
+    heading: `${ContentEnum.CHAPTER} ${number}: ${name}`,
     image: require('@/assets/conceptpath/lesson1/lesson1concept3.jpg'),
-    name: 'a Word Processing Program',
+    number,
+    name,
     definition: 'A Word Processing Program is software that allows users to create, edit, format, and print text documents.',
     buzzwords: [
         'Code Structuring',

@@ -1,26 +1,26 @@
-import {IndefiniteArticle} from "@/globals/language/IndefiniteArticleEnum";
-import {Vocals} from "@/globals/language/VocalsEnum";
+import {IndefiniteArticleEnum} from "@/globals/language/IndefiniteArticleEnum";
+import {VocalsEnum} from "@/globals/language/VocalsEnum";
 
-export function getIndefiniteArticle(conceptName: string): IndefiniteArticle {
+export function getIndefiniteArticle(conceptName: string): IndefiniteArticleEnum {
     const firstLetter: string = conceptName[0];
     switch (firstLetter.toLowerCase()){
-        case Vocals.A: {
-            return IndefiniteArticle.AN;
+        case VocalsEnum.A: {
+            return IndefiniteArticleEnum.AN;
         }
-        case Vocals.E: {
-            return IndefiniteArticle.AN;
+        case VocalsEnum.E: {
+            return IndefiniteArticleEnum.AN;
         }
-        case Vocals.I: {
-            return IndefiniteArticle.AN;
+        case VocalsEnum.I: {
+            return IndefiniteArticleEnum.AN;
         }
-        case Vocals.O: {
-            return IndefiniteArticle.AN;
+        case VocalsEnum.O: {
+            return IndefiniteArticleEnum.AN;
         }
-        case Vocals.U: {
-            return IndefiniteArticle.AN;
+        case VocalsEnum.U: {
+            return IndefiniteArticleEnum.AN;
         }
         default: {
-            return IndefiniteArticle.A;
+            return IndefiniteArticleEnum.A;
         }
     }
 }

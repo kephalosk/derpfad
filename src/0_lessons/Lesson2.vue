@@ -15,7 +15,7 @@
     </p>
 
     <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1.heading }}</h4>
+      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
       <ConceptImage :image-link="lesson2concept6" class="conceptImage extraLarge"/>
 <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
 <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
@@ -23,7 +23,7 @@
     </div>
 
     <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1.heading }}</h4>
+      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
       <ConceptImage :image-link="lesson2concept7" class="conceptImage extraLarge"/>
       <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
       <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
@@ -31,7 +31,7 @@
     </div>
 
     <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1.heading }}</h4>
+      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
       <ConceptImage :image-link="lesson2concept8" class="conceptImage extraLarge"/>
       <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
       <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
@@ -39,7 +39,7 @@
     </div>
 
     <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1.heading }}</h4>
+      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
       <ConceptImage :image-link="lesson2concept9" class="conceptImage extraLarge"/>
       <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
       <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
@@ -47,7 +47,7 @@
     </div>
 
     <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1.heading }}</h4>
+      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
       <ConceptImage :image-link="lesson2concept10" class="conceptImage extraLarge"/>
       <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
       <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
@@ -55,7 +55,7 @@
     </div>
 
     <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1.heading }}</h4>
+      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
       <ConceptImage :image-link="lesson2concept11" class="conceptImage extraLarge"/>
       <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
       <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
@@ -63,7 +63,7 @@
     </div>
 
     <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1.heading }}</h4>
+      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
       <ConceptImage :image-link="lesson2concept12" class="conceptImage extraLarge"/>
       <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
       <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
@@ -71,7 +71,7 @@
     </div>
 
     <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1.heading }}</h4>
+      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
       <ConceptImage :image-link="lesson2concept13" class="conceptImage extraLarge"/>
       <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
       <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
@@ -79,7 +79,7 @@
     </div>
 
     <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1.heading }}</h4>
+      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
       <ConceptImage :image-link="lesson2concept14" class="conceptImage extraLarge"/>
       <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
       <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
@@ -87,7 +87,7 @@
     </div>
 
     <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1.heading }}</h4>
+      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
       <ConceptImage :image-link="lesson2concept15" class="conceptImage extraLarge"/>
       <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
       <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
@@ -95,7 +95,7 @@
     </div>
 
     <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1.heading }}</h4>
+      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
       <ConceptImage :image-link="lesson2concept16" class="conceptImage extraLarge"/>
       <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
       <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
@@ -103,7 +103,7 @@
     </div>
 
     <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1.heading }}</h4>
+      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
       <ConceptImage :image-link="lesson2concept17" class="conceptImage extraLarge"/>
       <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
       <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
@@ -111,7 +111,7 @@
     </div>
 
     <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1.heading }}</h4>
+      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
       <ConceptImage :image-link="lesson2concept18" class="conceptImage extraLarge"/>
       <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
       <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
@@ -119,7 +119,7 @@
     </div>
 
     <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1.heading }}</h4>
+      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
       <ConceptImage :image-link="lesson2concept19" class="conceptImage extraLarge"/>
       <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
       <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
@@ -127,7 +127,7 @@
     </div>
 
     <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1.heading }}</h4>
+      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
       <ConceptImage :image-link="lesson2concept20" class="conceptImage extraLarge"/>
       <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
       <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
@@ -135,7 +135,7 @@
     </div>
 
     <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1.heading }}</h4>
+      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
       <ConceptImage :image-link="lesson2concept21" class="conceptImage extraLarge"/>
       <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
       <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
@@ -143,7 +143,7 @@
     </div>
 
     <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1.heading }}</h4>
+      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
       <ConceptImage :image-link="lesson2concept22" class="conceptImage extraLarge"/>
       <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
       <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
@@ -151,7 +151,7 @@
     </div>
 
     <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1.heading }}</h4>
+      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
       <ConceptImage :image-link="lesson2concept23" class="conceptImage extraLarge"/>
       <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
       <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
@@ -175,12 +175,12 @@ import Explanation from "@/components/Explanation.vue";
 import Definition from "@/components/Definition.vue";
 import ConceptImage from "@/components/ConceptImage.vue";
 import References from "@/components/References.vue";
-import {concept1} from "@/1_content/lesson1/concept1PersonalComputer";
-import {concept2} from "@/1_content/lesson1/concept2OperatingSystem";
+import {concept1PersonalComputer} from "@/1_content/lesson1/concept1PersonalComputer";
+import {concept2OperatingSystem} from "@/1_content/lesson1/concept2OperatingSystem";
 import lesson3 from "@/0_lessons/Lesson3.vue";
-import {concept3} from "@/1_content/lesson1/concept3WordProcessingProgram";
-import {concept4} from "@/1_content/lesson1/concept4HTMLWebsite";
-import {concept5} from "@/1_content/lesson1/concept5WebBrowser";
+import {concept3WordProcessingProgram} from "@/1_content/lesson1/concept3WordProcessingProgram";
+import {concept4HTMLWebsite} from "@/1_content/lesson1/concept4HTMLWebsite";
+import {concept5WebBrowser} from "@/1_content/lesson1/concept5WebBrowser";
 import ChapterDropDown from "@/components/ChapterDropDown.vue";
 import {getCountryCode} from "@/globals/localization/GetCountryCode";
 

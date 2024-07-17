@@ -1,9 +1,14 @@
 import {ConceptContent} from "@/globals/Types/ConceptContent";
+import {ContentEnum} from "@/globals/ContentEnum";
 
-export const concept1: ConceptContent = {
-    heading: 'Concept 1: Personal Computer',
+const number: number = 1;
+const name: string = 'Personal Computer';
+
+export const concept1PersonalComputer: ConceptContent = {
+    heading: `${ContentEnum.CHAPTER} ${number}: ${name}`,
     image: require('@/assets/conceptpath/lesson1/lesson1concept1.jpg'),
-    name: 'a Personal Computer',
+    number,
+    name,
     definition: 'A Personal Computer is a machine used by developers to write, test and manage code locally.',
     buzzwords: [
         'Accessibility and Convenience',
