@@ -3,7 +3,7 @@
     <p class="explanationHeading">{{ title }}</p>
     <p class="bookinfo" v-for="(item, index) in details" :key="index">
       <a class="color" :href="item.weblinks[countryCode]" target="_blank"><img class="bookCover" alt="Cover Image" :src="item.imageLink"/></a>
-      <a class="color"  :href="item.weblinks[countryCode]" target="_blank">{{ item.title }}</a>
+      <a class="color roundedButton"  :href="item.weblinks[countryCode]" target="_blank">{{ item.title }}</a>
     </p>
   </InfoCard>
 </template>
@@ -70,5 +70,18 @@ const title = 'Further Information:';
 }
 .color {
   color: #0A4A4A;
+}
+.roundedButton {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #1EB3B3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 1rem;
+  transition: background-color 0.3s;
+}
+
+.roundedButton:hover {
+  background-color: #0F7070;
 }
 </style>
