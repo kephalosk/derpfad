@@ -5,7 +5,7 @@ const number: number = 5;
 const name: string = 'Web Browser';
 
 export const concept5WebBrowser: ConceptContent = {
-    heading: `${ContentEnum.CHAPTER} ${number}: ${name}`,
+    heading: `${ContentEnum.CONCEPT} ${number}: ${name}`,
     image: require('@/assets/conceptpath/lesson1/lesson1concept5.jpg'),
     number,
     name,

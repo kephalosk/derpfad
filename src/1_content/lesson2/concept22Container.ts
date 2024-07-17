@@ -5,7 +5,7 @@ const number: number = 22;
 const name: string = 'Container';
 
 export const concept8InternetProvider: ConceptContent = {
-    heading: `${ContentEnum.CHAPTER} ${number}: ${name}`,
+    heading: `${ContentEnum.CONCEPT} ${number}: ${name}`,
     image: require('@/assets/conceptpath/lesson2/lesson2concept22.jpg'),
     number,
     name,

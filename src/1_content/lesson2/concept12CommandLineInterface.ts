@@ -5,7 +5,7 @@ const number: number = 12;
 const name: string = 'Command Line Interface';
 
 export const concept8InternetProvider: ConceptContent = {
-    heading: `${ContentEnum.CHAPTER} ${number}: ${name}`,
+    heading: `${ContentEnum.CONCEPT} ${number}: ${name}`,
     image: require('@/assets/conceptpath/lesson2/lesson2concept12.jpg'),
     number,
     name,

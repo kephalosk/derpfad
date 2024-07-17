@@ -5,7 +5,7 @@ const number: number = 2;
 const name: string = 'Operating System';
 
 export const concept2OperatingSystem: ConceptContent = {
-    heading: `${ContentEnum.CHAPTER} ${number}: ${name}`,
+    heading: `${ContentEnum.CONCEPT} ${number}: ${name}`,
     image: require('@/assets/conceptpath/lesson1/lesson1concept2.jpg'),
     number,
     name,

@@ -5,7 +5,7 @@ const number: number = 1;
 const name: string = 'Personal Computer';
 
 export const concept1PersonalComputer: ConceptContent = {
-    heading: `${ContentEnum.CHAPTER} ${number}: ${name}`,
+    heading: `${ContentEnum.CONCEPT} ${number}: ${name}`,
     image: require('@/assets/conceptpath/lesson1/lesson1concept1.jpg'),
     number,
     name,

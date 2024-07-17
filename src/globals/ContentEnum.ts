@@ -1,3 +1,3 @@
 export enum ContentEnum {
-    CHAPTER = 'Chapter',
+    CONCEPT = 'Concept',
 }

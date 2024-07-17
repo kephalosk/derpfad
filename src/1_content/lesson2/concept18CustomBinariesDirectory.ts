@@ -5,7 +5,7 @@ const number: number = 18;
 const name: string = 'Custom Binaries Directory';
 
 export const concept8InternetProvider: ConceptContent = {
-    heading: `${ContentEnum.CHAPTER} ${number}: ${name}`,
+    heading: `${ContentEnum.CONCEPT} ${number}: ${name}`,
     image: require('@/assets/conceptpath/lesson2/lesson2concept18.jpg'),
     number,
     name,

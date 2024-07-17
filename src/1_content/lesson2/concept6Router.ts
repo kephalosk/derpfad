@@ -5,7 +5,7 @@ const number: number = 6;
 const name: string = 'Router';
 
 export const concept6Router: ConceptContent = {
-    heading: `${ContentEnum.CHAPTER} ${number}: ${name}`,
+    heading: `${ContentEnum.CONCEPT} ${number}: ${name}`,
     image: require('@/assets/conceptpath/lesson2/lesson2concept6.jpg'),
     number,
     name,

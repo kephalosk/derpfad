@@ -5,7 +5,7 @@ const number: number = 4;
 const name: string = 'HTML-Website';
 
 export const concept4HTMLWebsite: ConceptContent = {
-    heading: `${ContentEnum.CHAPTER} ${number}: ${name}`,
+    heading: `${ContentEnum.CONCEPT} ${number}: ${name}`,
     image: require('@/assets/conceptpath/lesson1/lesson1concept4.jpg'),
     number,
     name,
