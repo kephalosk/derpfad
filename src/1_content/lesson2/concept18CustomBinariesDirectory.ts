@@ -1,12 +1,12 @@
 import {ConceptContent} from "@/globals/Types/ConceptContent";
 import {ContentEnum} from "@/globals/ContentEnum";
 
-const number: number = 8;
-const name: string = 'Internet Provider';
+const number: number = 18;
+const name: string = 'Custom Binaries Directory';
 
 export const concept8InternetProvider: ConceptContent = {
     heading: `${ContentEnum.CHAPTER} ${number}: ${name}`,
-    image: require('@/assets/conceptpath/lesson2/lesson2concept8.jpg'),
+    image: require('@/assets/conceptpath/lesson2/lesson2concept18.jpg'),
     number,
     name,
     definition:  [
@@ -26,6 +26,8 @@ export const concept8InternetProvider: ConceptContent = {
             explanation: '',
         }
     ],
-    sidenotes: [],
+    sidenotes: [
+        'In Windows there is no special location for custom binaries by default.'
+    ],
     references: [],
 }

@@ -9,16 +9,23 @@ export const concept6Router: ConceptContent = {
     image: require('@/assets/conceptpath/lesson2/lesson2concept6.jpg'),
     number,
     name,
-    definition: '',
-    buzzwords: [
+    definition:  [
         '',
-        '',
-        ''
     ],
-    explanations: [
-        '',
-        '',
-        ''
+    reason: [
+        {
+            buzzword: '',
+            explanation: '',
+        },
+        {
+            buzzword: '',
+            explanation: '',
+        },
+        {
+            buzzword: '',
+            explanation: '',
+        }
     ],
+    sidenotes: [],
     references: [],
 }
