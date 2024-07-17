@@ -1,5 +1,5 @@
 <template>
-  <InfoCard class="cardExplanation">
+  <InfoCard class="cardExplanation" v-if="hasDefinition">
     <p class="definitionHeading color">{{ heading }}</p>
     <ul class="definitionPoints color" v-for="(item, index) in definition" :key="index">
       <li>{{ item }}</li>
@@ -25,6 +25,8 @@ const props = defineProps({
     }
   }
 });
+
+const hasDefinition = props.definition?.length;
 
 const article = getIndefiniteArticle(props.conceptName);
 

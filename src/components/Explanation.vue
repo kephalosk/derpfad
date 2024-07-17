@@ -1,5 +1,5 @@
 <template>
-  <InfoCard class="cardExplanation">
+  <InfoCard class="cardExplanation" v-if="hasExplanation">
     <p class="explanationHeading color">{{ heading }}</p>
     <ul class="explanationPoints color" v-for="(item, index) in reason" :key="index">
       <li><b>{{ item.buzzword }}: </b>{{ item.explanation }}</li>
@@ -34,7 +34,10 @@ const props = defineProps({
   },
 });
 
+const hasExplanation = props.reason?.length;
+
 const article = getIndefiniteArticle(props.conceptName);
+
 const heading: string = `Why ${article} ${props.conceptName}?`;
 </script>
 

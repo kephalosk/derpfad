@@ -19,8 +19,8 @@
       <ConceptImage :image-link="concept3WordProcessingProgram.image" class="conceptImage mediumSmall"/>
       <Definition class="large" :concept-name="concept3WordProcessingProgram.name" :definition="concept3WordProcessingProgram.definition"/>
       <Explanation class="large" :concept-name="concept3WordProcessingProgram.name" :reason="concept3WordProcessingProgram.reason"/>
-      <References :details="concept3WordProcessingProgram.references" :country-code="countryCode" class="large"/>
       <Sidenotes :sidenotes="concept3WordProcessingProgram.sidenotes"/>
+      <References :details="concept3WordProcessingProgram.references" :country-code="countryCode" class="large"/>
     </div>
 
     <div class="conceptContainer">
