@@ -4,7 +4,7 @@ import {ContentEnum} from "@/globals/ContentEnum";
 const number: number = 11;
 const name: string = 'Container Environment';
 
-export const concept8InternetProvider: ConceptContent = {
+export const concept11ContainerEnvironment: ConceptContent = {
     heading: `${ContentEnum.CONCEPT} ${number}: ${name}`,
     image: require('@/assets/conceptpath/lesson2/lesson2concept11.jpg'),
     number,

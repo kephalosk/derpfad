@@ -14,160 +14,41 @@
       </LessonDropDown>
     </p>
 
-    <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept3WordProcessingProgram.heading }}</h4>
-      <ConceptImage :image-link="concept3WordProcessingProgram.image" class="conceptImage mediumSmall"/>
-      <Definition class="large" :concept-name="concept3WordProcessingProgram.name" :definition="concept3WordProcessingProgram.definition"/>
-      <Explanation class="large" :concept-name="concept3WordProcessingProgram.name" :reason="concept3WordProcessingProgram.reason"/>
-      <Sidenotes :sidenotes="concept3WordProcessingProgram.sidenotes"/>
-      <References :details="concept3WordProcessingProgram.references" :country-code="countryCode" class="large"/>
-    </div>
+    <ConceptBlock :concept="concept6Router" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
 
-    <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
-      <ConceptImage :image-link="lesson2concept6" class="conceptImage extraLarge"/>
-<!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
-<!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
-      <!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
-    </div>
+    <ConceptBlock :concept="concept7WideAreaNetwork" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
 
-    <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
-      <ConceptImage :image-link="lesson2concept7" class="conceptImage extraLarge"/>
-      <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
-      <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
-      <!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
-    </div>
+    <ConceptBlock :concept="concept8InternetProvider" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
 
-    <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
-      <ConceptImage :image-link="lesson2concept8" class="conceptImage extraLarge"/>
-      <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
-      <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
-      <!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
-    </div>
+    <ConceptBlock :concept="concept9WorldWideWeb" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
 
-    <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
-      <ConceptImage :image-link="lesson2concept9" class="conceptImage extraLarge"/>
-      <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
-      <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
-      <!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
-    </div>
+    <ConceptBlock :concept="concept10Server" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
 
-    <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
-      <ConceptImage :image-link="lesson2concept10" class="conceptImage extraLarge"/>
-      <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
-      <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
-      <!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
-    </div>
+    <ConceptBlock :concept="concept11ContainerEnvironment" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
 
-    <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
-      <ConceptImage :image-link="lesson2concept11" class="conceptImage extraLarge"/>
-      <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
-      <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
-      <!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
-    </div>
+    <ConceptBlock :concept="concept12CommandLineInterface" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
 
-    <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
-      <ConceptImage :image-link="lesson2concept12" class="conceptImage extraLarge"/>
-      <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
-      <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
-      <!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
-    </div>
+    <ConceptBlock :concept="concept13ContainerRegistry" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
 
-    <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
-      <ConceptImage :image-link="lesson2concept13" class="conceptImage extraLarge"/>
-      <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
-      <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
-      <!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
-    </div>
+    <ConceptBlock :concept="concept14Shell" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
 
-    <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
-      <ConceptImage :image-link="lesson2concept14" class="conceptImage extraLarge"/>
-      <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
-      <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
-      <!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
-    </div>
+    <ConceptBlock :concept="concept15Terminal" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
 
-    <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
-      <ConceptImage :image-link="lesson2concept15" class="conceptImage extraLarge"/>
-      <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
-      <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
-      <!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
-    </div>
+    <ConceptBlock :concept="concept16SystemBinariesDirectory" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
 
-    <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
-      <ConceptImage :image-link="lesson2concept16" class="conceptImage extraLarge"/>
-      <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
-      <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
-      <!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
-    </div>
+    <ConceptBlock :concept="concept17ShellCommand" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
 
-    <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
-      <ConceptImage :image-link="lesson2concept17" class="conceptImage extraLarge"/>
-      <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
-      <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
-      <!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
-    </div>
+    <ConceptBlock :concept="concept18CustomBinariesDirectory" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
 
-    <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
-      <ConceptImage :image-link="lesson2concept18" class="conceptImage extraLarge"/>
-      <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
-      <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
-      <!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
-    </div>
+    <ConceptBlock :concept="concept19Pointer" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
 
-    <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
-      <ConceptImage :image-link="lesson2concept19" class="conceptImage extraLarge"/>
-      <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
-      <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
-      <!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
-    </div>
+    <ConceptBlock :concept="concept20DockerConfiguration" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
 
-    <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
-      <ConceptImage :image-link="lesson2concept20" class="conceptImage extraLarge"/>
-      <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
-      <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
-      <!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
-    </div>
+    <ConceptBlock :concept="concept21ProjectFolder" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
 
-    <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
-      <ConceptImage :image-link="lesson2concept21" class="conceptImage extraLarge"/>
-      <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
-      <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
-      <!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
-    </div>
+    <ConceptBlock :concept="concept22Container" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
 
-    <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
-      <ConceptImage :image-link="lesson2concept22" class="conceptImage extraLarge"/>
-      <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
-      <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
-      <!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
-    </div>
-
-    <div class="conceptContainer">
-      <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
-      <ConceptImage :image-link="lesson2concept23" class="conceptImage extraLarge"/>
-      <!--      <Definition class="large" :concept-name="concept1.name" :definition="concept1.definition"/>-->
-      <!--      <Explanation class="large" :concept-name="concept1.name" :buzzwords="concept1.buzzwords" :explanations="concept1.explanations"/>-->
-      <!--        <References :details="concept1.references" :country-code="countryCode" class="large"/>-->
-    </div>
-
-
+    <ConceptBlock :concept="concept23WebServer" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
 
     <how-to1-minimal-setup/>
   </section>
@@ -193,6 +74,26 @@ import {concept5WebBrowser} from "@/1_content/lesson1/concept5WebBrowser";
 import ChapterDropDown from "@/components/ChapterDropDown.vue";
 import {getCountryCode} from "@/globals/localization/GetCountryCode";
 import Sidenotes from "@/components/Sidenotes.vue";
+import {WidthEnum} from "@/globals/WidthEnum";
+import ConceptBlock from "@/components/ConceptBlock.vue";
+import {concept6Router} from "@/1_content/lesson2/concept6Router";
+import {concept7WideAreaNetwork} from "@/1_content/lesson2/concept7WideAreaNetwork";
+import {concept8InternetProvider} from "@/1_content/lesson2/concept8InternetProvider";
+import {concept9WorldWideWeb} from "@/1_content/lesson2/concept9WorldWideWeb";
+import {concept10Server} from "@/1_content/lesson2/concept10Server";
+import {concept11ContainerEnvironment} from "@/1_content/lesson2/concept11ContainerEnvironment";
+import {concept12CommandLineInterface} from "@/1_content/lesson2/concept12CommandLineInterface";
+import {concept13ContainerRegistry} from "@/1_content/lesson2/concept13ContainerRegistry";
+import {concept14Shell} from "@/1_content/lesson2/concept14Shell";
+import {concept15Terminal} from "@/1_content/lesson2/concept15Terminal";
+import {concept16SystemBinariesDirectory} from "@/1_content/lesson2/concept16SystemBinariesDirectory";
+import {concept17ShellCommand} from "@/1_content/lesson2/concept17ShellCommand";
+import {concept18CustomBinariesDirectory} from "@/1_content/lesson2/concept18CustomBinariesDirectory";
+import {concept19Pointer} from "@/1_content/lesson2/concept19Pointer";
+import {concept20DockerConfiguration} from "@/1_content/lesson2/concept20DockerConfiguration";
+import {concept21ProjectFolder} from "@/1_content/lesson2/concept21ProjectFolder";
+import {concept22Container} from "@/1_content/lesson2/concept22Container";
+import {concept23WebServer} from "@/1_content/lesson2/concept23WebServer";
 
 const router = useRouter();
 
