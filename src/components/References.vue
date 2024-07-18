@@ -74,7 +74,7 @@ const title = 'Further Information:';
 .roundedButton {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background-color: #1EB3B3;
+  background-color: #1DBDBD;
   color: #fff;
   text-decoration: none;
   border-radius: 1rem;
@@ -82,6 +82,6 @@ const title = 'Further Information:';
 }
 
 .roundedButton:hover {
-  background-color: #0F7070;
+  background-color: #139494;
 }
 </style>

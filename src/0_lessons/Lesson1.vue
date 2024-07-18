@@ -14,14 +14,7 @@
         </LessonDropDown>
       </p>
 
-      <div class="conceptContainer">
-        <h4 class="banner-heading">{{ concept1PersonalComputer.heading }}</h4>
-        <ConceptImage :image-link="concept1PersonalComputer.image" class="conceptImage extraSmall"/>
-        <Definition class="large" :concept-name="concept1PersonalComputer.name" :definition="concept1PersonalComputer.definition"/>
-        <Explanation class="large" :concept-name="concept1PersonalComputer.name" :reason="concept1PersonalComputer.reason"/>
-        <References :details="concept1PersonalComputer.references" :country-code="countryCode" class="large"/>
-        <Sidenotes :sidenotes="concept1PersonalComputer.sidenotes"/>
-      </div>
+      <ConceptBlock :concept="concept1PersonalComputer" :countryCode="countryCode" :imageClass="WidthEnum.EXTRASMALL"/>
 
       <!-- Block_ch1l1c1 -->
 <!--      <ins class="adsbygoogle"-->
@@ -31,41 +24,13 @@
 <!--           data-ad-format="auto"-->
 <!--           data-full-width-responsive="true"></ins>-->
 
-      <div class="conceptContainer">
-        <h4 class="banner-heading">{{ concept2OperatingSystem.heading }}</h4>
-        <ConceptImage :image-link="concept2OperatingSystem.image" class="conceptImage small"/>
-        <Definition class="large" :concept-name="concept2OperatingSystem.name" :definition="concept2OperatingSystem.definition"/>
-        <Explanation class="large" :concept-name="concept2OperatingSystem.name" :reason="concept2OperatingSystem.reason"/>
-        <Sidenotes :sidenotes="concept2OperatingSystem.sidenotes"/>
-        <References :details="concept2OperatingSystem.references" :country-code="countryCode" class="large"/>
-      </div>
+      <ConceptBlock :concept="concept2OperatingSystem" :countryCode="countryCode" :imageClass="WidthEnum.SMALL"/>
 
-      <div class="conceptContainer">
-        <h4 class="banner-heading">{{ concept3WordProcessingProgram.heading }}</h4>
-        <ConceptImage :image-link="concept3WordProcessingProgram.image" class="conceptImage mediumSmall"/>
-        <Definition class="large" :concept-name="concept3WordProcessingProgram.name" :definition="concept3WordProcessingProgram.definition"/>
-        <Explanation class="large" :concept-name="concept3WordProcessingProgram.name" :reason="concept3WordProcessingProgram.reason"/>
-        <Sidenotes :sidenotes="concept3WordProcessingProgram.sidenotes"/>
-        <References :details="concept3WordProcessingProgram.references" :country-code="countryCode" class="large"/>
-      </div>
+      <ConceptBlock :concept="concept3WordProcessingProgram" :countryCode="countryCode" :imageClass="WidthEnum.MEDIUMSMALL"/>
 
-      <div class="conceptContainer">
-        <h4 class="banner-heading">{{ concept4HTMLWebsite.heading }}</h4>
-        <ConceptImage :image-link="concept4HTMLWebsite.image" class="conceptImage medium"/>
-        <Definition class="large" :concept-name="concept4HTMLWebsite.name" :definition="concept4HTMLWebsite.definition"/>
-        <Explanation class="large" :concept-name="concept4HTMLWebsite.name" :reason="concept4HTMLWebsite.reason"/>
-        <Sidenotes :sidenotes="concept4HTMLWebsite.sidenotes"/>
-        <References :details="concept4HTMLWebsite.references" :country-code="countryCode" class="large"/>
-      </div>
+      <ConceptBlock :concept="concept4HTMLWebsite" :countryCode="countryCode" :imageClass="WidthEnum.MEDIUM"/>
 
-      <div class="conceptContainer">
-        <h4 class="banner-heading">{{ concept5WebBrowser.heading }}</h4>
-        <ConceptImage :image-link="concept5WebBrowser.image" class="conceptImage"/>
-        <Definition class="large" :concept-name="concept5WebBrowser.name" :definition="concept5WebBrowser.definition"/>
-        <Explanation class="large" :concept-name="concept5WebBrowser.name" :reason="concept5WebBrowser.reason"/>
-        <Sidenotes :sidenotes="concept5WebBrowser.sidenotes"/>
-        <References :details="concept5WebBrowser.references" :country-code="countryCode" class="large"/>
-      </div>
+      <ConceptBlock :concept="concept5WebBrowser" :countryCode="countryCode" :imageClass="WidthEnum.LARGE"/>
 
       <how-to1-minimal-setup/>
     </section>
@@ -91,6 +56,8 @@ import {concept5WebBrowser} from "@/1_content/lesson1/concept5WebBrowser";
 import ChapterDropDown from "@/components/ChapterDropDown.vue";
 import {getCountryCode} from "@/globals/localization/GetCountryCode";
 import Sidenotes from "@/components/Sidenotes.vue";
+import ConceptBlock from "@/components/ConceptBlock.vue";
+import {WidthEnum} from "@/globals/WidthEnum";
 
 const router = useRouter();
 
@@ -146,43 +113,5 @@ a {
 }
 p {
   padding: 0;
-}
-.banner-heading {
-  background: linear-gradient(to bottom right, #31ffff, #ffffff);
-  color: #139494; /* Dark blue text */
-  padding: 10px 0px; /* Adjust padding to your preference */
-  border-radius: 5px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  display: inline-block; /* Ensures the background fits the text content */
-  font-weight: bold; /* Make the text bold */
-  text-align: center; /* Center-align the text */
-  width: 100%;
-}
-.conceptContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 100%;
-}
-.conceptImage {
-  max-width: 700px;
-}
-.extraSmall {
-  max-width: 180px;
-}
-.small {
-  max-width: 200px;
-}
-.mediumSmall {
-  max-width: 240px;
-}
-.medium {
-  max-width: 460px;
-}
-.large {
-  max-width: 700px;
-}
-.pathline {
-  //align-content: normal;
 }
 </style>
