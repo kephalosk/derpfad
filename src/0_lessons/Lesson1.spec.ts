@@ -3,19 +3,11 @@ import HomeComponent from "@/0_lessons/Lesson1.vue";
 import ConceptImage from "@/components/ConceptImage.vue";
 
 describe("HomeComponent", () => {
-  it("renders div homeComponent", () => {
+  it("renders section", () => {
     const wrapper = shallowMount(HomeComponent);
 
-    const divHomeComponent = wrapper.find("div");
+    const section = wrapper.find("section");
 
-    expect(divHomeComponent.exists()).toBe(true);
-  });
-
-  it("renders Concept 1: Personal Computer", () => {
-    const wrapper = shallowMount(HomeComponent);
-
-    const divHomeComponent = wrapper.findComponent(ConceptImage);
-
-    expect(divHomeComponent.exists()).toBe(true);
+    expect(section.exists()).toBe(true);
   });
 });

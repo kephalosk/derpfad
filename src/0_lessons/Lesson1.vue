@@ -43,10 +43,6 @@ import LessonDropDown from "@/components/LessonDropDown.vue";
 import {onMounted, ref} from "vue";
 import HowTo1MinimalSetup from "@/4_howtos/HowTo1MinimalSetup.vue";
 import {useRouter} from "vue-router";
-import Explanation from "@/components/Explanation.vue";
-import Definition from "@/components/Definition.vue";
-import ConceptImage from "@/components/ConceptImage.vue";
-import References from "@/components/References.vue";
 import {concept1PersonalComputer} from "@/1_content/lesson1/concept1PersonalComputer";
 import {concept2OperatingSystem} from "@/1_content/lesson1/concept2OperatingSystem";
 import lesson3 from "@/0_lessons/Lesson3.vue";
@@ -55,7 +51,6 @@ import {concept4HTMLWebsite} from "@/1_content/lesson1/concept4HTMLWebsite";
 import {concept5WebBrowser} from "@/1_content/lesson1/concept5WebBrowser";
 import ChapterDropDown from "@/components/ChapterDropDown.vue";
 import {getCountryCode} from "@/globals/localization/GetCountryCode";
-import Sidenotes from "@/components/Sidenotes.vue";
 import ConceptBlock from "@/components/ConceptBlock.vue";
 import {WidthEnum} from "@/globals/WidthEnum";
 
