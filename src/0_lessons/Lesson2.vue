@@ -10,7 +10,7 @@
       <LessonDropDown :selected="selectedLesson" defaultValue="lesson2" @optionSelected="handleLessonChange">
         <option value="lesson1">Lesson 1: Minimal Setup</option>
         <option value="lesson2">Lesson 2: Container Setup</option>
-        <!--          <option value="lesson3">Lesson 3: Container-Registry Setup</option>-->
+        <option value="lesson3">Lesson 3: Kubernetes Setup</option>
       </LessonDropDown>
     </p>
 
