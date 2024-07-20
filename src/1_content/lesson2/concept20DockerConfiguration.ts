@@ -10,22 +10,16 @@ export const concept20DockerConfiguration: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Settings and parameters used to customize Docker\'s behavior and environment',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
-        },
-        {
-            buzzword: '',
-            explanation: '',
-        },
-        {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Automation',
+            explanation: 'Automates the creation and management of Docker containers and images through scripts and configuration files',
         }
     ],
-    sidenotes: [],
+    sidenotes: [
+        'Typically specified in configuration files like Dockerfile'
+    ],
     references: [],
 }

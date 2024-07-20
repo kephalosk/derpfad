@@ -10,20 +10,17 @@ export const concept7WideAreaNetwork: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Telecommunications network',
+        'Covers large geographical areas'
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Geographical Reach',
+            explanation: 'Connects remote locations over large distances',
         },
         {
-            buzzword: '',
-            explanation: '',
-        },
-        {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Internet Access',
+            explanation: 'Provides internet connectivity to regional and remote areas',
         }
     ],
     sidenotes: [],

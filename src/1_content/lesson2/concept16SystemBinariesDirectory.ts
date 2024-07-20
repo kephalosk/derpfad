@@ -10,12 +10,12 @@ export const concept16SystemBinariesDirectory: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Directory containing essential system executable files',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Consistency',
+            explanation: 'Ensures that core utilities are available in standard locations for system scripts and commands',
         },
         {
             buzzword: '',

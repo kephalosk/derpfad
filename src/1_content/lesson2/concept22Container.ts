@@ -10,20 +10,16 @@ export const concept22Container: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'A lightweight, portable, and self-sufficient unit that packages an application and its dependencies',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Isolation',
+            explanation: 'Runs applications in isolated environments, sharing the host operating system\'s kernel',
         },
         {
-            buzzword: '',
-            explanation: '',
-        },
-        {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Management',
+            explanation: 'Ideal for microservices, cloud-native applications, and continuous integration/continuous deployment (CI/CD) pipelines',
         }
     ],
     sidenotes: [],

@@ -10,20 +10,16 @@ export const concept15Terminal: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Interface for interacting with the operating system through a command-line shell',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Visibility',
+            explanation: 'Displays text-based input and output between the user and the system',
         },
         {
-            buzzword: '',
-            explanation: '',
-        },
-        {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Customization',
+            explanation: 'Supports customization of appearance and behavior',
         }
     ],
     sidenotes: [],

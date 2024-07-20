@@ -10,20 +10,16 @@ export const concept8InternetProvider: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'A company providing internet access',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Services',
+            explanation: 'Offers various internet services (e.g., broadband, fiber, DSL)',
         },
         {
-            buzzword: '',
-            explanation: '',
-        },
-        {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Infrastructure',
+            explanation: 'Owns or leases network infrastructure',
         }
     ],
     sidenotes: [],

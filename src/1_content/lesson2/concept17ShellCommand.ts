@@ -10,20 +10,16 @@ export const concept17ShellCommand: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Instruction entered into a shell to perform a specific task',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'System Control',
+            explanation: 'Provides direct control over system functions and operations',
         },
         {
-            buzzword: '',
-            explanation: '',
-        },
-        {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Efficiency',
+            explanation: 'Allows quick execution of tasks without graphical interfaces',
         }
     ],
     sidenotes: [],

@@ -10,20 +10,12 @@ export const concept19Pointer: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Reference to another memory location',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
-        },
-        {
-            buzzword: '',
-            explanation: '',
-        },
-        {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Memory Access',
+            explanation: 'Provides a direct way to access and manipulate memory locations',
         }
     ],
     sidenotes: [

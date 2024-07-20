@@ -10,20 +10,16 @@ export const concept23WebServer: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Software that delivers web content to users',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Content Delivery',
+            explanation: 'Serves websites and applications',
         },
         {
-            buzzword: '',
-            explanation: '',
-        },
-        {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Accessibility',
+            explanation: 'Makes websites and web applications accessible from anywhere via a web browser',
         }
     ],
     sidenotes: [],

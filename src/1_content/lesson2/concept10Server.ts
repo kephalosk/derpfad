@@ -10,21 +10,17 @@ export const concept10Server: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Computer system or device',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Functionality',
+            explanation: 'Provides services or resources to other computers (clients)',
         },
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Resource Management',
+            explanation: 'Centralizes management of resources (e.g., files, applications)',
         },
-        {
-            buzzword: '',
-            explanation: '',
-        }
     ],
     sidenotes: [],
     references: [],

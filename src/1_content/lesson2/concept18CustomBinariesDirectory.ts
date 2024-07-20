@@ -10,21 +10,17 @@ export const concept18CustomBinariesDirectory: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Directory for storing user-installed executable files',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Separation',
+            explanation: 'Keeps user-installed binaries separate from system files to avoid conflicts',
         },
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Organization',
+            explanation: 'Provides a structured location for managing personal or third-party executables',
         },
-        {
-            buzzword: '',
-            explanation: '',
-        }
     ],
     sidenotes: [
         'In Windows there is no special location for custom binaries by default.'

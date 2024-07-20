@@ -10,20 +10,24 @@ export const concept13ContainerRegistry: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Repository for storing container images',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Storage',
+            explanation: 'Centralizes storage of container images for easy management',
         },
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Version Control',
+            explanation: 'Supports versioning and tagging of images for tracking and rollback',
         },
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Distribution',
+            explanation: 'Provides a reliable mechanism for distributing container images to multiple environments',
+        },
+        {
+            buzzword: 'Integration',
+            explanation: 'Works with container orchestration tools (e.g., Kubernetes) for streamlined deployments',
         }
     ],
     sidenotes: [],

@@ -10,21 +10,17 @@ export const concept14Shell: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Command-line interface for interacting with the operating system',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Functionality',
+            explanation: 'Executes commands and scripts',
         },
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Control',
+            explanation: 'Offers detailed control over system operations and processes',
         },
-        {
-            buzzword: '',
-            explanation: '',
-        }
     ],
     sidenotes: [],
     references: [],

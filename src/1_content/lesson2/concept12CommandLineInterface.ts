@@ -10,20 +10,16 @@ export const concept12CommandLineInterface: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Text-based interface for interacting with a computer',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Efficiency',
+            explanation: 'Enables quick and direct execution of commands',
         },
         {
-            buzzword: '',
-            explanation: '',
-        },
-        {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Customization',
+            explanation: 'Allows customization and complex configuration',
         }
     ],
     sidenotes: [],

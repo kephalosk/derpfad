@@ -10,22 +10,22 @@ export const concept9WorldWideWeb: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'System of interlinked hypertext documents',
+        'Accessible via the internet',
+        'Uses HTTP/HTTPS protocols',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Standardization',
+            explanation: 'Governed by the World Wide Web Consortium (W3C)',
         },
         {
-            buzzword: '',
-            explanation: '',
-        },
-        {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Information Access',
+            explanation: 'Provides global access to information and knowledge',
         }
     ],
-    sidenotes: [],
+    sidenotes: [
+        'Invented by Tim Berners-Lee in 1989'
+    ],
     references: [],
 }

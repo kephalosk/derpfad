@@ -10,20 +10,16 @@ export const concept21ProjectFolder: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Directory used to organize files and resources for a specific project',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Organization',
+            explanation: 'Keeps all project-related files and resources in a structured and accessible manner',
         },
         {
-            buzzword: '',
-            explanation: '',
-        },
-        {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Deployment',
+            explanation: 'Simplifies deployment by consolidating project files into a single directory structure',
         }
     ],
     sidenotes: [],

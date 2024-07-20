@@ -10,20 +10,17 @@ export const concept6Router: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Network device',
+        'Directs data packets'
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Network Communication',
+            explanation: 'Enables communication between different networks',
         },
         {
-            buzzword: '',
-            explanation: '',
-        },
-        {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Internet Access',
+            explanation: 'Provides internet connectivity to multiple devices',
         }
     ],
     sidenotes: [],

@@ -10,20 +10,20 @@ export const concept11ContainerEnvironment: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Virtualized environment for running applications',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Isolation',
+            explanation: 'Isolates applications and their dependencies from the host system',
         },
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Portability',
+            explanation: 'Allows consistent deployment across different environments (e.g., development, testing, production)',
         },
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Efficiency',
+            explanation: 'Uses system resources more efficiently compared to traditional virtualization',
         }
     ],
     sidenotes: [],
