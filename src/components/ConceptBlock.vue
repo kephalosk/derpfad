@@ -16,6 +16,7 @@ import References from "@/components/References.vue";
 import ConceptImage from "@/components/ConceptImage.vue";
 import Definition from "@/components/Definition.vue";
 import Sidenotes from "@/components/Sidenotes.vue";
+import {WidthEnum} from "@/globals/WidthEnum";
 
 const props = defineProps({
   concept: {
@@ -27,7 +28,8 @@ const props = defineProps({
   },
   imageClass: {
     type: String,
-    required: true
+    required: true,
+    default: WidthEnum.EXTRALARGE,
   },
 });
 

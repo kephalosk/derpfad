@@ -14,43 +14,43 @@
       </LessonDropDown>
     </p>
 
-    <ConceptBlock :concept="concept6Router" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
+    <ConceptBlock :concept="concept6Router" :countryCode="countryCode"/>
 
-    <ConceptBlock :concept="concept7WideAreaNetwork" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
+    <ConceptBlock :concept="concept7WideAreaNetwork" :countryCode="countryCode"/>
 
-    <ConceptBlock :concept="concept8InternetProvider" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
+    <ConceptBlock :concept="concept8InternetProvider" :countryCode="countryCode"/>
 
-    <ConceptBlock :concept="concept9WorldWideWeb" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
+    <ConceptBlock :concept="concept9WorldWideWeb" :countryCode="countryCode"/>
 
-    <ConceptBlock :concept="concept10Server" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
+    <ConceptBlock :concept="concept10Server" :countryCode="countryCode"/>
 
-    <ConceptBlock :concept="concept11ContainerEnvironment" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
+    <ConceptBlock :concept="concept11ContainerEnvironment" :countryCode="countryCode"/>
 
-    <ConceptBlock :concept="concept12CommandLineInterface" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
+    <ConceptBlock :concept="concept12CommandLineInterface" :countryCode="countryCode"/>
 
-    <ConceptBlock :concept="concept13ContainerRegistry" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
+    <ConceptBlock :concept="concept13ContainerRegistry" :countryCode="countryCode"/>
 
-    <ConceptBlock :concept="concept14Shell" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
+    <ConceptBlock :concept="concept14Shell" :countryCode="countryCode"/>
 
-    <ConceptBlock :concept="concept15Terminal" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
+    <ConceptBlock :concept="concept15Terminal" :countryCode="countryCode"/>
 
-    <ConceptBlock :concept="concept16SystemBinariesDirectory" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
+    <ConceptBlock :concept="concept16SystemBinariesDirectory" :countryCode="countryCode"/>
 
-    <ConceptBlock :concept="concept17ShellCommand" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
+    <ConceptBlock :concept="concept17ShellCommand" :countryCode="countryCode"/>
 
-    <ConceptBlock :concept="concept18CustomBinariesDirectory" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
+    <ConceptBlock :concept="concept18CustomBinariesDirectory" :countryCode="countryCode"/>
 
-    <ConceptBlock :concept="concept19Pointer" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
+    <ConceptBlock :concept="concept19Pointer" :countryCode="countryCode"/>
 
-    <ConceptBlock :concept="concept20DockerConfiguration" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
+    <ConceptBlock :concept="concept20DockerConfiguration" :countryCode="countryCode"/>
 
-    <ConceptBlock :concept="concept21ProjectFolder" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
+    <ConceptBlock :concept="concept21ProjectFolder" :countryCode="countryCode"/>
 
-    <ConceptBlock :concept="concept22Container" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
+    <ConceptBlock :concept="concept22Container" :countryCode="countryCode"/>
 
-    <ConceptBlock :concept="concept23WebServer" :countryCode="countryCode" :imageClass="WidthEnum.EXTRALARGE"/>
+    <ConceptBlock :concept="concept23WebServer" :countryCode="countryCode"/>
 
-    <how-to1-minimal-setup/>
+    <how-to2-container-setup/>
   </section>
 
   <a href="https://a.check24.net/misc/click.php?pid=305756&aid=330&cat=13" target="_blank"><img src="https://a.check24.net/misc/view.php?pid=305756&aid=330&cat=13" width="300" height="600" style="max-width: 100%; height: auto;" ></a>
@@ -59,22 +59,10 @@
 <script setup lang="ts">
 import LessonDropDown from "@/components/LessonDropDown.vue";
 import {onMounted, ref} from "vue";
-import HowTo1MinimalSetup from "@/4_howtos/HowTo1MinimalSetup.vue";
 import {useRouter} from "vue-router";
-import Explanation from "@/components/Explanation.vue";
-import Definition from "@/components/Definition.vue";
-import ConceptImage from "@/components/ConceptImage.vue";
-import References from "@/components/References.vue";
-import {concept1PersonalComputer} from "@/1_content/lesson1/concept1PersonalComputer";
-import {concept2OperatingSystem} from "@/1_content/lesson1/concept2OperatingSystem";
 import lesson3 from "@/0_lessons/Lesson3.vue";
-import {concept3WordProcessingProgram} from "@/1_content/lesson1/concept3WordProcessingProgram";
-import {concept4HTMLWebsite} from "@/1_content/lesson1/concept4HTMLWebsite";
-import {concept5WebBrowser} from "@/1_content/lesson1/concept5WebBrowser";
 import ChapterDropDown from "@/components/ChapterDropDown.vue";
 import {getCountryCode} from "@/globals/localization/GetCountryCode";
-import Sidenotes from "@/components/Sidenotes.vue";
-import {WidthEnum} from "@/globals/WidthEnum";
 import ConceptBlock from "@/components/ConceptBlock.vue";
 import {concept6Router} from "@/1_content/lesson2/concept6Router";
 import {concept7WideAreaNetwork} from "@/1_content/lesson2/concept7WideAreaNetwork";
@@ -94,30 +82,12 @@ import {concept20DockerConfiguration} from "@/1_content/lesson2/concept20DockerC
 import {concept21ProjectFolder} from "@/1_content/lesson2/concept21ProjectFolder";
 import {concept22Container} from "@/1_content/lesson2/concept22Container";
 import {concept23WebServer} from "@/1_content/lesson2/concept23WebServer";
+import HowTo2ContainerSetup from "@/4_howtos/HowTo2ContainerSetup.vue";
 
 const router = useRouter();
 
 const selectedChapter = ref('chapter1');
 const selectedLesson = ref('lesson2');
-
-const lesson2concept6: string = require('@/assets/conceptpath/lesson2/lesson2concept6.jpg');
-const lesson2concept7: string = require('@/assets/conceptpath/lesson2/lesson2concept7.jpg');
-const lesson2concept8: string = require('@/assets/conceptpath/lesson2/lesson2concept8.jpg');
-const lesson2concept9: string = require('@/assets/conceptpath/lesson2/lesson2concept9.jpg');
-const lesson2concept10: string = require('@/assets/conceptpath/lesson2/lesson2concept10.jpg');
-const lesson2concept11: string = require('@/assets/conceptpath/lesson2/lesson2concept11.jpg');
-const lesson2concept12: string = require('@/assets/conceptpath/lesson2/lesson2concept12.jpg');
-const lesson2concept13: string = require('@/assets/conceptpath/lesson2/lesson2concept13.jpg');
-const lesson2concept14: string = require('@/assets/conceptpath/lesson2/lesson2concept14.jpg');
-const lesson2concept15: string = require('@/assets/conceptpath/lesson2/lesson2concept15.jpg');
-const lesson2concept16: string = require('@/assets/conceptpath/lesson2/lesson2concept16.jpg');
-const lesson2concept17: string = require('@/assets/conceptpath/lesson2/lesson2concept17.jpg');
-const lesson2concept18: string = require('@/assets/conceptpath/lesson2/lesson2concept18.jpg');
-const lesson2concept19: string = require('@/assets/conceptpath/lesson2/lesson2concept19.jpg');
-const lesson2concept20: string = require('@/assets/conceptpath/lesson2/lesson2concept20.jpg');
-const lesson2concept21: string = require('@/assets/conceptpath/lesson2/lesson2concept21.jpg');
-const lesson2concept22: string = require('@/assets/conceptpath/lesson2/lesson2concept22.jpg');
-const lesson2concept23: string = require('@/assets/conceptpath/lesson2/lesson2concept23.jpg');
 
 let countryCode = ref<string>('');
 
