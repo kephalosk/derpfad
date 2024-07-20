@@ -7,6 +7,8 @@
       <li>Download <b>Docker Desktop</b></li>
       <li>Install <b>Docker Desktop</b></li>
       <li>Start <b>Docker Desktop</b></li>
+      <li>Open url: https://hub.docker.com/</li>
+      <li>Create a DockerHub Account</li>
       <li>Open a <b>Word Processing Program</b></li>
       <li>Create a new file</li>
       <li>
@@ -23,7 +25,7 @@
       <li>Open a <b>Terminal</b></li>
       <li>Change the directory with the <b>Shell Command cd</b> to your <b>Project Folder</b> ("<b>cd test</b>" goes to Subfolder with the name test) and "<b>cd ..</b>" goes one Folder up in the File System)</li>
       <li>
-        Run the following Command with your custom username and Project name:
+        Run the following Command with your custom DockerHub username and Project name:
         <ScrollWindow>
           <pre><code>
             {{ dockerCommand1 }}
@@ -31,7 +33,7 @@
         </ScrollWindow>
       </li>
       <li>
-        Run the following Command with your custom username and Project name:
+        Run the following Command with your custom DockerHub username and Project name:
         <ScrollWindow>
           <pre><code>
             {{ dockerCommand2 }}
@@ -40,15 +42,12 @@
       </li>
       <li>Open a <b>Web Browser</b></li>
 
-      <li>Open url: http://localhost/
+      <li>Open url: http://localhost:3000/
         <InfoCard class="cardImage">
-          <img alt="Cover Image" :src="resultDockerHTML" class="image"/>
+          <img alt="Cover Image" :src="resultDockerPort3000" class="image"/>
         </InfoCard>
       </li>
 
-
-      <li>Open url: https://hub.docker.com/</li>
-      <li>Create a DockerHub Account</li>
 
       <li>Open a <b>Terminal</b></li>
 
@@ -62,7 +61,7 @@
       </li>
 
       <li>
-        Run:
+        Run with DockerHub username:
         <ScrollWindow>
           <pre><code>
             {{ dockerCommand4 }}
@@ -71,7 +70,7 @@
       </li>
 
       <li>
-        Run:
+        Run with DockerHub username:
         <ScrollWindow>
           <pre><code>
             {{ dockerCommand5 }}
@@ -91,7 +90,7 @@
 
       <li>Open url: http://localhost:3001/
         <InfoCard class="cardImage">
-          <img alt="Cover Image" :src="resultDockerHTML" class="image"/>
+          <img alt="Cover Image" :src="resultDockerPort3001" class="image"/>
         </InfoCard>
       </li>
     </ol>
@@ -103,6 +102,8 @@ import InfoCard from "@/components/InfoCard.vue";
 import ScrollWindow from "@/components/ScrollWindow.vue";
 
 const resultDockerHTML: string = require('@/assets/results/result_docker_html.png');
+const resultDockerPort3000: string = require('@/assets/results/result_docker_port3000.png');
+const resultDockerPort3001: string = require('@/assets/results/result_docker_port3001.png');
 
 const basicDockerfile: string = "\nFROM nginx:alpine" +
 "\n" +
