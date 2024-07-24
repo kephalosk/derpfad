@@ -10,18 +10,9 @@ export const concept38KubernetesAuthentification: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Used for secure communication between clients and the Kubernetes API server.',
     ],
-    reason: [
-        {
-            buzzword: '',
-            explanation: '',
-        },
-        {
-            buzzword: '',
-            explanation: '',
-        }
-    ],
+    reason: [],
     sidenotes: [],
     references: [],
 }

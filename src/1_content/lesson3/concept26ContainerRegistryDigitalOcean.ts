@@ -10,18 +10,9 @@ export const concept26ContainerRegistryDigitalOcean: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Digital Ocean has its own container image registry service',
     ],
-    reason: [
-        {
-            buzzword: '',
-            explanation: '',
-        },
-        {
-            buzzword: '',
-            explanation: '',
-        }
-    ],
+    reason: [],
     sidenotes: [],
     references: [],
 }

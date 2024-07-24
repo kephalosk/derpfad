@@ -10,16 +10,16 @@ export const concept35HomebrewBinariesDirectory: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'A package manager for macOS and Linux that simplifies software installation.',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Centralized Location',
+            explanation: 'Provides a single place where Homebrew installs executable files',
         },
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Management',
+            explanation: 'Homebrew automatically manages and updates binaries in this directory, ensuring proper installation',
         }
     ],
     sidenotes: [],

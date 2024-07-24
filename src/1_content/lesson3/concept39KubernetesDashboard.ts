@@ -10,16 +10,16 @@ export const concept39KubernetesDashboard: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'A web-based user interface for managing Kubernetes clusters',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Monitoring',
+            explanation: 'Displays real-time metrics and status of cluster components',
         },
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Visualization',
+            explanation: 'Provides a graphical view of cluster resources like pods, services, and deployments',
         }
     ],
     sidenotes: [],

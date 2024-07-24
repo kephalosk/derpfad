@@ -10,16 +10,16 @@ export const concept29MasterNode: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Central control unit of a Kubernetes cluster',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Cluster Management',
+            explanation: 'Centralizes control and configuration of the entire cluster',
         },
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Scheduling',
+            explanation: 'Determines how and where to run workloads based on available resources',
         }
     ],
     sidenotes: [],

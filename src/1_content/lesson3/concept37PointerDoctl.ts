@@ -10,18 +10,9 @@ export const concept37PointerDoctl: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Globally integration in the PATH',
     ],
-    reason: [
-        {
-            buzzword: '',
-            explanation: '',
-        },
-        {
-            buzzword: '',
-            explanation: '',
-        }
-    ],
+    reason: [],
     sidenotes: [],
     references: [],
 }

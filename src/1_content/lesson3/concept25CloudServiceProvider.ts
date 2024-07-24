@@ -10,16 +10,20 @@ export const concept25CloudServiceProvider: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Company offering cloud computing services like storage, processing, and networking.',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'IaaS (Infrastructure as a Service)',
+            explanation: 'Provides virtualized computing resources',
         },
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'PaaS (Platform as a Service)',
+            explanation: 'Offers hardware and software tools',
+        },
+        {
+            buzzword: 'SaaS (Software as a Service)',
+            explanation: 'Delivers software applications',
         }
     ],
     sidenotes: [],

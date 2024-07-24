@@ -10,16 +10,16 @@ export const concept31Loadbalancer: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Distributes incoming network traffic across multiple pods or services',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'High Availability',
+            explanation: 'Ensures uninterrupted service by routing traffic only to healthy pods',
         },
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Scalability',
+            explanation: 'Supports automatic scaling by distributing traffic as the number of pods increases or decreases',
         }
     ],
     sidenotes: [],

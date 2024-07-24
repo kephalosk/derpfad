@@ -10,17 +10,13 @@ export const concept24ServerDigitalOcean: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'A cloud infrastructure provider',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Service',
+            explanation: 'Offering scalable compute platform with easy-to-use management tools',
         },
-        {
-            buzzword: '',
-            explanation: '',
-        }
     ],
     sidenotes: [],
     references: [],

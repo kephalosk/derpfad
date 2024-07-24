@@ -10,16 +10,16 @@ export const concept32ServerKubernetes: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'The official website for Kubernetes, providing documentation, resources, and community information.',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Documentation',
+            explanation: 'Comprehensive guides, tutorials, and references for using and managing Kubernetes',
         },
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Downloads',
+            explanation: 'Links to download Kubernetes software and tools',
         }
     ],
     sidenotes: [],

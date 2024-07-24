@@ -10,12 +10,12 @@ export const concept28WorkerNode: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'A machine (physical or virtual) in a Kubernetes cluster that runs containerized applications.',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Isolation',
+            explanation: 'Ensures workloads are isolated from each other',
         },
         {
             buzzword: '',

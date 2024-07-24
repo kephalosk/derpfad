@@ -10,16 +10,16 @@ export const concept36CommandLineInterfaceDoctl: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Command-line tool for interacting with DigitalOcean\'s API',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Configuration',
+            explanation: 'Allows users to configure and access their DigitalOcean account and projects',
         },
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Management',
+            explanation: 'Used to manage DigitalOcean resources like Droplets, databases, and Kubernetes clusters',
         }
     ],
     sidenotes: [],

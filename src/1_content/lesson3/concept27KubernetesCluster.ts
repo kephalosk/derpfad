@@ -10,16 +10,20 @@ export const concept27KubernetesCluster: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'A set of nodes that run containerized applications managed by Kubernetes.',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Scalability',
+            explanation: 'Automatically scales applications up or down based on demand',
         },
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'High Availability',
+            explanation: 'Ensures application uptime with self-healing and load balancing',
+        },
+        {
+            buzzword: 'Resource Efficiency',
+            explanation: 'Optimizes resource use across nodes',
         }
     ],
     sidenotes: [],

@@ -10,16 +10,16 @@ export const concept33CommandLineInterfaceKubectl: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Command-line tool for interacting with Kubernetes clusters',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Configuration',
+            explanation: 'Allows users to view and edit cluster resources and configurations',
         },
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'Monitoring',
+            explanation: 'Provides commands to check the status of pods, services, and other resources',
         }
     ],
     sidenotes: [],

@@ -10,16 +10,20 @@ export const concept30ServiceNetwork: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Network setup allowing communication between services within a Kubernetes cluster',
     ],
     reason: [
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'NodePort',
+            explanation: 'Exposes the service on a static port on each node\'s IP',
         },
         {
-            buzzword: '',
-            explanation: '',
+            buzzword: 'DNS Resolution',
+            explanation: 'Services are automatically discoverable via DNS names within the cluster',
+        },
+        {
+            buzzword: 'Network Policies',
+            explanation: 'Controls and restricts network traffic between services',
         }
     ],
     sidenotes: [],

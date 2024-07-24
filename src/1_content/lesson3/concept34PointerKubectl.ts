@@ -10,18 +10,9 @@ export const concept34PointerKubectl: ConceptContent = {
     number,
     name,
     definition:  [
-        '',
+        'Globally integration in the PATH',
     ],
-    reason: [
-        {
-            buzzword: '',
-            explanation: '',
-        },
-        {
-            buzzword: '',
-            explanation: '',
-        }
-    ],
+    reason: [],
     sidenotes: [],
     references: [],
 }
