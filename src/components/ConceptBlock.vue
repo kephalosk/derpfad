@@ -2,24 +2,22 @@
   <div class="conceptContainer">
     <h4 class="banner-heading">{{ concept.heading }}</h4>
     <ConceptImage :image-link="concept.image" :class="conceptImageClass"/>
-    <Definition class="large" :concept-name="concept.name" :definition="concept.definition"/>
-    <Explanation class="large" :concept-name="concept.name" :reason="concept.reason"/>
-    <Sidenotes :sidenotes="concept.sidenotes"/>
+    <Notes :sidenotes="concept.notes"/>
     <References :details="concept.references" :country-code="countryCode" class="large"/>
   </div>
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
-import Explanation from "@/components/Explanation.vue";
+import {defineProps, PropType} from 'vue';
 import References from "@/components/References.vue";
 import ConceptImage from "@/components/ConceptImage.vue";
-import Definition from "@/components/Definition.vue";
-import Sidenotes from "@/components/Sidenotes.vue";
 import {WidthEnum} from "@/globals/WidthEnum";
+import type {ConceptContent} from "@/globals/Types/ConceptContent";
+import Notes from "@/components/Notes.vue";
 
 const props = defineProps({
   concept: {
+    type: Object as PropType<ConceptContent>,
     required: true
   },
   countryCode: {
@@ -34,8 +32,6 @@ const props = defineProps({
 });
 
 const conceptImageClass = `conceptImage ${props.imageClass}`;
-
-const separator = ": ";
 </script>
 
 <style scoped>

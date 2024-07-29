@@ -9,19 +9,10 @@ export const concept14Shell: ConceptContent = {
     image: require('@/assets/conceptpath/lesson2/lesson2concept14.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'Command-line interface for interacting with the operating system',
+        'Functionality: Executes commands and scripts',
+        'Control: Offers detailed control over system operations and processes',
     ],
-    reason: [
-        {
-            buzzword: 'Functionality',
-            explanation: 'Executes commands and scripts',
-        },
-        {
-            buzzword: 'Control',
-            explanation: 'Offers detailed control over system operations and processes',
-        },
-    ],
-    sidenotes: [],
     references: [],
 }

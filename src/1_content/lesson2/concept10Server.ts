@@ -9,19 +9,10 @@ export const concept10Server: ConceptContent = {
     image: require('@/assets/conceptpath/lesson2/lesson2concept10.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'Computer system or device',
+        'Functionality: Provides services or resources to other computers (clients)',
+        'Resource Management: Centralizes management of resources (e.g., files, applications)',
     ],
-    reason: [
-        {
-            buzzword: 'Functionality',
-            explanation: 'Provides services or resources to other computers (clients)',
-        },
-        {
-            buzzword: 'Resource Management',
-            explanation: 'Centralizes management of resources (e.g., files, applications)',
-        },
-    ],
-    sidenotes: [],
     references: [],
 }

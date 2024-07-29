@@ -9,27 +9,12 @@ export const concept13ContainerRegistry: ConceptContent = {
     image: require('@/assets/conceptpath/lesson2/lesson2concept13.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'Repository for storing container images',
+        'Storage: Centralizes storage of container images for easy management',
+        'Version Control: Supports versioning and tagging of images for tracking and rollback',
+        'Distribution: Provides a reliable mechanism for distributing container images to multiple environments',
+        'Integration: Works with container orchestration tools (e.g., Kubernetes) for streamlined deployments',
     ],
-    reason: [
-        {
-            buzzword: 'Storage',
-            explanation: 'Centralizes storage of container images for easy management',
-        },
-        {
-            buzzword: 'Version Control',
-            explanation: 'Supports versioning and tagging of images for tracking and rollback',
-        },
-        {
-            buzzword: 'Distribution',
-            explanation: 'Provides a reliable mechanism for distributing container images to multiple environments',
-        },
-        {
-            buzzword: 'Integration',
-            explanation: 'Works with container orchestration tools (e.g., Kubernetes) for streamlined deployments',
-        }
-    ],
-    sidenotes: [],
     references: [],
 }

@@ -9,25 +9,10 @@ export const concept16SystemBinariesDirectory: ConceptContent = {
     image: require('@/assets/conceptpath/lesson2/lesson2concept16.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'Directory containing essential system executable files',
-    ],
-    reason: [
-        {
-            buzzword: 'Consistency',
-            explanation: 'Ensures that core utilities are available in standard locations for system scripts and commands',
-        },
-        {
-            buzzword: '',
-            explanation: '',
-        },
-        {
-            buzzword: '',
-            explanation: '',
-        }
-    ],
-    sidenotes: [
-        'In Windows system binaries are stored in the folder system32'
+        'Consistency: Ensures that core utilities are available in standard locations for system scripts and commands',
+        'In Windows system binaries are stored in the folder system32',
     ],
     references: [],
 }

@@ -9,20 +9,11 @@ export const concept6Router: ConceptContent = {
     image: require('@/assets/conceptpath/lesson2/lesson2concept6.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'Network device',
-        'Directs data packets'
+        'Directs data packets',
+        'Network Communication: Enables communication between different networks',
+        'Internet Access: Provides internet connectivity to multiple devices',
     ],
-    reason: [
-        {
-            buzzword: 'Network Communication',
-            explanation: 'Enables communication between different networks',
-        },
-        {
-            buzzword: 'Internet Access',
-            explanation: 'Provides internet connectivity to multiple devices',
-        }
-    ],
-    sidenotes: [],
     references: [],
 }

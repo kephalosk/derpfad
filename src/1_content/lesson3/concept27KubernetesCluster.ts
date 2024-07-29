@@ -9,23 +9,11 @@ export const concept27KubernetesCluster: ConceptContent = {
     image: require('@/assets/conceptpath/lesson3/lesson3concept27.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'A set of nodes that run containerized applications managed by Kubernetes.',
+        'Scalability: Automatically scales applications up or down based on demand',
+        'High Availability: Ensures application uptime with self-healing and load balancing',
+        'Resource Efficiency: Optimizes resource use across nodes',
     ],
-    reason: [
-        {
-            buzzword: 'Scalability',
-            explanation: 'Automatically scales applications up or down based on demand',
-        },
-        {
-            buzzword: 'High Availability',
-            explanation: 'Ensures application uptime with self-healing and load balancing',
-        },
-        {
-            buzzword: 'Resource Efficiency',
-            explanation: 'Optimizes resource use across nodes',
-        }
-    ],
-    sidenotes: [],
     references: [],
 }

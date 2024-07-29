@@ -9,15 +9,9 @@ export const concept3WordProcessingProgram: ConceptContent = {
     image: require('@/assets/conceptpath/lesson1/lesson1concept3.jpg'),
     number,
     name,
-    definition: [
+    notes: [
         'Allows users to create, edit, format, and print text documents.',
+        'Code Structuring: Organizing code snippets and files',
     ],
-    reason: [
-        {
-            buzzword: 'Code Structuring',
-            explanation: 'Organizing code snippets and files',
-        }
-    ],
-    sidenotes: [],
     references: [],
 }

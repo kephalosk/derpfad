@@ -9,10 +9,8 @@ export const concept26ContainerRegistryDigitalOcean: ConceptContent = {
     image: require('@/assets/conceptpath/lesson3/lesson3concept26.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'Digital Ocean has its own container image registry service',
     ],
-    reason: [],
-    sidenotes: [],
     references: [],
 }

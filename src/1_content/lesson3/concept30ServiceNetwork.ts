@@ -9,23 +9,11 @@ export const concept30ServiceNetwork: ConceptContent = {
     image: require('@/assets/conceptpath/lesson3/lesson3concept30.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'Network setup allowing communication between services within a Kubernetes cluster',
+        'NodePort: Exposes the service on a static port on each node\'s IP',
+        'DNS Resolution: Services are automatically discoverable via DNS names within the cluster',
+        'Network Policies: Controls and restricts network traffic between services',
     ],
-    reason: [
-        {
-            buzzword: 'NodePort',
-            explanation: 'Exposes the service on a static port on each node\'s IP',
-        },
-        {
-            buzzword: 'DNS Resolution',
-            explanation: 'Services are automatically discoverable via DNS names within the cluster',
-        },
-        {
-            buzzword: 'Network Policies',
-            explanation: 'Controls and restricts network traffic between services',
-        }
-    ],
-    sidenotes: [],
     references: [],
 }

@@ -6,8 +6,6 @@ export interface ConceptContent {
     image: string,
     number: number,
     name: string,
-    definition: string[],
-    reason: ConceptReason[],
-    sidenotes: string[],
+    notes: string[],
     references: ReferenceDetails[],
 }

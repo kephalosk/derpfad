@@ -9,19 +9,10 @@ export const concept31Loadbalancer: ConceptContent = {
     image: require('@/assets/conceptpath/lesson3/lesson3concept31.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'Distributes incoming network traffic across multiple pods or services',
+        'High Availability: Ensures uninterrupted service by routing traffic only to healthy pods',
+        'Scalability: Supports automatic scaling by distributing traffic as the number of pods increases or decreases',
     ],
-    reason: [
-        {
-            buzzword: 'High Availability',
-            explanation: 'Ensures uninterrupted service by routing traffic only to healthy pods',
-        },
-        {
-            buzzword: 'Scalability',
-            explanation: 'Supports automatic scaling by distributing traffic as the number of pods increases or decreases',
-        }
-    ],
-    sidenotes: [],
     references: [],
 }

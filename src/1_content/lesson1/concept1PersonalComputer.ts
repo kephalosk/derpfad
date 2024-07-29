@@ -9,23 +9,14 @@ export const concept1PersonalComputer: ConceptContent = {
     image: require('@/assets/conceptpath/lesson1/lesson1concept1.jpg'),
     number,
     name,
-    definition: [
-        'Machine to write, test and manage code locally'
+    notes: [
+        'Machine to write, test and manage code locally',
+        'Accessibility: Immediate access to development tools',
+        'Convenience: Work from anywhere with ease',
+        'Customization: Use preferred software, settings, and configurations'
     ],
-    reason: [
-        {
-            buzzword: 'Accessibility',
-            explanation: 'Immediate access to development tools',
-        },
-        {
-            buzzword: 'Convenience',
-            explanation: 'Work from anywhere with ease',
-        },
-        {
-            buzzword: 'Customization',
-            explanation: 'Use preferred software, settings, and configurations.',
-        },
-    ],
+    definition: [],
+    reason: [],
     sidenotes: [],
     references: [
         {

@@ -9,20 +9,11 @@ export const concept7WideAreaNetwork: ConceptContent = {
     image: require('@/assets/conceptpath/lesson2/lesson2concept7.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'Telecommunications network',
-        'Covers large geographical areas'
+        'Covers large geographical areas',
+        'Geographical Reach: Connects remote locations over large distances',
+        'Internet Access: Provides internet connectivity to regional and remote areas',
     ],
-    reason: [
-        {
-            buzzword: 'Geographical Reach',
-            explanation: 'Connects remote locations over large distances',
-        },
-        {
-            buzzword: 'Internet Access',
-            explanation: 'Provides internet connectivity to regional and remote areas',
-        }
-    ],
-    sidenotes: [],
     references: [],
 }

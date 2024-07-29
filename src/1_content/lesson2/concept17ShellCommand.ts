@@ -9,19 +9,10 @@ export const concept17ShellCommand: ConceptContent = {
     image: require('@/assets/conceptpath/lesson2/lesson2concept17.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'Instruction entered into a shell to perform a specific task',
+        'System Control: Provides direct control over system functions and operations',
+        'Efficiency: Allows quick execution of tasks without graphical interfaces',
     ],
-    reason: [
-        {
-            buzzword: 'System Control',
-            explanation: 'Provides direct control over system functions and operations',
-        },
-        {
-            buzzword: 'Efficiency',
-            explanation: 'Allows quick execution of tasks without graphical interfaces',
-        }
-    ],
-    sidenotes: [],
     references: [],
 }

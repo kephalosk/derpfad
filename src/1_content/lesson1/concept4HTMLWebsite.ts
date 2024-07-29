@@ -9,26 +9,14 @@ export const concept4HTMLWebsite: ConceptContent = {
     image: require('@/assets/conceptpath/lesson1/lesson1concept4.jpg'),
     number,
     name,
-    definition: [
+    notes: [
         'A Website written in HTML',
         'HTML means: HyperText Markup Language',
         'It\'s the standard markup language to create and structure content on websites',
+        'Standardized: Standard maintained by the World Wide Web Consortium (W3C)',
+        'Universally Supported: Supported by all web browsers',
+        'Easy to Learn: Simple, clear and intuitive syntax',
     ],
-    reason: [
-        {
-            buzzword: 'Standardized',
-            explanation: 'Standard maintained by the World Wide Web Consortium (W3C)',
-        },
-        {
-            buzzword: 'Universally Supported',
-            explanation: 'Supported by all web browsers',
-        },
-        {
-            buzzword: 'Easy to Learn',
-            explanation: 'Simple, clear and intuitive syntax',
-        }
-    ],
-    sidenotes: [],
     references: [
         {
             title: 'Jon Duckett: HTML and CSS: Design and Build Websites',

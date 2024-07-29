@@ -9,10 +9,8 @@ export const concept37PointerDoctl: ConceptContent = {
     image: require('@/assets/conceptpath/lesson3/lesson3concept37.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'Globally integration in the PATH',
     ],
-    reason: [],
-    sidenotes: [],
     references: [],
 }

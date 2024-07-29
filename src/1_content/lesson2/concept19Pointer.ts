@@ -9,16 +9,9 @@ export const concept19Pointer: ConceptContent = {
     image: require('@/assets/conceptpath/lesson2/lesson2concept19.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'Reference to another memory location',
-    ],
-    reason: [
-        {
-            buzzword: 'Memory Access',
-            explanation: 'Provides a direct way to access and manipulate memory locations',
-        }
-    ],
-    sidenotes: [
+        'Memory Access: Provides a direct way to access and manipulate memory locations',
         'In macOS and Linux a pointer is called Alias for a relativ target',
         'In macOS and Linux a pointer is called symlink for a hard target',
         'In Windows a pointer is called Shortcut',

@@ -9,23 +9,11 @@ export const concept25CloudServiceProvider: ConceptContent = {
     image: require('@/assets/conceptpath/lesson3/lesson3concept25.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'Company offering cloud computing services like storage, processing, and networking.',
+        'IaaS (Infrastructure as a Service): Provides virtualized computing resources',
+        'PaaS (Platform as a Service): Offers hardware and software tools',
+        'SaaS (Software as a Service): Delivers software applications',
     ],
-    reason: [
-        {
-            buzzword: 'IaaS (Infrastructure as a Service)',
-            explanation: 'Provides virtualized computing resources',
-        },
-        {
-            buzzword: 'PaaS (Platform as a Service)',
-            explanation: 'Offers hardware and software tools',
-        },
-        {
-            buzzword: 'SaaS (Software as a Service)',
-            explanation: 'Delivers software applications',
-        }
-    ],
-    sidenotes: [],
     references: [],
 }

@@ -9,19 +9,10 @@ export const concept22Container: ConceptContent = {
     image: require('@/assets/conceptpath/lesson2/lesson2concept22.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'A lightweight, portable, and self-sufficient unit that packages an application and its dependencies',
+        'Isolation: Runs applications in isolated environments, sharing the host operating system\'s kernel',
+        'Management: Ideal for microservices, cloud-native applications, and continuous integration/continuous deployment (CI/CD) pipelines',
     ],
-    reason: [
-        {
-            buzzword: 'Isolation',
-            explanation: 'Runs applications in isolated environments, sharing the host operating system\'s kernel',
-        },
-        {
-            buzzword: 'Management',
-            explanation: 'Ideal for microservices, cloud-native applications, and continuous integration/continuous deployment (CI/CD) pipelines',
-        }
-    ],
-    sidenotes: [],
     references: [],
 }

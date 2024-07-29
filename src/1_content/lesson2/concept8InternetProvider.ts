@@ -9,19 +9,10 @@ export const concept8InternetProvider: ConceptContent = {
     image: require('@/assets/conceptpath/lesson2/lesson2concept8.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'A company providing internet access',
+        'Services: Offers various internet services (e.g., broadband, fiber, DSL)',
+        'Infrastructure: Owns or leases network infrastructure',
     ],
-    reason: [
-        {
-            buzzword: 'Services',
-            explanation: 'Offers various internet services (e.g., broadband, fiber, DSL)',
-        },
-        {
-            buzzword: 'Infrastructure',
-            explanation: 'Owns or leases network infrastructure',
-        }
-    ],
-    sidenotes: [],
     references: [],
 }

@@ -9,17 +9,10 @@ export const concept20DockerConfiguration: ConceptContent = {
     image: require('@/assets/conceptpath/lesson2/lesson2concept20.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'Settings and parameters used to customize Docker\'s behavior and environment',
-    ],
-    reason: [
-        {
-            buzzword: 'Automation',
-            explanation: 'Automates the creation and management of Docker containers and images through scripts and configuration files',
-        }
-    ],
-    sidenotes: [
-        'Typically specified in configuration files like Dockerfile'
+        'Automation: Automates the creation and management of Docker containers and images through scripts and configuration files',
+        'Typically specified in configuration files like Dockerfile',
     ],
     references: [],
 }

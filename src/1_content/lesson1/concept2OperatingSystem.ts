@@ -9,20 +9,11 @@ export const concept2OperatingSystem: ConceptContent = {
     image: require('@/assets/conceptpath/lesson1/lesson1concept2.jpg'),
     number,
     name,
-    definition: [
+    notes: [
         'Manages a computer\'s hardware',
         'Provides common services for computer programs',
+        'User Interface: Enables users to interact with the computer',
+        'Resource Management: Allocates hardware resources (CPU, memory, storage) to applications'
     ],
-    reason: [
-        {
-            buzzword: 'User Interface',
-            explanation: 'Enables users to interact with the computer',
-        },
-        {
-            buzzword: 'Resource Management',
-            explanation: 'Allocates hardware resources (CPU, memory, storage) to applications',
-        }
-    ],
-    sidenotes: [],
     references: [],
 }

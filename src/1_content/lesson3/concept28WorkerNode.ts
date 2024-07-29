@@ -9,19 +9,9 @@ export const concept28WorkerNode: ConceptContent = {
     image: require('@/assets/conceptpath/lesson3/lesson3concept28.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'A machine (physical or virtual) in a Kubernetes cluster that runs containerized applications.',
+        'Isolation: Ensures workloads are isolated from each other',
     ],
-    reason: [
-        {
-            buzzword: 'Isolation',
-            explanation: 'Ensures workloads are isolated from each other',
-        },
-        {
-            buzzword: '',
-            explanation: '',
-        }
-    ],
-    sidenotes: [],
     references: [],
 }

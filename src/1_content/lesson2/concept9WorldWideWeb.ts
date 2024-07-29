@@ -9,23 +9,13 @@ export const concept9WorldWideWeb: ConceptContent = {
     image: require('@/assets/conceptpath/lesson2/lesson2concept9.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'System of interlinked hypertext documents',
         'Accessible via the internet',
         'Uses HTTP/HTTPS protocols',
-    ],
-    reason: [
-        {
-            buzzword: 'Standardization',
-            explanation: 'Governed by the World Wide Web Consortium (W3C)',
-        },
-        {
-            buzzword: 'Information Access',
-            explanation: 'Provides global access to information and knowledge',
-        }
-    ],
-    sidenotes: [
-        'Invented by Tim Berners-Lee in 1989'
+        'Standardization: Governed by the World Wide Web Consortium (W3C)',
+        'Information Access: Provides global access to information and knowledge',
+        'Invented by Tim Berners-Lee in 1989',
     ],
     references: [],
 }

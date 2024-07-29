@@ -9,19 +9,10 @@ export const concept32ServerKubernetes: ConceptContent = {
     image: require('@/assets/conceptpath/lesson3/lesson3concept32.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'The official website for Kubernetes, providing documentation, resources, and community information.',
+        'Documentation: Comprehensive guides, tutorials, and references for using and managing Kubernetes',
+        'Downloads: Links to download Kubernetes software and tools',
     ],
-    reason: [
-        {
-            buzzword: 'Documentation',
-            explanation: 'Comprehensive guides, tutorials, and references for using and managing Kubernetes',
-        },
-        {
-            buzzword: 'Downloads',
-            explanation: 'Links to download Kubernetes software and tools',
-        }
-    ],
-    sidenotes: [],
     references: [],
 }

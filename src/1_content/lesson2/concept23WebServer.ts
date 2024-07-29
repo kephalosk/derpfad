@@ -9,19 +9,10 @@ export const concept23WebServer: ConceptContent = {
     image: require('@/assets/conceptpath/lesson2/lesson2concept23.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'Software that delivers web content to users',
+        'Content Delivery: Serves websites and applications',
+        'Accessibility: Makes websites and web applications accessible from anywhere via a web browser',
     ],
-    reason: [
-        {
-            buzzword: 'Content Delivery',
-            explanation: 'Serves websites and applications',
-        },
-        {
-            buzzword: 'Accessibility',
-            explanation: 'Makes websites and web applications accessible from anywhere via a web browser',
-        }
-    ],
-    sidenotes: [],
     references: [],
 }

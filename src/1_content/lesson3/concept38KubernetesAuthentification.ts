@@ -9,10 +9,8 @@ export const concept38KubernetesAuthentification: ConceptContent = {
     image: require('@/assets/conceptpath/lesson3/lesson3concept38.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'Used for secure communication between clients and the Kubernetes API server.',
     ],
-    reason: [],
-    sidenotes: [],
     references: [],
 }

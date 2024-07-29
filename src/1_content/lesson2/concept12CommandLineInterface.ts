@@ -9,19 +9,10 @@ export const concept12CommandLineInterface: ConceptContent = {
     image: require('@/assets/conceptpath/lesson2/lesson2concept12.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'Text-based interface for interacting with a computer',
+        'Efficiency: Enables quick and direct execution of commands',
+        'Customization: Allows customization and complex configuration',
     ],
-    reason: [
-        {
-            buzzword: 'Efficiency',
-            explanation: 'Enables quick and direct execution of commands',
-        },
-        {
-            buzzword: 'Customization',
-            explanation: 'Allows customization and complex configuration',
-        }
-    ],
-    sidenotes: [],
     references: [],
 }

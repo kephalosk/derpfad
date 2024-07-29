@@ -9,10 +9,8 @@ export const concept34PointerKubectl: ConceptContent = {
     image: require('@/assets/conceptpath/lesson3/lesson3concept34.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'Globally integration in the PATH',
     ],
-    reason: [],
-    sidenotes: [],
     references: [],
 }

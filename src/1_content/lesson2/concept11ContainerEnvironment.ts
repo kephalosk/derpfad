@@ -9,23 +9,11 @@ export const concept11ContainerEnvironment: ConceptContent = {
     image: require('@/assets/conceptpath/lesson2/lesson2concept11.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'Virtualized environment for running applications',
+        'Isolation: Isolates applications and their dependencies from the host system',
+        'Portability: Allows consistent deployment across different environments (e.g., development, testing, production)',
+        'Efficiency: Uses system resources more efficiently compared to traditional virtualization',
     ],
-    reason: [
-        {
-            buzzword: 'Isolation',
-            explanation: 'Isolates applications and their dependencies from the host system',
-        },
-        {
-            buzzword: 'Portability',
-            explanation: 'Allows consistent deployment across different environments (e.g., development, testing, production)',
-        },
-        {
-            buzzword: 'Efficiency',
-            explanation: 'Uses system resources more efficiently compared to traditional virtualization',
-        }
-    ],
-    sidenotes: [],
     references: [],
 }

@@ -9,22 +9,12 @@ export const concept5WebBrowser: ConceptContent = {
     image: require('@/assets/conceptpath/lesson1/lesson1concept5.jpg'),
     number,
     name,
-    definition: [
+    notes: [
         'Software to access and view content on the World Wide Web',
         'Software to access and view locally stored content',
-    ],
-    reason: [
-        {
-            buzzword: 'Local Development',
-            explanation: 'Render and preview websites and web applications',
-        },
-        {
-            buzzword: 'Compatibility Testing',
-            explanation: 'Test and debug websites and web applications',
-        }
-    ],
-    sidenotes: [
-        'Most web browsers provide developer tools to debug websites and web applications'
+        'Local Development: Render and preview websites and web applications',
+        'Compatibility Testing: Test and debug websites and web applications',
+        'Most web browsers provide developer tools to debug websites and web applications',
     ],
     references: [],
 }

@@ -9,15 +9,9 @@ export const concept24ServerDigitalOcean: ConceptContent = {
     image: require('@/assets/conceptpath/lesson3/lesson3concept24.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'A cloud infrastructure provider',
+        'Service: Offering scalable compute platform with easy-to-use management tools',
     ],
-    reason: [
-        {
-            buzzword: 'Service',
-            explanation: 'Offering scalable compute platform with easy-to-use management tools',
-        },
-    ],
-    sidenotes: [],
     references: [],
 }

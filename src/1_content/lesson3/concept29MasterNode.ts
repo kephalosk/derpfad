@@ -9,19 +9,10 @@ export const concept29MasterNode: ConceptContent = {
     image: require('@/assets/conceptpath/lesson3/lesson3concept29.jpg'),
     number,
     name,
-    definition:  [
+    notes: [
         'Central control unit of a Kubernetes cluster',
+        'Cluster Management: Centralizes control and configuration of the entire cluster',
+        'Scheduling: Determines how and where to run workloads based on available resources',
     ],
-    reason: [
-        {
-            buzzword: 'Cluster Management',
-            explanation: 'Centralizes control and configuration of the entire cluster',
-        },
-        {
-            buzzword: 'Scheduling',
-            explanation: 'Determines how and where to run workloads based on available resources',
-        }
-    ],
-    sidenotes: [],
     references: [],
 }
