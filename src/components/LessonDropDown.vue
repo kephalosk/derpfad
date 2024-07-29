@@ -1,7 +1,9 @@
 <template>
   <div>
     <select :value="selected" id="options" @change="handleChange">
-      <slot></slot>
+      <option value="lesson1">Lesson 1: Minimal Setup</option>
+      <option value="lesson2">Lesson 2: Container Setup</option>
+      <option value="lesson3">Lesson 3: Kubernetes Setup</option>
     </select>
   </div>
 </template>

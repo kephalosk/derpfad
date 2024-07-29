@@ -1,17 +1,11 @@
 <template>
   <section class="pathline">
     <p>
-      <ChapterDropDown class="chapter" :selected="selectedChapter" defaultValue="chapter1" @optionSelected="handleChapterChange">
-        <option value="chapter1">Chapter 1: Basics</option>
-      </ChapterDropDown>
+      <ChapterDropDown class="chapter" :selected="selectedChapter" defaultValue="chapter1" @optionSelected="handleChapterChange"/>
     </p>
 
     <p>
-      <LessonDropDown :selected="selectedLesson" defaultValue="lesson2" @optionSelected="handleLessonChange">
-        <option value="lesson1">Lesson 1: Minimal Setup</option>
-        <option value="lesson2">Lesson 2: Container Setup</option>
-        <option value="lesson3">Lesson 3: Kubernetes Setup</option>
-      </LessonDropDown>
+      <LessonDropDown :selected="selectedLesson" defaultValue="lesson2" @optionSelected="handleLessonChange"/>
     </p>
 
     <ConceptBlock :concept="concept24ServerDigitalOcean" :countryCode="countryCode"/>

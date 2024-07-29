@@ -1,7 +1,7 @@
 <template>
   <div>
     <select :value="selected" id="options" @change="handleChange">
-      <slot></slot>
+      <option value="chapter1">Chapter 1: Basics</option>
     </select>
   </div>
 </template>
